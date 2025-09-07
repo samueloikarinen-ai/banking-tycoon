@@ -11,9 +11,10 @@ Take loans from central bank.
 
 
 
+Other:
 
-Run the game with a .bat file
+    - Run the game with a .bat file
 
 
 
-history.log, customers.json, bankdata.json are created when you run app
+    - history.log, customers.json, bankdata.json are created when you run app
