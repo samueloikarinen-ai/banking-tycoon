@@ -7,6 +7,9 @@ Gain interest from granted loans.
 
 Customers gain interest from deposited money.
 
-Take loans from central bank
+Take loans from central bank.
+
+
+
 
 Run the game with a .bat file
