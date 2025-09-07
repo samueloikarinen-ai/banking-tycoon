@@ -218,7 +218,7 @@ class Bank:
         return True
 
     # ---------- Day / Interest ----------
-        def advance_day(self):
+    def advance_day(self):
         self.day += 1
 
         # --- Customer loans accrual ---
@@ -313,4 +313,5 @@ class Bank:
         self.history = data.get("history", [])
         self.next_customer_id = data.get("next_customer_id", 1)
         self.load_customers()
+
 
