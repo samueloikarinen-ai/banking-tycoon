@@ -169,82 +169,72 @@ class BankingGUI:
         self.root.destroy()
 
     # --- Dashboard ---
-    def refresh_dashboard(self):
-        total_customer_balance = sum(c.get("deposit_balance", 0) for c in self.bank.customers.values())
-        self.total_deposits_label.config(text=f"Bank balance: ${self.bank.balance:,.2f} / Deposit Bal ${total_customer_balance:,.2f}")
+        # --- Dashboard ---
+        def refresh_dashboard(self):
+            total_customer_balance = sum(c.get("deposit_balance", 0) for c in self.bank.customers.values())
+            self.balance_label.config(text=f"Bank Balance: ${self.bank.balance:,.2f}")
+            self.total_deposits_label.config(text=f"${self.bank.balance:,.2f} / ${total_customer_balance:,.2f}")
+            self.day_label.config(text=f"Day: {self.bank.day}")
 
-        self.day_label.config(text=f"Day: {self.bank.day}")
+            # --- Interest counters ---
+            days_until_deposit_payout = 30 - self.bank.days_since_last_deposit_collection
+            days_until_loan_collection = 30 - self.bank.days_since_last_collection
+            self.deposit_counter_label.config(text=f"Deposit interest in: {days_until_deposit_payout} days")
+            self.loan_counter_label.config(text=f"Loan interest in: {days_until_loan_collection} days")
 
-        # --- Interest counters ---
-        days_until_deposit_payout = 30 - self.bank.days_since_last_deposit_collection
-        days_until_loan_collection = 30 - self.bank.days_since_last_collection
-        self.deposit_counter_label.config(text=f"Deposit interest in: {days_until_deposit_payout} days")
-        self.loan_counter_label.config(text=f"Loan interest in: {days_until_loan_collection} days")
+            # --- Deposits Panel ---
+            self.deposits_text.config(state="normal")
+            self.deposits_text.delete(1.0, tk.END)
+            for cid, c in self.bank.customers.items():
+                for dep in c.get("deposits", []):
+                    principal = dep.get("amount", 0.0)
+                    accrued = dep.get("accrued", 0.0)
+                    self.deposits_text.insert(tk.END, f"Customer {cid}: ${principal:.2f} (+ ")
+                    self.deposits_text.insert(tk.END, f"${accrued:.2f}", "red")
+                    self.deposits_text.insert(tk.END, " interest)\n")
+            self.deposits_text.config(state="disabled")
 
-        # --- Deposits Panel ---
-        self.deposits_text.config(state="normal")
-        self.deposits_text.delete(1.0, tk.END)
-        for cid, c in self.bank.customers.items():
-            for dep in c.get("deposits", []):
-                principal = dep["amount"]
-                accrued = dep.get("accrued", 0)
-                self.deposits_text.insert(tk.END, f"Customer {cid}: ${principal:.2f} (+ ")
-                self.deposits_text.insert(tk.END, f"${accrued:.2f}", "red")  # interest red
-                self.deposits_text.insert(tk.END, " interest)\n")
-        self.deposits_text.config(state="disabled")
+            # --- Loans Panel ---
+            self.loans_text.config(state="normal")
+            self.loans_text.delete(1.0, tk.END)
+            for cid, c in self.bank.customers.items():
+                for l in c.get("loans", []):
+                    principal = l.get("amount", 0.0)
+                    accrued = l.get("accrued", 0.0)
+                    days_left = l.get("days_left", 0)
+                    self.loans_text.insert(tk.END, f"Customer {cid}: ${principal:.2f} (+ ")
+                    self.loans_text.insert(tk.END, f"${accrued:.2f}", "green")
+                    self.loans_text.insert(tk.END, f" interest) | {days_left} days left\n")
+            self.loans_text.config(state="disabled")
 
-        # --- Loans Panel ---
-        self.loans_text.config(state="normal")
-        self.loans_text.delete(1.0, tk.END)
-        for cid, c in self.bank.customers.items():
-            for l in c.get("loans", []):
-                principal = l["amount"]
-                accrued = l.get("accrued", 0)
-                days_left = l.get("days_left", 0)
-                self.loans_text.insert(tk.END, f"Customer {cid}: ${principal:.2f} (+ ")
-                self.loans_text.insert(tk.END, f"${accrued:.2f}", "green")  # interest green
-                self.loans_text.insert(tk.END, f" interest) | {days_left} days left\n")
-        self.loans_text.config(state="disabled")
+            # --- History Panel ---
+            self.history_text.config(state="normal")
+            self.history_text.delete(1.0, tk.END)
+            for day, desc in self.bank.history[-10:]:
+                self.history_text.insert(tk.END, f"Day {day}: {desc}\n")
+            self.history_text.config(state="disabled")
 
-        # --- History Panel ---
-        # Initialize logger once
-        self.history_logger = HistoryLogger(self.bank)
+        # --- Event simulation ---
+        def simulate_event(self):
+            event_funcs = [deposit_event, loan_request_event]
+            if self.bank.deposits:
+                event_funcs.append(withdraw_event)
 
-        # GUI history panel code stays the same
-        self.history_text.config(state="normal")
-        self.history_text.delete(1.0, tk.END)
-        for day, desc in self.bank.history[-10:]:
-            self.history_text.insert(tk.END, f"Day {day}: {desc}\n")
-        self.history_text.config(state="disabled")
+            evt_func = random.choice(event_funcs)
 
-    # --- Event simulation ---
-    def simulate_event(self):
-        # Start with deposit and loan events
-        event_funcs = [deposit_event, loan_request_event]
-
-        # Only add withdraw if there are deposits
-        if self.bank.deposits:
-            event_funcs.append(withdraw_event)
-
-        # Pick a random event
-        evt_func = random.choice(event_funcs)
-
-        # Run event
-        if evt_func == loan_request_event:
-            result = evt_func(self.bank, approval_callback=self.get_loan_input)
-        else:
+            # Run event and ensure result is a string
             result = evt_func(self.bank)
+            if not isinstance(result, str):
+                result = str(result)
 
-            # Show event result
-        self.event_text.config(state="normal")
-        self.event_text.delete(1.0, tk.END)
-        result = str(result)
-        self.event_text.insert(tk.END, result)
-        self.event_text.config(state="disabled")
+            self.event_text.config(state="normal")
+            self.event_text.delete(1.0, tk.END)
+            self.event_text.insert(tk.END, result)
+            self.event_text.config(state="disabled")
 
-        # Pause simulation until user continues
-        self.simulation_paused = True
-        self.refresh_dashboard()
+            # Pause simulation until user clicks "Continue Event"
+            self.simulation_paused = True
+            self.refresh_dashboard()  
 
     # --- Update Loop ---
     def update_loop(self):
