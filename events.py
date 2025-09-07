@@ -48,48 +48,59 @@ def loan_request_event(bank, approval_callback=None):
     elif score < 800: rate = 0.04
     else: rate = 0.02
 
-
-
     # Use callback for approval if provided
-    decision = None
-    new_amt = None
-    new_yrs = None
     if approval_callback:
-        decision, *values = approval_callback(cid, amt, yrs, rate, score)
+        result = approval_callback(cid, amt, yrs, rate, score)
+        # Unpack decision and values safely
+        if isinstance(result, tuple):
+            decision = result[0]
+            values = result[1:]
+        else:
+            decision = result
+            values = []
 
-        if decision == "accept":
+        if decision == "accept" or decision is None:
             success = bank.give_loan(amt, yrs, rate, customer_id=cid, require_approval=False)
             if success:
-                return f"Loan ACCEPTED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
+                return f"Loan ACCEPTED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
             else:
-                return f"Loan FAILED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
-
+                return f"Loan FAILED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
         elif decision == "decline":
-            return f"Loan DECLINED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
-
+            return f"Loan DECLINED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
         elif decision == "counter":
+            # Check for valid values
+            if len(values) != 2 or values[0] is None or values[1] is None:
+                return f"Loan COUNTER REJECTED for customer {cid} (invalid counter-offer)"
+            new_amt, new_yrs = values
             # Evaluate counteroffer probability based on credit score
             diff_amt = abs(new_amt - amt) / amt
             diff_yrs = abs(new_yrs - yrs) / max(1, yrs)
-            if score < 580:
-                tol = 0.6
-            elif score < 670:
-                tol = 0.4
-            elif score < 740:
-                tol = 0.25
-            elif score < 800:
-                tol = 0.15
-            else:
-                tol = 0.1
+            if score < 580: tol = 0.6
+            elif score < 670: tol = 0.4
+            elif score < 740: tol = 0.25
+            elif score < 800: tol = 0.15
+            else: tol = 0.1
 
             acc_score = 1 - (diff_amt + diff_yrs) / 2
             acc_prob = max(0, acc_score - (1 - tol))
 
             if random.random() < acc_prob:
-                bank.give_loan(new_amt, new_yrs, rate, customer_id=cid, require_approval=False)
-                return f"Loan COUNTER ACCEPTED for customer {cid} (${new_amt:.2f} for {new_yrs} yrs at {rate * 100:.2f}%)"
+                success = bank.give_loan(new_amt, new_yrs, rate, customer_id=cid, require_approval=False)
+                if success:
+                    return f"Loan COUNTER ACCEPTED for customer {cid} (${new_amt:.2f} for {new_yrs} yrs at {rate*100:.2f}%)"
+                else:
+                    return f"Loan COUNTER FAILED for customer {cid} (${new_amt:.2f} for {new_yrs} yrs at {rate*100:.2f}%)"
+            else:
+                return f"Loan COUNTER REJECTED for customer {cid}"
         else:
-            return f"Loan COUNTER REJECTED for customer {cid}"
+            return "Loan request cancelled or invalid response."
+    else:
+        # No approval callback, auto-accept
+        success = bank.give_loan(amt, yrs, rate, customer_id=cid, require_approval=False)
+        if success:
+            return f"Loan ACCEPTED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
+        else:
+            return f"Loan FAILED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
 
 
 
