@@ -3,11 +3,12 @@ import time
 import random
 import tkinter as tk
 from tkinter import simpledialog
+from history import HistoryLogger
 
 from bank import Bank
 from events import deposit_event, withdraw_event, loan_request_event
 
-from history import HistoryLogger
+
 
 class BankingGUI:
     def __init__(self, bank: Bank):
@@ -17,7 +18,8 @@ class BankingGUI:
         self.day_duration = 1
         self.last_day_time = time.time()
         self.pending_event = None
-
+        self.history_logger = HistoryLogger()
+        self.logged_history_ids = set()  # Track which history events are already logged
 
         # --- GUI Setup ---
         self.root = tk.Tk()
@@ -25,7 +27,7 @@ class BankingGUI:
         self.root.geometry("1000x700")
         self.root.configure(bg="#f5f5f5")
 
-        # --- Summary Frame ---
+
         # --- Summary Frame ---
         summary_frame = tk.Frame(self.root, bg="#f5f5f5")
         summary_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=5)
@@ -139,8 +141,10 @@ class BankingGUI:
         # Return result in expected format
         if result.get('decision') == 'counter':
             return ('counter', result['new_amt'], result['new_yrs'])
+        elif result.get('decision') in ('accept', 'decline'):
+            return result.get('decision')
         else:
-            return result.get('decision', 'decline')
+            return 'decline'  # default if dialog closed
 
     # --- Commands ---
     def borrow(self):
@@ -206,11 +210,17 @@ class BankingGUI:
                 self.loans_text.insert(tk.END, f" interest) | {days_left} days left\n")
         self.loans_text.config(state="disabled")
 
+
         # --- History Panel ---
         self.history_text.config(state="normal")
         self.history_text.delete(1.0, tk.END)
         for day, desc in self.bank.history[-10:]:
             self.history_text.insert(tk.END, f"Day {day}: {desc}\n")
+            # Only log new events
+            history_id = (day, desc)
+            if history_id not in self.logged_history_ids:
+                self.history_logger.log(f"Day {day}: {desc}")
+                self.logged_history_ids.add(history_id)
         self.history_text.config(state="disabled")
 
     # --- Event simulation ---
@@ -222,7 +232,10 @@ class BankingGUI:
         evt_func = random.choice(event_funcs)
 
         # Run event and ensure result is a string
-        result = evt_func(self.bank)
+        if evt_func == loan_request_event:
+            result = evt_func(self.bank, approval_callback=self.get_loan_input)
+        else:
+            result = evt_func(self.bank)
         if not isinstance(result, str):
             result = str(result)
 
@@ -234,6 +247,9 @@ class BankingGUI:
         # Pause simulation until user clicks "Continue Event"
         self.simulation_paused = True
         self.refresh_dashboard()
+
+
+
 
     # --- Update Loop ---
     def update_loop(self):

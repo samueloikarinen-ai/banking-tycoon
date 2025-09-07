@@ -56,30 +56,40 @@ def loan_request_event(bank, approval_callback=None):
     new_yrs = None
     if approval_callback:
         decision, *values = approval_callback(cid, amt, yrs, rate, score)
-        if decision == "counter":
-            new_amt, new_yrs = values
 
-    # Process decision
-    if decision == "accept" or decision is None:
-        bank.give_loan(amt, yrs, rate, customer_id=cid, require_approval=False)
-        return f"Loan ACCEPTED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
-    elif decision == "decline":
-        return f"Loan DECLINED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate*100:.2f}%)"
-    elif decision == "counter":
-        # Evaluate counteroffer probability based on credit score
-        diff_amt = abs(new_amt - amt) / amt
-        diff_yrs = abs(new_yrs - yrs) / max(1, yrs)
-        if score < 580: tol = 0.6
-        elif score < 670: tol = 0.4
-        elif score < 740: tol = 0.25
-        elif score < 800: tol = 0.15
-        else: tol = 0.1
+        if decision == "accept":
+            success = bank.give_loan(amt, yrs, rate, customer_id=cid, require_approval=False)
+            if success:
+                return f"Loan ACCEPTED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
+            else:
+                return f"Loan FAILED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
 
-        acc_score = 1 - (diff_amt + diff_yrs) / 2
-        acc_prob = max(0, acc_score - (1 - tol))
+        elif decision == "decline":
+            return f"Loan DECLINED for customer {cid} (${amt:.2f} for {yrs} yrs at {rate * 100:.2f}%)"
 
-        if random.random() < acc_prob:
-            bank.give_loan(new_amt, new_yrs, rate, customer_id=cid, require_approval=False)
-            return f"Loan COUNTER ACCEPTED for customer {cid} (${new_amt:.2f} for {new_yrs} yrs at {rate*100:.2f}%)"
+        elif decision == "counter":
+            # Evaluate counteroffer probability based on credit score
+            diff_amt = abs(new_amt - amt) / amt
+            diff_yrs = abs(new_yrs - yrs) / max(1, yrs)
+            if score < 580:
+                tol = 0.6
+            elif score < 670:
+                tol = 0.4
+            elif score < 740:
+                tol = 0.25
+            elif score < 800:
+                tol = 0.15
+            else:
+                tol = 0.1
+
+            acc_score = 1 - (diff_amt + diff_yrs) / 2
+            acc_prob = max(0, acc_score - (1 - tol))
+
+            if random.random() < acc_prob:
+                bank.give_loan(new_amt, new_yrs, rate, customer_id=cid, require_approval=False)
+                return f"Loan COUNTER ACCEPTED for customer {cid} (${new_amt:.2f} for {new_yrs} yrs at {rate * 100:.2f}%)"
         else:
             return f"Loan COUNTER REJECTED for customer {cid}"
+
+
+
