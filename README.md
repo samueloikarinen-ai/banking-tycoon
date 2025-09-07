@@ -1,4 +1,4 @@
-# banking-tycoon
+# banking-tycoon 1.0
 Banking tycoon game, with simple gui. 
 
 Grow your bank, gain deposits, grant loans, have customers withdraw money. 
