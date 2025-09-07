@@ -218,7 +218,7 @@ class Bank:
         return True
 
     # ---------- Day / Interest ----------
-    def advance_day(self):
+        def advance_day(self):
         self.day += 1
 
         # --- Customer loans accrual ---
@@ -258,7 +258,6 @@ class Bank:
         for d in self.deposits:
             daily_interest = d[0] * 0.01 / 365
             d[1] += daily_interest
-            self.balance -= daily_interest
             customer_id = d[2]
             for cd in self.customers[customer_id]["deposits"]:
                 if cd["amount"] >= d[0]:
@@ -277,6 +276,7 @@ class Bank:
                         dep["accrued"] = 0.0
                 customer["deposit_balance"] = round(customer["deposit_balance"], 2)
             if total_paid > 0:
+                self.balance -= total_paid   # Deduct all interest payouts here only!
                 self.add_history(f"Paid ${total_paid:,.2f} in deposit interest to customers")
             self.days_since_last_deposit_collection = 0
 
@@ -313,3 +313,4 @@ class Bank:
         self.history = data.get("history", [])
         self.next_customer_id = data.get("next_customer_id", 1)
         self.load_customers()
+
