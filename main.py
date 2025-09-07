@@ -83,12 +83,19 @@ class BankingGUI:
         self.event_text = tk.Text(self.event_frame, height=5, state="disabled")
         self.event_text.pack(fill=tk.BOTH, padx=5, pady=5)
 
-        # History
+        # History panel
         self.history_frame = tk.LabelFrame(self.root, text="Bank History", font=("Arial", 12))
         self.history_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
         self.history_text = tk.Text(self.history_frame, height=10, state="disabled")
         self.history_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
+        # + - values panel
+        self.transactions_frame = tk.LabelFrame(self.root, text="Transaction Log", font=("Arial", 12))
+        self.transactions_frame.pack(fill=tk.X, padx=10, pady=5)
+        self.transactions_text = tk.Text(self.transactions_frame, height=5, state="disabled")
+        self.transactions_text.pack(fill=tk.BOTH, padx=5, pady=5)
+        self.transactions_text.tag_configure("green", foreground="green")
+        self.transactions_text.tag_configure("red", foreground="red")
 
         # Start loop
         self.root.after(100, self.update_loop)
@@ -223,19 +230,41 @@ class BankingGUI:
                 self.logged_history_ids.add(history_id)
         self.history_text.config(state="disabled")
 
+        # Transaction log
+        self.transactions_text.config(state="normal")
+        self.transactions_text.delete(1.0, tk.END)
+        for sign, value in self.bank.transaction_values[-10:]:
+            if sign == '+':
+                self.transactions_text.insert(tk.END, f"+{value:.2f}\n", "green")
+            else:
+                self.transactions_text.insert(tk.END, f"-{value:.2f}\n", "red")
+        self.transactions_text.config(state="disabled")
+
     # --- Event simulation ---
     def simulate_event(self):
         event_funcs = [deposit_event, loan_request_event]
+
+
         if self.bank.deposits:
             event_funcs.append(withdraw_event)
 
         evt_func = random.choice(event_funcs)
+        should_pause = evt_func != loan_request_event
+
+        if should_pause:
+            self.simulation_paused = True
+        else:
+            self.simulation_paused = False
 
         # Run event and ensure result is a string
         if evt_func == loan_request_event:
             result = evt_func(self.bank, approval_callback=self.get_loan_input)
+            # Don't pause for loan events – handled in modal
         else:
             result = evt_func(self.bank)
+            # Pause for deposit/withdrawal events
+            self.simulation_paused = True
+
         if not isinstance(result, str):
             result = str(result)
 
@@ -244,8 +273,6 @@ class BankingGUI:
         self.event_text.insert(tk.END, result)
         self.event_text.config(state="disabled")
 
-        # Pause simulation until user clicks "Continue Event"
-        self.simulation_paused = True
         self.refresh_dashboard()
 
 

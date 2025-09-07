@@ -17,6 +17,7 @@ class Bank:
         self.pending_event = None
         self.days_since_last_collection = 0
         self.days_since_last_deposit_collection = 0
+        self.transaction_values = []
 
         # Load data
         self.load_data()
@@ -96,6 +97,7 @@ class Bank:
 
         # --- History & Save ---
         self.add_history(f"Customer {customer_id} deposited ${amount:.2f} (had ${before_balance:.2f}, now ${after_balance:.2f})")
+        self.transaction_values.append(('+', amount))
         self.save_data()
         self.save_customers()
         return customer_id
@@ -139,6 +141,7 @@ class Bank:
 
         # --- History & Save ---
         self.add_history(f"Customer {customer_id} withdrew ${amount:.2f} (had ${before_balance:.2f}, now ${after_balance:.2f})")
+        self.transaction_values.append(('-', amount))
         self.save_data()
         self.save_customers()
         return True
