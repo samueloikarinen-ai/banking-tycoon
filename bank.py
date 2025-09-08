@@ -201,6 +201,7 @@ class Bank:
                         break
         if total_collected > 0:
             self.add_history(f"Collected ${total_collected:,.2f} in loan interest this month")
+            self.transaction_values.append(('+', total_collected))
 
     def borrow_central_bank(self, amount, years, rate=0.05):
         days = int(years * 365)
@@ -281,6 +282,7 @@ class Bank:
             if total_paid > 0:
                 self.balance -= total_paid   # Deduct all interest payouts here only!
                 self.add_history(f"Paid ${total_paid:,.2f} in deposit interest to customers")
+                self.transaction_values.append(('-', total_paid))
             self.days_since_last_deposit_collection = 0
 
         # --- Collect loan interest every 30 days ---

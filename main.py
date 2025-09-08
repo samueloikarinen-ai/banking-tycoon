@@ -1,4 +1,3 @@
-# main.py
 import time
 import random
 import tkinter as tk
@@ -9,9 +8,13 @@ from bank import Bank
 from events import deposit_event, withdraw_event, loan_request_event
 
 
-
 class BankingGUI:
     def __init__(self, bank: Bank):
+        self.root = tk.Tk()
+        self.root.title("Banking Tycoon")
+        self.root.geometry("1000x700")
+        self.root.configure(bg="#f5f5f5")
+
         self.bank = bank
         self.running = True
         self.simulation_paused = False
@@ -21,29 +24,17 @@ class BankingGUI:
         self.history_logger = HistoryLogger()
         self.logged_history_ids = set()  # Track which history events are already logged
 
-        # --- GUI Setup ---
-        self.root = tk.Tk()
-        self.root.title("Banking Tycoon")
-        self.root.geometry("1000x700")
-        self.root.configure(bg="#f5f5f5")
-
+        self.bottom_panels_frame = tk.Frame(self.root)
+        self.bottom_panels_frame.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=5)
 
         # --- Summary Frame ---
         summary_frame = tk.Frame(self.root, bg="#f5f5f5")
         summary_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=5)
 
-        self.balance_label = tk.Label(summary_frame, text="Bank Balance:", font=("Arial", 16), bg="#f5f5f5")
-        self.balance_label.pack(side=tk.LEFT, padx=10)
+        # Remove bank balance label as requested
 
         self.total_deposits_label = tk.Label(summary_frame, text="", font=("Arial", 20), bg="#f5f5f5", fg="green")
         self.total_deposits_label.pack(side=tk.LEFT, padx=10)
-
-        # --- New: Interest counters ---
-        self.deposit_counter_label = tk.Label(summary_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="red")
-        self.deposit_counter_label.pack(side=tk.LEFT, padx=10)
-
-        self.loan_counter_label = tk.Label(summary_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="green")
-        self.loan_counter_label.pack(side=tk.LEFT, padx=10)
 
         self.day_label = tk.Label(summary_frame, text="", font=("Arial", 16), bg="#f5f5f5")
         self.day_label.pack(side=tk.RIGHT, padx=10)
@@ -55,16 +46,26 @@ class BankingGUI:
         # Deposits Panel
         deposits_frame = tk.LabelFrame(middle_frame, text="Customer Deposits", font=("Arial", 12))
         deposits_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+
         self.deposits_text = tk.Text(deposits_frame, width=40)
         self.deposits_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         self.deposits_text.tag_configure("red", foreground="red")
 
+        # Deposit Interest Counter in Deposits Panel
+        self.deposit_counter_label = tk.Label(deposits_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="red")
+        self.deposit_counter_label.pack(side=tk.BOTTOM, pady=(5, 10))
+
         # Loans Panel
         loans_frame = tk.LabelFrame(middle_frame, text="Customer Loans", font=("Arial", 12))
         loans_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+
         self.loans_text = tk.Text(loans_frame, width=40)
         self.loans_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         self.loans_text.tag_configure("green", foreground="green")
+
+        # Loan Interest Counter in Loans Panel
+        self.loan_counter_label = tk.Label(loans_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="green")
+        self.loan_counter_label.pack(side=tk.BOTTOM, pady=(5, 10))
 
         # --- Controls ---
         frame = tk.Frame(self.root, bg="#f5f5f5")
@@ -76,30 +77,30 @@ class BankingGUI:
         tk.Button(frame, text="Continue Event", command=self.continue_event).pack(side=tk.LEFT, padx=20)
         tk.Button(frame, text="Quit", command=self.quit_game).pack(side=tk.RIGHT, padx=20)
 
-
-        # Event messages
-        self.event_frame = tk.LabelFrame(self.root, text="Events", font=("Arial", 12))
-        self.event_frame.pack(fill=tk.X, padx=10, pady=5)
-        self.event_text = tk.Text(self.event_frame, height=5, state="disabled")
+        # Event panel
+        self.event_frame = tk.LabelFrame(self.bottom_panels_frame, text="Event", font=("Arial", 12))
+        self.event_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.event_text = tk.Text(self.event_frame, height=7, state="disabled")
         self.event_text.pack(fill=tk.BOTH, padx=5, pady=5)
 
-        # History panel
-        self.history_frame = tk.LabelFrame(self.root, text="Bank History", font=("Arial", 12))
-        self.history_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
-        self.history_text = tk.Text(self.history_frame, height=10, state="disabled")
-        self.history_text.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
-
-        # + - values panel
-        self.transactions_frame = tk.LabelFrame(self.root, text="Transaction Log", font=("Arial", 12))
-        self.transactions_frame.pack(fill=tk.X, padx=10, pady=5)
-        self.transactions_text = tk.Text(self.transactions_frame, height=5, state="disabled")
+        # Transaction Log panel
+        self.transactions_frame = tk.LabelFrame(self.bottom_panels_frame, text="Transaction Log", font=("Arial", 12))
+        self.transactions_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.transactions_text = tk.Text(self.transactions_frame, height=7, state="disabled")
         self.transactions_text.pack(fill=tk.BOTH, padx=5, pady=5)
         self.transactions_text.tag_configure("green", foreground="green")
         self.transactions_text.tag_configure("red", foreground="red")
 
+        # History panel
+        self.history_frame = tk.LabelFrame(self.bottom_panels_frame, text="History", font=("Arial", 12))
+        self.history_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=5, pady=5)
+        self.history_text = tk.Text(self.history_frame, height=7, state="disabled")
+        self.history_text.pack(fill=tk.BOTH, padx=5, pady=5)
+        self.history_text.tag_configure("green", foreground="green")
+        self.history_text.tag_configure("red", foreground="red")
+
         # Start loop
         self.root.after(100, self.update_loop)
-
 
     # loan input
     def get_loan_input(self, customer_id, amount, years, rate, credit_score):
@@ -182,8 +183,8 @@ class BankingGUI:
     # --- Dashboard ---
     def refresh_dashboard(self):
         total_customer_balance = sum(c.get("deposit_balance", 0) for c in self.bank.customers.values())
-        self.balance_label.config(text=f"Bank Balance: ${self.bank.balance:,.2f}")
-        self.total_deposits_label.config(text=f"${self.bank.balance:,.2f} / ${total_customer_balance:,.2f}")
+        # No bank balance label to update anymore
+        self.total_deposits_label.config(text=f"Balance Bank ${self.bank.balance:,.2f} / Accounts: ${total_customer_balance:,.2f}")
         self.day_label.config(text=f"Day: {self.bank.day}")
 
         # --- Interest counters ---
@@ -217,11 +218,10 @@ class BankingGUI:
                 self.loans_text.insert(tk.END, f" interest) | {days_left} days left\n")
         self.loans_text.config(state="disabled")
 
-
         # --- History Panel ---
         self.history_text.config(state="normal")
         self.history_text.delete(1.0, tk.END)
-        for day, desc in self.bank.history[-10:]:
+        for day, desc in reversed(self.bank.history[-10:]):
             self.history_text.insert(tk.END, f"Day {day}: {desc}\n")
             # Only log new events
             history_id = (day, desc)
@@ -233,7 +233,7 @@ class BankingGUI:
         # Transaction log
         self.transactions_text.config(state="normal")
         self.transactions_text.delete(1.0, tk.END)
-        for sign, value in self.bank.transaction_values[-10:]:
+        for sign, value in reversed(self.bank.transaction_values[-10:]):
             if sign == '+':
                 self.transactions_text.insert(tk.END, f"+{value:.2f}\n", "green")
             else:
@@ -243,7 +243,6 @@ class BankingGUI:
     # --- Event simulation ---
     def simulate_event(self):
         event_funcs = [deposit_event, loan_request_event]
-
 
         if self.bank.deposits:
             event_funcs.append(withdraw_event)
@@ -274,9 +273,6 @@ class BankingGUI:
         self.event_text.config(state="disabled")
 
         self.refresh_dashboard()
-
-
-
 
     # --- Update Loop ---
     def update_loop(self):
