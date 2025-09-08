@@ -30,8 +30,10 @@ Bank Creation & Customization
     - Start small with a local bank branch.
     - Customize name, logo, HQ design, and brand identity.
 
-Players attract deposits (savings, checking, CDs).
-Issue loans (personal, mortgages, business loans) with adjustable interest rates and risk profiles.
+Deposits & Loans System
+
+    - Players attract deposits (savings, checking, CDs).
+    - Issue loans (personal, mortgages, business loans) with adjustable interest rates and risk profiles.
 
 Profit & Risk Management
 
