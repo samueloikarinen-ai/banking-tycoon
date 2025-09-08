@@ -15,8 +15,7 @@ class Bank:
         self.customers = {}      # customer_id: {id, loans, deposits, deposit_balance, credit_score}
         self.running = True
         self.pending_event = None
-        self.days_since_last_collection = 0
-        self.days_since_last_deposit_collection = 0
+        self.days_since_last_collection = []
         self.transaction_values = []
         self.monthly_interest_income_history = []
         self.total_paid = 0.0
@@ -203,14 +202,15 @@ class Bank:
                     if cl["amount"] == principal and cl["days_left"] == days_left:
                         cl["accrued"] = 0.0
                         break
+        self.total_collected = total_collected
         if total_collected > 0:
             self.add_history(f"Collected ${total_collected:,.2f} in loan interest this month")
             self.transaction_values.append(('+', total_collected))
 
 
     def pay_monthly_interest(self):
-        if self.days_since_last_deposit_collection >= 30:
-            total_paid = 0.0
+        total_paid = 0.0
+        if self.days_since_last_collection >= 30:
             for cid, customer in self.customers.items():
                 for dep in customer.get("deposits", []):
                     if dep["accrued"] > 0:
@@ -218,14 +218,16 @@ class Bank:
                         total_paid += dep["accrued"]
                         dep["accrued"] = 0.0
                 customer["deposit_balance"] = round(customer["deposit_balance"], 2)
+            self.total_paid = total_paid
             if total_paid > 0:
                 self.balance -= total_paid   # Deduct all interest payouts here only!
                 self.add_history(f"Paid ${total_paid:,.2f} in deposit interest to customers")
                 self.transaction_values.append(('-', total_paid))
 
 
-    def borrow_central_bank(self, amount, years, rate=0.05):
+    def borrow_central_bank(self, amount, years, rate=0.05,):
         days = int(years * 365)
+
         self.central_loans.append([amount, days, 0.0, rate])
         self.balance += amount
         self.add_history(f"Borrowed ${amount} from central bank at {rate*100:.2f}%")
@@ -246,7 +248,7 @@ class Bank:
     def advance_day(self):
         self.day += 1
         self.days_since_last_collection += 1
-        self.days_since_last_deposit_collection += 1
+
 
         # --- Customer loans accrual ---
         for loan in self.loans[:]:
@@ -292,7 +294,7 @@ class Bank:
                     break
 
         # --- Collect loan and deposit interest every 30 days ---
-        if self.days_since_last_collection and self.days_since_last_deposit_collection >= 30:
+        if self.days_since_last_collection >= 30:
             self.collect_monthly_interest()
             self.pay_monthly_interest()
 
@@ -302,7 +304,7 @@ class Bank:
 
             # reset
             self.days_since_last_collection = 0
-            self.days_since_last_deposit_collection = 0
+
 
 
         self.save_data()
@@ -318,7 +320,9 @@ class Bank:
             "deposits": self.deposits,
             "day": self.day,
             "history": self.history,
-            "next_customer_id": self.next_customer_id
+            "next_customer_id": self.next_customer_id,
+            "monthly_interest_income_history": self.monthly_interest_income_history,
+            "days_since_last_collection": self.days_since_last_collection
         })
 
     def load_data(self):
@@ -331,4 +335,6 @@ class Bank:
         self.day = data.get("day", 0)
         self.history = data.get("history", [])
         self.next_customer_id = data.get("next_customer_id", 1)
+        self.monthly_interest_income_history = data.get("monthly_interest_income_history", [])
+        self.days_since_last_collection = data.get("days_since_last_collection", 0)
         self.load_customers()

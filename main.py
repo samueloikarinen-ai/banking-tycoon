@@ -2,11 +2,13 @@ import time
 import random
 import tkinter as tk
 from tkinter import simpledialog
+
+from prompt_toolkit.contrib.telnet import TelnetServer
+
 from history import HistoryLogger
 
 from bank import Bank
 from events import deposit_event, withdraw_event, loan_request_event
-
 
 class BankingGUI:
     def __init__(self, bank: Bank):
@@ -212,7 +214,7 @@ class BankingGUI:
     def refresh_dashboard(self):
         total_customer_balance = sum(c.get("deposit_balance", 0) for c in self.bank.customers.values())
         # No bank balance label to update anymore
-        self.total_deposits_label.config(text=f"Balance Bank ${self.bank.balance:,.2f} / Accounts: ${total_customer_balance:,.2f}")
+        self.total_deposits_label.config(text=f"Balance Bank: ${self.bank.balance:,.2f} / Accounts: ${total_customer_balance:,.2f}")
         self.day_label.config(text=f"Day: {self.bank.day}")
 
         # Central Bank Debt
@@ -232,17 +234,27 @@ class BankingGUI:
         # Monthly and yearly income
         monthly_income = self.bank.total_collected - self.bank.total_paid
         self.monthly_income_label.config(
-            text=f"Monthly Interest Income: ${monthly_income:,.2f}"
+            text=f"Monthly Income: ${monthly_income:,.2f}"
         )
 
-        # For yearly income, sum last 12 months
-        yearly_income = sum(self.bank.monthly_interest_income_history[-12:])
+        months = self.bank.monthly_interest_income_history
+
+        if not months:
+            yearly_income = 0.0
+        elif len(months) >= 12:
+
+            yearly_income = sum(months[-12:])
+        else:
+
+            repeated = (months * (12 // len(months) + 1))[:12]
+            yearly_income = sum(repeated)
+
         self.yearly_income_label.config(
-            text=f"Yearly Interest Income: ${yearly_income:,.2f}"
+            text=f"Yearly Income: ${yearly_income:,.2f}"
         )
 
         # --- Interest counters ---
-        days_until_deposit_payout = 30 - self.bank.days_since_last_deposit_collection
+        days_until_deposit_payout = 30 - self.bank.days_since_last_collection
         days_until_loan_collection = 30 - self.bank.days_since_last_collection
         self.deposit_counter_label.config(text=f"Deposit interest in: {days_until_deposit_payout} days")
         self.loan_counter_label.config(text=f"Loan interest in: {days_until_loan_collection} days")
