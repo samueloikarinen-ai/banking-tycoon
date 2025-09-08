@@ -26,6 +26,7 @@ simple taxes and investments
 # other updates to be added
 
 Bank Creation & Customization
+
     - Start small with a local bank branch.
     - Customize name, logo, HQ design, and brand identity.
 
@@ -33,22 +34,27 @@ Players attract deposits (savings, checking, CDs).
 Issue loans (personal, mortgages, business loans) with adjustable interest rates and risk profiles.
 
 Profit & Risk Management
+
     - Balance liquidity vs profitability.
     - Handle defaults, bankruptcies, and economic downturns.
 
 Investment Opportunities
+
     - Bonds, stocks, real estate, fintech startups.
     - Diversify portfolio or go high-risk/high-reward.
 
 Regulation & Compliance
+
     - Meet capital reserve requirements.
     - Deal with audits and potential fines for misconduct.
 
 Branch Expansion
+
     - Open new branches regionally or globally.
     - Tailor services to local economies (microloans in developing regions, investment banking in financial hubs).
 
 📈 Strategic & Simulation Features
+
     - Economic Cycles
     - Boom, recession, inflation, or crises affect customers and investments.
     - Random world events (housing crash, government bailout, tech boom).
@@ -58,6 +64,7 @@ Branch Expansion
     - Scandals or poor service can damage reputation.
 
 Technology & Innovation
+
     - Online banking, ATMs, mobile apps, crypto services.
     - Research & development unlocks new products.
 
