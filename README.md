@@ -20,6 +20,8 @@ Other:
 
 # 1.1 coming soon
 
+optimization, fixes
+
 simple taxes and investments
 
 
