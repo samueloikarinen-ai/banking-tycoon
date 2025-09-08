@@ -233,16 +233,68 @@ class Bank:
         self.add_history(f"Borrowed ${amount} from central bank at {rate*100:.2f}%")
         self.save_data()
 
-    def repay_central_bank(self):
-        total_due = sum(l[0]+l[2] for l in self.central_loans)
-        if total_due > self.balance:
-            print("Not enough money to repay central bank loans!")
+    def repay_central_bank(self, loan_index=None, amount=None):
+        """
+        Repay a central bank loan.
+
+        Args:
+            loan_index (int, optional): Index of the loan in self.central_loans to repay.
+                                        If None, the first loan will be selected.
+            amount (float, optional): How much to repay. If None, repay full amount due.
+
+        Returns:
+            bool: True if repayment successful, False otherwise.
+        """
+        if not self.central_loans:
+            print("No central bank loans to repay.")
             return False
-        self.balance -= total_due
-        self.central_loans.clear()
-        self.add_history(f"Repaid ${total_due:,.2f} to central bank")
+
+        # Default to the first loan if not specified
+        if loan_index is None or loan_index < 0 or loan_index >= len(self.central_loans):
+            loan_index = 0
+
+        principal, days_left, accrued, rate = self.central_loans[loan_index]
+        total_due = principal + accrued
+
+        # If no amount specified, try full repayment
+        if amount is None:
+            amount = total_due
+
+        # Check available balance
+        if amount > self.balance:
+            print(f"Not enough balance to repay ${amount:.2f}. Available: ${self.balance:.2f}")
+            return False
+
+        # Apply repayment
+        if amount >= total_due:
+            # Full repayment
+            self.balance -= total_due
+            self.central_loans.pop(loan_index)
+            self.add_history(f"Repaid central bank loan #{loan_index} in full: ${total_due:,.2f}")
+        else:
+            # Partial repayment: reduce accrued first, then principal
+            repay_remaining = amount
+
+            # Pay accrued first
+            if accrued > 0:
+                pay_accrued = min(accrued, repay_remaining)
+                accrued -= pay_accrued
+                repay_remaining -= pay_accrued
+
+            # Then reduce principal if anything remains
+            if repay_remaining > 0:
+                principal -= repay_remaining
+                repay_remaining = 0
+
+            # Update loan record
+            self.central_loans[loan_index] = [principal, days_left, accrued, rate]
+            self.balance -= amount
+            self.add_history(f"Partially repaid ${amount:,.2f} of central bank loan #{loan_index}. "
+                             f"Remaining due: ${principal + accrued:,.2f}")
+
         self.save_data()
         return True
+
 
     # ---------- Day / Interest ----------
     def advance_day(self):
@@ -262,11 +314,21 @@ class Bank:
                         cl["accrued"] += daily_interest
                         cl["days_left"] = loan[1]
                         break
+
+
             else:
+
                 principal, _, accrued, rate, customer_id = loan
                 self.balance += principal
                 self.add_history(f"Customer {customer_id} repaid loan principal of ${principal:,.2f}")
                 self.loans.remove(loan)
+
+                # --- Remove from customer loans list ---
+                for cl in list(self.customers[customer_id]["loans"]):
+                    if cl["amount"] == principal and cl["days_left"] <= 0:
+                        self.customers[customer_id]["loans"].remove(cl)
+                        break
+
 
         # --- Central bank loans ---
         for loan in self.central_loans[:]:
@@ -293,7 +355,7 @@ class Bank:
                     cd["accrued"] += daily_interest
                     break
 
-        # --- Collect loan and deposit interest every 30 days ---
+        # --- Collect loan- and deposit interest every 30 days ---
         if self.days_since_last_collection >= 30:
             self.collect_monthly_interest()
             self.pay_monthly_interest()

@@ -24,7 +24,7 @@ class BankingGUI:
         self.last_day_time = time.time()
         self.pending_event = None
         self.history_logger = HistoryLogger()
-        self.logged_history_ids = set()  # Track which history events are already logged
+        self.logged_history_ids = set()
 
 
         # --- Summary Frame ---
@@ -223,8 +223,11 @@ class BankingGUI:
         self.central_loans_text.insert(tk.END, "Central Bank Loans:\n")
         if self.bank.central_loans:
             for loan in self.bank.central_loans:
+                principal, days_left, accrued, rate = loan
+                total_due = principal + accrued
+
                 self.central_loans_text.insert(
-                    tk.END, f"  Amount: ${loan[0]:,.2f}, Days: {loan[1]}, Rate: {loan[3]:.2%}\n",
+                    tk.END, f"  Amount: ${loan[0]:,.2f}, Days: {loan[1]}, Rate: {loan[3]:.2%}, Total due: {total_due:,.2f}\n",
                             "left"
                 )
         else:
