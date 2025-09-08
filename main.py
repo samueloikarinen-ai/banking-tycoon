@@ -24,20 +24,41 @@ class BankingGUI:
         self.history_logger = HistoryLogger()
         self.logged_history_ids = set()  # Track which history events are already logged
 
-        self.bottom_panels_frame = tk.Frame(self.root)
-        self.bottom_panels_frame.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=5)
 
         # --- Summary Frame ---
         summary_frame = tk.Frame(self.root, bg="#f5f5f5")
         summary_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=5)
 
-        # Remove bank balance label as requested
-
+        # Balance
         self.total_deposits_label = tk.Label(summary_frame, text="", font=("Arial", 20), bg="#f5f5f5", fg="green")
         self.total_deposits_label.pack(side=tk.LEFT, padx=10)
 
+        # Date
         self.day_label = tk.Label(summary_frame, text="", font=("Arial", 16), bg="#f5f5f5")
         self.day_label.pack(side=tk.RIGHT, padx=10)
+
+        # Add monthly income label
+        self.monthly_income_label = tk.Label(summary_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="purple")
+        self.monthly_income_label.pack(side=tk.LEFT, padx=10)
+
+        # add yearly income
+        self.yearly_income_label = tk.Label(summary_frame, text="", font=("Arial", 12), bg="#f5f5f5", fg="darkgreen")
+        self.yearly_income_label.pack(side=tk.LEFT, padx=10)
+
+
+
+        #secondary summary frame
+        secondary_summary_frame = tk.Frame(self.root, bg="#f5f5f5")
+        secondary_summary_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
+
+        # Add central bank debt label
+        self.central_loans_text = tk.Text(secondary_summary_frame, height=5, width=60, bg="#f5f5f5", borderwidth=0,
+                                          font=("Arial", 10))
+        self.central_loans_text.pack(side=tk.TOP, padx=10, pady=2)
+        self.central_loans_text.config(state="disabled")
+
+
+
 
         # --- Middle Frame for Accounts ---
         middle_frame = tk.Frame(self.root, bg="#f5f5f5")
@@ -76,6 +97,13 @@ class BankingGUI:
         self.pause_btn.pack(side=tk.LEFT, padx=20)
         tk.Button(frame, text="Continue Event", command=self.continue_event).pack(side=tk.LEFT, padx=20)
         tk.Button(frame, text="Quit", command=self.quit_game).pack(side=tk.RIGHT, padx=20)
+
+
+        # Bottom section
+
+        self.bottom_panels_frame = tk.Frame(self.root)
+        self.bottom_panels_frame.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=5)
+
 
         # Event panel
         self.event_frame = tk.LabelFrame(self.bottom_panels_frame, text="Event", font=("Arial", 12))
@@ -137,7 +165,7 @@ class BankingGUI:
                 result['new_yrs'] = new_yrs
                 popup.destroy()
 
-        # Buttons
+        # Counter Buttons
         btn_frame = tk.Frame(popup)
         btn_frame.pack(pady=10)
         tk.Button(btn_frame, text="Accept", command=accept, width=10).pack(side=tk.LEFT, padx=5)
@@ -186,6 +214,32 @@ class BankingGUI:
         # No bank balance label to update anymore
         self.total_deposits_label.config(text=f"Balance Bank ${self.bank.balance:,.2f} / Accounts: ${total_customer_balance:,.2f}")
         self.day_label.config(text=f"Day: {self.bank.day}")
+
+        # Central Bank Debt
+        self.central_loans_text.config(state="normal")
+        self.central_loans_text.delete(1.0, tk.END)
+        self.central_loans_text.insert(tk.END, "Central Bank Loans:\n")
+        if self.bank.central_loans:
+            for loan in self.bank.central_loans:
+                self.central_loans_text.insert(
+                    tk.END, f"  Amount: ${loan[0]:,.2f}, Days: {loan[1]}, Rate: {loan[3]:.2%}\n",
+                            "left"
+                )
+        else:
+            self.central_loans_text.insert(tk.END, "  None\n")
+        self.central_loans_text.config(state="disabled")
+
+        # Monthly and yearly income
+        monthly_income = self.bank.total_collected - self.bank.total_paid
+        self.monthly_income_label.config(
+            text=f"Monthly Interest Income: ${monthly_income:,.2f}"
+        )
+
+        # For yearly income, sum last 12 months
+        yearly_income = sum(self.bank.monthly_interest_income_history[-12:])
+        self.yearly_income_label.config(
+            text=f"Yearly Interest Income: ${yearly_income:,.2f}"
+        )
 
         # --- Interest counters ---
         days_until_deposit_payout = 30 - self.bank.days_since_last_deposit_collection

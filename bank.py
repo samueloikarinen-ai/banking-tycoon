@@ -18,6 +18,10 @@ class Bank:
         self.days_since_last_collection = 0
         self.days_since_last_deposit_collection = 0
         self.transaction_values = []
+        self.monthly_interest_income_history = []
+        self.total_paid = 0.0
+        self.total_collected = 0.0
+
 
         # Load data
         self.load_data()
@@ -203,6 +207,23 @@ class Bank:
             self.add_history(f"Collected ${total_collected:,.2f} in loan interest this month")
             self.transaction_values.append(('+', total_collected))
 
+
+    def pay_monthly_interest(self):
+        if self.days_since_last_deposit_collection >= 30:
+            total_paid = 0.0
+            for cid, customer in self.customers.items():
+                for dep in customer.get("deposits", []):
+                    if dep["accrued"] > 0:
+                        customer["deposit_balance"] += dep["accrued"]
+                        total_paid += dep["accrued"]
+                        dep["accrued"] = 0.0
+                customer["deposit_balance"] = round(customer["deposit_balance"], 2)
+            if total_paid > 0:
+                self.balance -= total_paid   # Deduct all interest payouts here only!
+                self.add_history(f"Paid ${total_paid:,.2f} in deposit interest to customers")
+                self.transaction_values.append(('-', total_paid))
+
+
     def borrow_central_bank(self, amount, years, rate=0.05):
         days = int(years * 365)
         self.central_loans.append([amount, days, 0.0, rate])
@@ -224,6 +245,8 @@ class Bank:
     # ---------- Day / Interest ----------
     def advance_day(self):
         self.day += 1
+        self.days_since_last_collection += 1
+        self.days_since_last_deposit_collection += 1
 
         # --- Customer loans accrual ---
         for loan in self.loans[:]:
@@ -268,28 +291,19 @@ class Bank:
                     cd["accrued"] += daily_interest
                     break
 
-        # --- Collect deposit interest every 30 days ---
-        self.days_since_last_deposit_collection += 1
-        if self.days_since_last_deposit_collection >= 30:
-            total_paid = 0.0
-            for cid, customer in self.customers.items():
-                for dep in customer.get("deposits", []):
-                    if dep["accrued"] > 0:
-                        customer["deposit_balance"] += dep["accrued"]
-                        total_paid += dep["accrued"]
-                        dep["accrued"] = 0.0
-                customer["deposit_balance"] = round(customer["deposit_balance"], 2)
-            if total_paid > 0:
-                self.balance -= total_paid   # Deduct all interest payouts here only!
-                self.add_history(f"Paid ${total_paid:,.2f} in deposit interest to customers")
-                self.transaction_values.append(('-', total_paid))
+        # --- Collect loan and deposit interest every 30 days ---
+        if self.days_since_last_collection and self.days_since_last_deposit_collection >= 30:
+            self.collect_monthly_interest()
+            self.pay_monthly_interest()
+
+            # create monthly income
+            monthly_income = self.total_collected - self.total_paid
+            self.monthly_interest_income_history.append(monthly_income)
+
+            # reset
+            self.days_since_last_collection = 0
             self.days_since_last_deposit_collection = 0
 
-        # --- Collect loan interest every 30 days ---
-        self.days_since_last_collection += 1
-        if self.days_since_last_collection >= 30:
-            self.collect_monthly_interest()
-            self.days_since_last_collection = 0
 
         self.save_data()
         self.save_customers()
