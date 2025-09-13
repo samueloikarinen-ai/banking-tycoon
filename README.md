@@ -25,7 +25,7 @@ Other:
 
 optimization, fixes
 
-simple taxes and investments
+simple taxes, investments and economic cycles: Boom, recession, inflation, or crises affect customers and investments.
 
 map of europe (for future interactions)
 
@@ -65,8 +65,7 @@ Branch Expansion
 
 📈 Strategic & Simulation Features
 
-    - Economic Cycles
-    - Boom, recession, inflation, or crises affect customers and investments.
+
     - Random world events (housing crash, government bailout, tech boom).
     - Competition
     - Rival AI banks compete for market share.
