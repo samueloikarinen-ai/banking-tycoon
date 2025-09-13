@@ -18,7 +18,7 @@ Other:
     - history.log, customers.json, bankdata.json are created when you run app
 
 
-<img width="330" height="150" alt="banking tycoon" src="https://github.com/user-attachments/assets/7cbfb2f6-79f6-4928-8606-41f2c0fe7389" />
+<img width="450" height="200" alt="banking tycoon" src="https://github.com/user-attachments/assets/7cbfb2f6-79f6-4928-8606-41f2c0fe7389" />
 
 
 # 1.1 coming soon
@@ -29,7 +29,7 @@ simple taxes and investments
 
 map of europe (for future interactions)
 
-<img width="330" height="150" alt="banking tycoon" src="https://github.com/user-attachments/assets/b3480ae8-90dd-43c4-8419-83d9373ea31e" />
+<img width="450" height="200" alt="banking tycoon" src="https://github.com/user-attachments/assets/b3480ae8-90dd-43c4-8419-83d9373ea31e" />
 
 # other updates to be added
 
