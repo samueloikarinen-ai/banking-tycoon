@@ -24,6 +24,8 @@ optimization, fixes
 
 simple taxes and investments
 
+map of europe (for future interactions)
+
 
 # other updates to be added
 
