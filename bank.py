@@ -1,8 +1,13 @@
 #bank.py
 import random
 from saveload import load_customers, save_customers, load_bank_data, save_bank_data
+from invest import StockMarket
+
+ECONOMY_FILE = "files/economycycle.json"
 
 class Bank:
+    last_economic_event: str
+
     def __init__(self):
         self.balance = 20000.0
         self.loans = []          # [amount, days_left, accrued, rate, customer_id]
@@ -20,6 +25,25 @@ class Bank:
         self.monthly_interest_income_history = []
         self.total_paid = 0.0
         self.total_collected = 0.0
+        # Add economic system
+        self.economic_status = "Normal"  # Can be: Normal, Boom, Recession, Inflation, Crisis
+        self.economic_multiplier = 1.0  # Multiplier for deposits
+        self.interest_rate_multiplier = 1.0  # Multiplier for interest rates
+        self.days_since_last_economic_change = 0
+        self.economic_change_interval = 182  # Approximately half a year (365/2)
+        # Income
+        self.yearly_income = 0.0
+        self.monthly_income = 0.0
+        # Add tax system
+        self.days_since_last_tax = 0
+        self.tax_interval = 365  # One year
+        self.tax_rate = 0.25  # 25% tax rate (can be adjusted based on economic status)
+        self.taxes_paid_history = []  # Track historical tax payments
+        # event messages to main.py gui
+        self.event_messages = []
+        #investing
+        self.stock_market = StockMarket(self)
+        self.owned_stocks = []  # This will be managed by StockMarket
 
 
         # Load data
@@ -109,14 +133,14 @@ class Bank:
         if customer_id is None:
             eligible_deposits = [d for d in self.deposits if d[0] > 0]
             if not eligible_deposits:
-                print("No customer deposits available for withdrawal.")
+                self.event_messages.append("No customer deposits available for withdrawal.")
                 return False
             d = random.choice(eligible_deposits)
             customer_id = d[2]
         else:
             eligible_deposits = [d for d in self.deposits if d[2] == customer_id and d[0] > 0]
             if not eligible_deposits:
-                print(f"Customer {customer_id} has no funds to withdraw.")
+                self.event_messages.append(f"Customer {customer_id} has no funds to withdraw.")
                 return False
             d = random.choice(eligible_deposits)
 
@@ -152,7 +176,7 @@ class Bank:
     # ---------- Loans ----------
     def give_loan(self, amount, years, rate=None, customer_id=None, require_approval=True, get_input_func=None):
         if amount > self.balance:
-            print("Not enough funds for loan!")
+            self.event_messages.append("Not enough funds for loan!")
             return False
 
         if customer_id is None or customer_id not in self.customers:
@@ -176,7 +200,8 @@ class Bank:
                 if response in ("y", "n"):
                     break
             if response != "y":
-                print(f"Loan to customer {customer_id} declined.")
+                self.add_history(f"Loan to customer {customer_id} declined.")
+                self.event_messages.append(f"Loan to customer {customer_id} declined.")
                 return False
 
         # Register loan
@@ -246,7 +271,7 @@ class Bank:
             bool: True if repayment successful, False otherwise.
         """
         if not self.central_loans:
-            print("No central bank loans to repay.")
+            self.event_messages.append("No central bank loans to repay.")
             return False
 
         # Default to the first loan if not specified
@@ -262,7 +287,8 @@ class Bank:
 
         # Check available balance
         if amount > self.balance:
-            print(f"Not enough balance to repay ${amount:.2f}. Available: ${self.balance:.2f}")
+            self.add_history(f"Not enough balance to repay ${amount:.2f}. Available: ${self.balance:.2f}")
+            self.event_messages.append(f"Not enough balance to repay ${amount:.2f}. Available: ${self.balance:.2f}")
             return False
 
         # Apply repayment
@@ -271,6 +297,7 @@ class Bank:
             self.balance -= total_due
             self.central_loans.pop(loan_index)
             self.add_history(f"Repaid central bank loan #{loan_index} in full: ${total_due:,.2f}")
+            self.event_messages.append(f"Repaid central bank loan #{loan_index} in full: ${total_due:,.2f}")
         else:
             # Partial repayment: reduce accrued first, then principal
             repay_remaining = amount
@@ -295,17 +322,146 @@ class Bank:
         self.save_data()
         return True
 
+    def update_economic_status(self):
+        """Change economic status every half year with different effects"""
+        self.days_since_last_economic_change += 1
+
+        if self.days_since_last_economic_change >= self.economic_change_interval:
+            self.days_since_last_economic_change = 0
+
+            # load states and their effects from file
+            economic_states = [ECONOMY_FILE]
+
+            # Get current state index
+            current_state_index = next((i for i, state in enumerate(economic_states)
+                                        if state["name"] == self.economic_status), 0)
+
+            # Choose a new state (can be the same or different)
+            if random.random() < 0.7:  # 70% chance to change to a different state
+                if random.random() < 0.5:  # 50% chance for it to be normal
+                    # Select Normal state specifically
+                    new_state = next((s for s in economic_states if s["name"] == "Normal"), economic_states[0])
+                else:
+                    # Select any state except the current one
+                    available_states = [s for s in economic_states if s["name"] != self.economic_status]
+                    new_state = random.choice(available_states) if available_states else economic_states[0]
+            else:
+                new_state = economic_states[current_state_index]  # Stay in current state
+
+            # Apply the economic changes
+            old_status = self.economic_status
+            self.economic_status = new_state["name"]
+            self.economic_multiplier = new_state["deposit_multiplier"]
+            self.interest_rate_multiplier = new_state["interest_rate_multiplier"]
+
+            # Apply changes to existing deposits
+            deposit_change_factor = new_state["deposit_multiplier"] / (
+                economic_states[current_state_index]["deposit_multiplier"] if old_status != "Normal" else 1.0
+            )
+
+            for customer in self.customers.values():
+                for deposit in customer.get("deposits", []):
+                    deposit["amount"] = round(deposit["amount"] * deposit_change_factor, 2)
+
+            # Log the economic change
+            self.add_history(f"Economic change: {old_status} → {new_state['name']}. {new_state['message']}")
+            self.event_messages.append(f"Economic change: {old_status} → {new_state['name']}. {new_state['message']}")
+            return new_state["message"]
+
+        return None
+
+
+    # ---------- INVESTMENTS ------------
+
+    def invest_in_stock(self, ticker, shares):
+        """Public method for GUI to buy stocks"""
+        return self.stock_market.buy_stock(ticker, shares)
+
+    def sell_stock(self, ticker, shares):
+        """Public method for GUI to sell stocks"""
+        return self.stock_market.sell_stock(ticker, shares)
+
+    def get_available_stocks(self):
+        """Public method for GUI to get available stocks"""
+        return self.stock_market.get_available_stocks()
+
+    def get_owned_stocks(self):
+        """Public method for GUI to get owned stocks"""
+        return self.stock_market.get_owned_stocks()
+
+    def get_portfolio_value(self):
+        """Public method for GUI to get portfolio value"""
+        return self.stock_market.get_portfolio_value()
+
+    def get_portfolio_performance(self):
+        """Public method for GUI to get portfolio performance"""
+        return self.stock_market.get_portfolio_performance()
+
+
+
+
+    # Yearly income
+    def calculate_yearly_income(self):
+        """Calculate yearly income based on the last 12 months of income history"""
+        months = self.monthly_interest_income_history
+
+        if not months:
+            return 0.0
+        elif len(months) >= 12:
+            return sum(months[-12:])
+        else:
+            # If less than 12 months of data, extrapolate
+            avg_monthly = sum(months) / len(months)
+            return avg_monthly * 12
+
+    def pay_taxes(self):
+        """Calculate and pay yearly taxes"""
+        tax_amount = self.yearly_income * self.tax_rate
+        if tax_amount > 0 and self.balance >= tax_amount:
+            self.balance -= tax_amount
+            self.taxes_paid_history.append(tax_amount)
+            self.days_since_last_tax = 0
+
+            # Record in history and transactions
+            self.add_history(f"Paid ${tax_amount:,.2f} in taxes")
+            self.event_messages.append(f"Paid ${tax_amount:,.2f} in taxes")
+            self.transaction_values.append(('-', tax_amount))
+
+            # Return message for event display
+            return f"Paid ${tax_amount:,.2f} in taxes"
+        elif tax_amount > 0:
+            message = f"Insufficient funds to pay taxes: ${tax_amount:,.2f} due"
+            self.add_history(message)
+            return message
+        return "No taxes due at this time"
+
+
 
     # ---------- Day / Interest ----------
     def advance_day(self):
         self.day += 1
         self.days_since_last_collection += 1
+        self.days_since_last_tax += 1  # Add this
 
+        #
+        if self.stock_market.update_market():
+            self.add_history("Stock market updated - new stocks available")
+            self.event_messages.append("Stock market updated - new stocks available")
+
+        # Add tax payment logic
+        if self.days_since_last_tax >= self.tax_interval:
+            self.pay_taxes()
+
+        #Economic cycle: boom, normal, recession, etc
+        economic_event = self.update_economic_status()
+        if economic_event:
+            # Store for GUI display
+            self.last_economic_event = economic_event
 
         # --- Customer loans accrual ---
         for loan in self.loans[:]:
             if loan[1] > 0:
-                daily_interest = loan[0] * loan[3] / 365
+                daily_interest = loan[0] * loan[3] * self.interest_rate_multiplier / 365
                 loan[2] += daily_interest
                 loan[1] -= 1
                 customer_id = loan[4]
@@ -316,11 +472,13 @@ class Bank:
                         break
 
 
-            else:
 
+            else:
                 principal, _, accrued, rate, customer_id = loan
                 self.balance += principal
                 self.add_history(f"Customer {customer_id} repaid loan principal of ${principal:,.2f}")
+                # record the transaction
+                self.transaction_values.append(('+', principal))
                 self.loans.remove(loan)
 
                 # --- Remove from customer loans list ---
@@ -333,7 +491,7 @@ class Bank:
         # --- Central bank loans ---
         for loan in self.central_loans[:]:
             if loan[1] > 0:
-                loan[2] += loan[0] * loan[3] / 365
+                loan[2] += loan[0] * loan[3] * self.interest_rate_multiplier / 365
                 loan[1] -= 1
             else:
                 principal, _, accrued, rate = loan
@@ -342,12 +500,14 @@ class Bank:
                     self.balance -= total_due
                     self.central_loans.remove(loan)
                     self.add_history(f"Repaid central bank loan of ${total_due:,.2f}")
+                    self.event_messages.append(f"Repaid central bank loan of ${total_due:,.2f}")
                 else:
                     self.add_history("WARNING: Could not repay central bank loan (insufficient funds)")
 
         # --- Deposits daily accrual ---
+        current_deposit_rate = 0.01 * self.interest_rate_multiplier
         for d in self.deposits:
-            daily_interest = d[0] * 0.01 / 365
+            daily_interest = d[0] * current_deposit_rate / 365
             d[1] += daily_interest
             customer_id = d[2]
             for cd in self.customers[customer_id]["deposits"]:
@@ -361,16 +521,19 @@ class Bank:
             self.pay_monthly_interest()
 
             # create monthly income
-            monthly_income = self.total_collected - self.total_paid
-            self.monthly_interest_income_history.append(monthly_income)
+            self.monthly_income = self.total_collected - self.total_paid
+            self.monthly_interest_income_history.append(self.monthly_income)
+
+            # Calculate yearly income - ADD THIS
+            self.yearly_income = self.calculate_yearly_income()
 
             # reset
             self.days_since_last_collection = 0
 
-
-
         self.save_data()
         self.save_customers()
+
+
 
     # ---------- Persistence ----------
     def save_data(self):
@@ -384,7 +547,16 @@ class Bank:
             "history": self.history,
             "next_customer_id": self.next_customer_id,
             "monthly_interest_income_history": self.monthly_interest_income_history,
-            "days_since_last_collection": self.days_since_last_collection
+            "days_since_last_collection": self.days_since_last_collection,
+            "economic_status": self.economic_status,
+            "economic_multiplier": self.economic_multiplier,
+            "interest_rate_multiplier": self.interest_rate_multiplier,
+            "days_since_last_economic_change": self.days_since_last_economic_change,
+            "days_since_last_tax": self.days_since_last_tax,
+            "monthly_income": self.monthly_income,
+            "yearly_income": self.yearly_income,  # ADD THIS
+            "taxes_paid_history": self.taxes_paid_history,
+            "owned_stocks": self.owned_stocks
         })
 
     def load_data(self):
@@ -399,4 +571,15 @@ class Bank:
         self.next_customer_id = data.get("next_customer_id", 1)
         self.monthly_interest_income_history = data.get("monthly_interest_income_history", [])
         self.days_since_last_collection = data.get("days_since_last_collection", 0)
+        self.economic_status = data.get("economic_status", "Normal")
+        self.economic_multiplier = data.get("economic_multiplier", 1.0)
+        self.interest_rate_multiplier = data.get("interest_rate_multiplier", 1.0)
+        self.days_since_last_economic_change = data.get("days_since_last_economic_change", 0)
+        self.days_since_last_tax = data.get("days_since_last_tax", 0)
+        self.monthly_income = data.get("monthly_income", 0.0)
+        self.yearly_income = data.get("yearly_income", 0.0)  # ADD THIS
+        self.taxes_paid_history = data.get("taxes_paid_history", [])
+        self.owned_stocks = data.get("owned_stocks", [])
+        # Reinitialize stock market after loading data
+        self.stock_market = StockMarket(self)
         self.load_customers()

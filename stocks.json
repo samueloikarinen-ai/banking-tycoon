@@ -1,0 +1,5002 @@
+[
+  {
+    "id": "COMP001",
+    "ticker": "NDSI",
+    "company_name": "Nexus Digital Solutions S.p.A.",
+    "industry": "IT",
+    "country": "Italy",
+    "founded": 1952,
+    "stock": {
+      "price": 243.64,
+      "shares_outstanding": 59702965,
+      "market_cap": 14546030392,
+      "pe_ratio": 9.88,
+      "dividend_yield": 0.0,
+      "52_week_high": 316.32,
+      "52_week_low": 130.68,
+      "daily_change_percent": -4.36
+    },
+    "financials": {
+      "revenue": 10454086437,
+      "net_income": 1473018964,
+      "eps": 24.67,
+      "debt_equity": 0.93
+    },
+    "iso_code": "IT"
+  },
+  {
+    "id": "COMP002",
+    "ticker": "QCID",
+    "company_name": "Quantum Code Innovations A/S",
+    "industry": "IT",
+    "country": "Denmark",
+    "founded": 2010,
+    "stock": {
+      "price": 191.59,
+      "shares_outstanding": 3770806,
+      "market_cap": 722448721,
+      "pe_ratio": 112.7,
+      "dividend_yield": 2.31,
+      "52_week_high": 230.51,
+      "52_week_low": 127.79,
+      "daily_change_percent": 0.39
+    },
+    "financials": {
+      "revenue": 199783005,
+      "net_income": 6419439,
+      "eps": 1.7,
+      "debt_equity": 0.08
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP003",
+    "ticker": "CTCC",
+    "company_name": "CyberSphere Technologies Co., Ltd",
+    "industry": "IT",
+    "country": "China",
+    "founded": 2001,
+    "stock": {
+      "price": 259.94,
+      "shares_outstanding": 1000000,
+      "market_cap": 259940000,
+      "pe_ratio": 13.67,
+      "dividend_yield": 0.0,
+      "52_week_high": 369.21,
+      "52_week_low": 244.68,
+      "daily_change_percent": -4.02
+    },
+    "financials": {
+      "revenue": 197649677,
+      "net_income": 19022625,
+      "eps": 19.02,
+      "debt_equity": 1.17
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP004",
+    "ticker": "DSSB",
+    "company_name": "DataForge Systems S.A.",
+    "industry": "IT",
+    "country": "Brazil",
+    "founded": 1956,
+    "stock": {
+      "price": 276.84,
+      "shares_outstanding": 1000000,
+      "market_cap": 276840000,
+      "pe_ratio": 13.31,
+      "dividend_yield": 4.15,
+      "52_week_high": 358.15,
+      "52_week_low": 241.89,
+      "daily_change_percent": 0.5
+    },
+    "financials": {
+      "revenue": 216820426,
+      "net_income": 20801468,
+      "eps": 20.8,
+      "debt_equity": 0.7
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP005",
+    "ticker": "CNB",
+    "company_name": "CloudMatrix NV",
+    "industry": "IT",
+    "country": "Belgium",
+    "founded": 1983,
+    "stock": {
+      "price": 268.84,
+      "shares_outstanding": 1039215724,
+      "market_cap": 279382755240,
+      "pe_ratio": 15.36,
+      "dividend_yield": 1.8,
+      "52_week_high": 290.95,
+      "52_week_low": 163.57,
+      "daily_change_percent": 4.85
+    },
+    "financials": {
+      "revenue": 364120789481,
+      "net_income": 18182735710,
+      "eps": 17.5,
+      "debt_equity": 1.21
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP006",
+    "ticker": "BLPA",
+    "company_name": "ByteCraft Labs Pty Ltd",
+    "industry": "IT",
+    "country": "Australia",
+    "founded": 1990,
+    "stock": {
+      "price": 97.0,
+      "shares_outstanding": 153397948,
+      "market_cap": 14879600956,
+      "pe_ratio": 5.9,
+      "dividend_yield": 0.98,
+      "52_week_high": 104.97,
+      "52_week_low": 78.05,
+      "daily_change_percent": -4.39
+    },
+    "financials": {
+      "revenue": 18128859223,
+      "net_income": 2522392115,
+      "eps": 16.44,
+      "debt_equity": 1.22
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP007",
+    "ticker": "LTSUK",
+    "company_name": "London TechNova Solutions Ltd",
+    "industry": "IT",
+    "country": "United Kingdom",
+    "founded": 1955,
+    "stock": {
+      "price": 294.85,
+      "shares_outstanding": 1000000,
+      "market_cap": 294850000,
+      "pe_ratio": 6.71,
+      "dividend_yield": 3.88,
+      "52_week_high": 375.07,
+      "52_week_low": 270.64,
+      "daily_change_percent": 0.7
+    },
+    "financials": {
+      "revenue": 253623202,
+      "net_income": 43938104,
+      "eps": 43.94,
+      "debt_equity": 0.17
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP008",
+    "ticker": "DHGD",
+    "company_name": "Digital Horizon Group A/S",
+    "industry": "IT",
+    "country": "Denmark",
+    "founded": 1951,
+    "stock": {
+      "price": 184.35,
+      "shares_outstanding": 1615011,
+      "market_cap": 297727277,
+      "pe_ratio": 12.2,
+      "dividend_yield": 2.9,
+      "52_week_high": 239.93,
+      "52_week_low": 167.94,
+      "daily_change_percent": 4.36
+    },
+    "financials": {
+      "revenue": 318759854,
+      "net_income": 24402053,
+      "eps": 15.11,
+      "debt_equity": 0.66
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP009",
+    "ticker": "ITAS",
+    "company_name": "InfoStream Technologies AB",
+    "industry": "IT",
+    "country": "Sweden",
+    "founded": 1988,
+    "stock": {
+      "price": 183.65,
+      "shares_outstanding": 3053376,
+      "market_cap": 560752502,
+      "pe_ratio": 26.58,
+      "dividend_yield": 1.1,
+      "52_week_high": 221.62,
+      "52_week_low": 117.72,
+      "daily_change_percent": 0.43
+    },
+    "financials": {
+      "revenue": 480929441,
+      "net_income": 21084996,
+      "eps": 6.91,
+      "debt_equity": 0.87
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP010",
+    "ticker": "PSAD",
+    "company_name": "PixelPioneer Studios A/S",
+    "industry": "IT",
+    "country": "Denmark",
+    "founded": 1969,
+    "stock": {
+      "price": 259.82,
+      "shares_outstanding": 2634400,
+      "market_cap": 684469808,
+      "pe_ratio": 5.78,
+      "dividend_yield": 0.0,
+      "52_week_high": 310.6,
+      "52_week_low": 231.07,
+      "daily_change_percent": 2.42
+    },
+    "financials": {
+      "revenue": 630385034,
+      "net_income": 118333411,
+      "eps": 44.92,
+      "debt_equity": 0.26
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP011",
+    "ticker": "PCIS",
+    "company_name": "Precision Craft Industries S.A.",
+    "industry": "Manufacturing",
+    "country": "Spain",
+    "founded": 1955,
+    "stock": {
+      "price": 29.22,
+      "shares_outstanding": 24063048,
+      "market_cap": 703122262,
+      "pe_ratio": 6.89,
+      "dividend_yield": 0.0,
+      "52_week_high": 31.5,
+      "52_week_low": 21.88,
+      "daily_change_percent": 3.29
+    },
+    "financials": {
+      "revenue": 920237037,
+      "net_income": 102122044,
+      "eps": 4.24,
+      "debt_equity": 0.63
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP012",
+    "ticker": "GAWUK",
+    "company_name": "Global Assembly Works Ltd",
+    "industry": "Manufacturing",
+    "country": "United Kingdom",
+    "founded": 1997,
+    "stock": {
+      "price": 20.04,
+      "shares_outstanding": 3255636395,
+      "market_cap": 65242953355,
+      "pe_ratio": 8.79,
+      "dividend_yield": 4.25,
+      "52_week_high": 28.66,
+      "52_week_low": 9.66,
+      "daily_change_percent": -4.64
+    },
+    "financials": {
+      "revenue": 50523240469,
+      "net_income": 7427933908,
+      "eps": 2.28,
+      "debt_equity": 1.4
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP013",
+    "ticker": "IMIC",
+    "company_name": "Innovate Manufacturing Inc",
+    "industry": "Manufacturing",
+    "country": "Canada",
+    "founded": 2002,
+    "stock": {
+      "price": 54.43,
+      "shares_outstanding": 7283096,
+      "market_cap": 396418915,
+      "pe_ratio": 3.63,
+      "dividend_yield": 3.07,
+      "52_week_high": 77.12,
+      "52_week_low": 32.36,
+      "daily_change_percent": 0.6
+    },
+    "financials": {
+      "revenue": 560145641,
+      "net_income": 109225782,
+      "eps": 15.0,
+      "debt_equity": 0.1
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP014",
+    "ticker": "QFIC",
+    "company_name": "Quality Fabrication Inc",
+    "industry": "Manufacturing",
+    "country": "Canada",
+    "founded": 1981,
+    "stock": {
+      "price": 111.46,
+      "shares_outstanding": 1833632,
+      "market_cap": 204376622,
+      "pe_ratio": 15.55,
+      "dividend_yield": 4.16,
+      "52_week_high": 165.0,
+      "52_week_low": 69.82,
+      "daily_change_percent": 1.7
+    },
+    "financials": {
+      "revenue": 253396997,
+      "net_income": 13143556,
+      "eps": 7.17,
+      "debt_equity": 1.03
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP015",
+    "ticker": "PPGS",
+    "company_name": "Production Plus Group S.A.",
+    "industry": "Manufacturing",
+    "country": "Spain",
+    "founded": 2001,
+    "stock": {
+      "price": 48.99,
+      "shares_outstanding": 10148102,
+      "market_cap": 497155516,
+      "pe_ratio": 11.75,
+      "dividend_yield": 0.0,
+      "52_week_high": 74.92,
+      "52_week_low": 25.6,
+      "daily_change_percent": 1.6
+    },
+    "financials": {
+      "revenue": 228415456,
+      "net_income": 42330258,
+      "eps": 4.17,
+      "debt_equity": 0.87
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP016",
+    "ticker": "MMCJ",
+    "company_name": "Mastercraft Manufacturing Co., Ltd",
+    "industry": "Manufacturing",
+    "country": "Japan",
+    "founded": 1983,
+    "stock": {
+      "price": 12.98,
+      "shares_outstanding": 591045951,
+      "market_cap": 7671776443,
+      "pe_ratio": 8.16,
+      "dividend_yield": 0.12,
+      "52_week_high": 19.89,
+      "52_week_low": 7.06,
+      "daily_change_percent": 0.81
+    },
+    "financials": {
+      "revenue": 6614815689,
+      "net_income": 941375993,
+      "eps": 1.59,
+      "debt_equity": 2.11
+    },
+    "iso_code": "JP"
+  },
+  {
+    "id": "COMP017",
+    "ticker": "LIPUK",
+    "company_name": "London Industrial Precision Ltd",
+    "industry": "Manufacturing",
+    "country": "United Kingdom",
+    "founded": 1975,
+    "stock": {
+      "price": 88.78,
+      "shares_outstanding": 7049993,
+      "market_cap": 625898378,
+      "pe_ratio": 12.94,
+      "dividend_yield": 3.19,
+      "52_week_high": 93.3,
+      "52_week_low": 80.71,
+      "daily_change_percent": 0.38
+    },
+    "financials": {
+      "revenue": 541308198,
+      "net_income": 48357864,
+      "eps": 6.86,
+      "debt_equity": 1.44
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP018",
+    "ticker": "MEBN",
+    "company_name": "Manufacturing Excellence BV",
+    "industry": "Manufacturing",
+    "country": "Netherlands",
+    "founded": 1974,
+    "stock": {
+      "price": 114.12,
+      "shares_outstanding": 1704201847,
+      "market_cap": 194483514779,
+      "pe_ratio": 22.2,
+      "dividend_yield": 3.0,
+      "52_week_high": 140.3,
+      "52_week_low": 89.41,
+      "daily_change_percent": 0.54
+    },
+    "financials": {
+      "revenue": 206620009414,
+      "net_income": 8767415289,
+      "eps": 5.14,
+      "debt_equity": 2.25
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP019",
+    "ticker": "PIAS",
+    "company_name": "ProduceTech Industries AG",
+    "industry": "Manufacturing",
+    "country": "Switzerland",
+    "founded": 2006,
+    "stock": {
+      "price": 48.6,
+      "shares_outstanding": 88611512,
+      "market_cap": 4306519483,
+      "pe_ratio": 11.44,
+      "dividend_yield": 0.95,
+      "52_week_high": 72.03,
+      "52_week_low": 35.66,
+      "daily_change_percent": -1.78
+    },
+    "financials": {
+      "revenue": 4047425625,
+      "net_income": 376789140,
+      "eps": 4.25,
+      "debt_equity": 2.08
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP020",
+    "ticker": "ALSS",
+    "company_name": "Assembly Line Solutions AB",
+    "industry": "Manufacturing",
+    "country": "Sweden",
+    "founded": 1980,
+    "stock": {
+      "price": 63.79,
+      "shares_outstanding": 301564635,
+      "market_cap": 19236808066,
+      "pe_ratio": 6.24,
+      "dividend_yield": 0.0,
+      "52_week_high": 88.71,
+      "52_week_low": 28.79,
+      "daily_change_percent": 4.52
+    },
+    "financials": {
+      "revenue": 22252175417,
+      "net_income": 3083998731,
+      "eps": 10.23,
+      "debt_equity": 0.71
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP021",
+    "ticker": "ISNB",
+    "company_name": "IronForge Steelworks NV",
+    "industry": "Steel",
+    "country": "Belgium",
+    "founded": 2001,
+    "stock": {
+      "price": 65.3,
+      "shares_outstanding": 1438024,
+      "market_cap": 93902967,
+      "pe_ratio": 5.2,
+      "dividend_yield": 3.99,
+      "52_week_high": 89.24,
+      "52_week_low": 51.92,
+      "daily_change_percent": -1.16
+    },
+    "financials": {
+      "revenue": 138893459,
+      "net_income": 18060221,
+      "eps": 12.56,
+      "debt_equity": 1.92
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP022",
+    "ticker": "MPSI",
+    "company_name": "Metallurgy Prime S.p.A.",
+    "industry": "Steel",
+    "country": "Italy",
+    "founded": 1965,
+    "stock": {
+      "price": 71.84,
+      "shares_outstanding": 248104661,
+      "market_cap": 17823838846,
+      "pe_ratio": 13.9,
+      "dividend_yield": 0.0,
+      "52_week_high": 93.79,
+      "52_week_low": 50.76,
+      "daily_change_percent": 4.17
+    },
+    "financials": {
+      "revenue": 21601539619,
+      "net_income": 1282945780,
+      "eps": 5.17,
+      "debt_equity": 2.01
+    },
+    "iso_code": "IT"
+  },
+  {
+    "id": "COMP023",
+    "ticker": "SSIS",
+    "company_name": "Stockholm SteelStrong Industries AB",
+    "industry": "Steel",
+    "country": "Sweden",
+    "founded": 1970,
+    "stock": {
+      "price": 44.37,
+      "shares_outstanding": 7920510,
+      "market_cap": 351433028,
+      "pe_ratio": 8.48,
+      "dividend_yield": 0.0,
+      "52_week_high": 57.0,
+      "52_week_low": 39.88,
+      "daily_change_percent": -0.54
+    },
+    "financials": {
+      "revenue": 415332345,
+      "net_income": 41393357,
+      "eps": 5.23,
+      "debt_equity": 2.04
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP024",
+    "ticker": "AMLI",
+    "company_name": "Alloy Masters Ltd",
+    "industry": "Steel",
+    "country": "Ireland",
+    "founded": 2019,
+    "stock": {
+      "price": 38.21,
+      "shares_outstanding": 443794683,
+      "market_cap": 16957394837,
+      "pe_ratio": 11.14,
+      "dividend_yield": 1.98,
+      "52_week_high": 55.12,
+      "52_week_low": 20.21,
+      "daily_change_percent": -1.64
+    },
+    "financials": {
+      "revenue": 9504700507,
+      "net_income": 1520575962,
+      "eps": 3.43,
+      "debt_equity": 1.21
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP025",
+    "ticker": "BTSG",
+    "company_name": "Berlin Titan Steel Manufacturing AG",
+    "industry": "Steel",
+    "country": "Germany",
+    "founded": 1998,
+    "stock": {
+      "price": 56.74,
+      "shares_outstanding": 39131973,
+      "market_cap": 2220348148,
+      "pe_ratio": 11.65,
+      "dividend_yield": 1.89,
+      "52_week_high": 87.81,
+      "52_week_low": 40.92,
+      "daily_change_percent": 1.96
+    },
+    "financials": {
+      "revenue": 1620585886,
+      "net_income": 190694349,
+      "eps": 4.87,
+      "debt_equity": 1.04
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP026",
+    "ticker": "SMFS",
+    "company_name": "Stockholm MetalCraft Foundries AB",
+    "industry": "Steel",
+    "country": "Sweden",
+    "founded": 1953,
+    "stock": {
+      "price": 61.26,
+      "shares_outstanding": 312033568,
+      "market_cap": 19115176375,
+      "pe_ratio": 8.69,
+      "dividend_yield": 0.0,
+      "52_week_high": 71.75,
+      "52_week_low": 31.9,
+      "daily_change_percent": -0.64
+    },
+    "financials": {
+      "revenue": 14235600714,
+      "net_income": 2200152240,
+      "eps": 7.05,
+      "debt_equity": 1.37
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP027",
+    "ticker": "SEAS",
+    "company_name": "SteelBeam Enterprises AG",
+    "industry": "Steel",
+    "country": "Switzerland",
+    "founded": 1967,
+    "stock": {
+      "price": 55.61,
+      "shares_outstanding": 3718620,
+      "market_cap": 206792458,
+      "pe_ratio": 28.81,
+      "dividend_yield": 1.77,
+      "52_week_high": 75.65,
+      "52_week_low": 23.07,
+      "daily_change_percent": 1.43
+    },
+    "financials": {
+      "revenue": 167007076,
+      "net_income": 7176795,
+      "eps": 1.93,
+      "debt_equity": 1.56
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP028",
+    "ticker": "FMOF",
+    "company_name": "ForgeFire Metals Oy",
+    "industry": "Steel",
+    "country": "Finland",
+    "founded": 1952,
+    "stock": {
+      "price": 7.82,
+      "shares_outstanding": 32107067,
+      "market_cap": 251077263,
+      "pe_ratio": 10.16,
+      "dividend_yield": 0.0,
+      "52_week_high": 11.79,
+      "52_week_low": 4.21,
+      "daily_change_percent": -4.18
+    },
+    "financials": {
+      "revenue": 156898068,
+      "net_income": 24636346,
+      "eps": 0.77,
+      "debt_equity": 0.95
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP029",
+    "ticker": "SSLI",
+    "company_name": "Structural Steel Ltd",
+    "industry": "Steel",
+    "country": "Ireland",
+    "founded": 1966,
+    "stock": {
+      "price": 79.99,
+      "shares_outstanding": 8346504,
+      "market_cap": 667636854,
+      "pe_ratio": 5.99,
+      "dividend_yield": 0.0,
+      "52_week_high": 92.76,
+      "52_week_low": 32.89,
+      "daily_change_percent": -3.48
+    },
+    "financials": {
+      "revenue": 811581340,
+      "net_income": 111442971,
+      "eps": 13.35,
+      "debt_equity": 1.89
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP030",
+    "ticker": "PAWS",
+    "company_name": "Precision Alloy Works AB",
+    "industry": "Steel",
+    "country": "Sweden",
+    "founded": 1963,
+    "stock": {
+      "price": 46.86,
+      "shares_outstanding": 15247369,
+      "market_cap": 714491711,
+      "pe_ratio": 16.62,
+      "dividend_yield": 0.0,
+      "52_week_high": 52.15,
+      "52_week_low": 39.86,
+      "daily_change_percent": 4.65
+    },
+    "financials": {
+      "revenue": 855223377,
+      "net_income": 42933963,
+      "eps": 2.82,
+      "debt_equity": 1.52
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP031",
+    "ticker": "TTFC",
+    "company_name": "Toronto TimberCraft Forestry Inc",
+    "industry": "Forestry",
+    "country": "Canada",
+    "founded": 1965,
+    "stock": {
+      "price": 41.61,
+      "shares_outstanding": 3149801577,
+      "market_cap": 131063243618,
+      "pe_ratio": 26.34,
+      "dividend_yield": 0.0,
+      "52_week_high": 46.02,
+      "52_week_low": 34.32,
+      "daily_change_percent": 3.5
+    },
+    "financials": {
+      "revenue": 148038439146,
+      "net_income": 4985840775,
+      "eps": 1.58,
+      "debt_equity": 1.73
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP032",
+    "ticker": "GRGA",
+    "company_name": "GreenWood Resources GmbH",
+    "industry": "Forestry",
+    "country": "Austria",
+    "founded": 2008,
+    "stock": {
+      "price": 47.61,
+      "shares_outstanding": 9597964,
+      "market_cap": 456959066,
+      "pe_ratio": 13.19,
+      "dividend_yield": 0.0,
+      "52_week_high": 71.52,
+      "52_week_low": 21.81,
+      "daily_change_percent": 4.61
+    },
+    "financials": {
+      "revenue": 311528251,
+      "net_income": 34602359,
+      "eps": 3.61,
+      "debt_equity": 0.85
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP033",
+    "ticker": "SPFB",
+    "company_name": "Sao Paulo ForestGuard Management S.A.",
+    "industry": "Forestry",
+    "country": "Brazil",
+    "founded": 1961,
+    "stock": {
+      "price": 32.74,
+      "shares_outstanding": 387976014,
+      "market_cap": 12702334698,
+      "pe_ratio": 4.5,
+      "dividend_yield": 0.0,
+      "52_week_high": 45.05,
+      "52_week_low": 18.9,
+      "daily_change_percent": -2.55
+    },
+    "financials": {
+      "revenue": 17726145593,
+      "net_income": 2826176195,
+      "eps": 7.28,
+      "debt_equity": 1.16
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP034",
+    "ticker": "STSS",
+    "company_name": "Sustainable Timber S.A.",
+    "industry": "Forestry",
+    "country": "Spain",
+    "founded": 1985,
+    "stock": {
+      "price": 16.9,
+      "shares_outstanding": 37267166,
+      "market_cap": 629815105,
+      "pe_ratio": 58.28,
+      "dividend_yield": 0.95,
+      "52_week_high": 25.16,
+      "52_week_low": 9.92,
+      "daily_change_percent": 3.8
+    },
+    "financials": {
+      "revenue": 436264166,
+      "net_income": 10979023,
+      "eps": 0.29,
+      "debt_equity": 2.13
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP035",
+    "ticker": "WHAN",
+    "company_name": "Woodland Harvesters AS",
+    "industry": "Forestry",
+    "country": "Norway",
+    "founded": 1989,
+    "stock": {
+      "price": 7.88,
+      "shares_outstanding": 1304946585,
+      "market_cap": 10282979089,
+      "pe_ratio": 5.84,
+      "dividend_yield": 3.57,
+      "52_week_high": 8.68,
+      "52_week_low": 4.11,
+      "daily_change_percent": 1.92
+    },
+    "financials": {
+      "revenue": 12191644479,
+      "net_income": 1759372326,
+      "eps": 1.35,
+      "debt_equity": 1.61
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP036",
+    "ticker": "AFNB",
+    "company_name": "ArborPrime Forestry NV",
+    "industry": "Forestry",
+    "country": "Belgium",
+    "founded": 2018,
+    "stock": {
+      "price": 29.98,
+      "shares_outstanding": 15151054,
+      "market_cap": 454228598,
+      "pe_ratio": 10.75,
+      "dividend_yield": 1.13,
+      "52_week_high": 33.47,
+      "52_week_low": 15.17,
+      "daily_change_percent": -3.8
+    },
+    "financials": {
+      "revenue": 531318490,
+      "net_income": 42262365,
+      "eps": 2.79,
+      "debt_equity": 1.76
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP037",
+    "ticker": "EPPA",
+    "company_name": "EcoForest Products Pty Ltd",
+    "industry": "Forestry",
+    "country": "Australia",
+    "founded": 1988,
+    "stock": {
+      "price": 13.92,
+      "shares_outstanding": 449245180,
+      "market_cap": 6253492905,
+      "pe_ratio": 6.6,
+      "dividend_yield": 0.0,
+      "52_week_high": 20.99,
+      "52_week_low": 7.84,
+      "daily_change_percent": -1.39
+    },
+    "financials": {
+      "revenue": 6043769374,
+      "net_income": 947889202,
+      "eps": 2.11,
+      "debt_equity": 1.49
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP038",
+    "ticker": "TEIUS",
+    "company_name": "TimberLine Enterprises Inc",
+    "industry": "Forestry",
+    "country": "United States",
+    "founded": 2011,
+    "stock": {
+      "price": 10.22,
+      "shares_outstanding": 9960833,
+      "market_cap": 101799713,
+      "pe_ratio": 9.04,
+      "dividend_yield": 0.0,
+      "52_week_high": 11.31,
+      "52_week_low": 4.16,
+      "daily_change_percent": -2.16
+    },
+    "financials": {
+      "revenue": 59021197,
+      "net_income": 11210257,
+      "eps": 1.13,
+      "debt_equity": 1.59
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP039",
+    "ticker": "FAS",
+    "company_name": "ForestSteward AB",
+    "industry": "Forestry",
+    "country": "Sweden",
+    "founded": 1960,
+    "stock": {
+      "price": 58.03,
+      "shares_outstanding": 14968754,
+      "market_cap": 868636794,
+      "pe_ratio": 90.67,
+      "dividend_yield": 3.09,
+      "52_week_high": 65.77,
+      "52_week_low": 49.1,
+      "daily_change_percent": 4.49
+    },
+    "financials": {
+      "revenue": 302557733,
+      "net_income": 9609783,
+      "eps": 0.64,
+      "debt_equity": 1.23
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP040",
+    "ticker": "NISI",
+    "company_name": "NatureWood Industries S.p.A.",
+    "industry": "Forestry",
+    "country": "Italy",
+    "founded": 1962,
+    "stock": {
+      "price": 37.56,
+      "shares_outstanding": 140789552,
+      "market_cap": 5288055573,
+      "pe_ratio": 11.25,
+      "dividend_yield": 0.0,
+      "52_week_high": 59.89,
+      "52_week_low": 21.33,
+      "daily_change_percent": 1.21
+    },
+    "financials": {
+      "revenue": 4650021503,
+      "net_income": 470082780,
+      "eps": 3.34,
+      "debt_equity": 1.11
+    },
+    "iso_code": "IT"
+  },
+  {
+    "id": "COMP041",
+    "ticker": "VMSA",
+    "company_name": "Vienna MediCare Solutions GmbH",
+    "industry": "Healthcare",
+    "country": "Austria",
+    "founded": 2008,
+    "stock": {
+      "price": 147.33,
+      "shares_outstanding": 1460143,
+      "market_cap": 215122868,
+      "pe_ratio": 163.7,
+      "dividend_yield": 1.31,
+      "52_week_high": 173.45,
+      "52_week_low": 116.22,
+      "daily_change_percent": 2.03
+    },
+    "financials": {
+      "revenue": 64017194,
+      "net_income": 1311176,
+      "eps": 0.9,
+      "debt_equity": 1.13
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP042",
+    "ticker": "HPAG",
+    "company_name": "HealthFirst Providers AG",
+    "industry": "Healthcare",
+    "country": "Germany",
+    "founded": 1971,
+    "stock": {
+      "price": 203.72,
+      "shares_outstanding": 63204899,
+      "market_cap": 12876102024,
+      "pe_ratio": 5.02,
+      "dividend_yield": 2.91,
+      "52_week_high": 315.69,
+      "52_week_low": 174.11,
+      "daily_change_percent": -4.29
+    },
+    "financials": {
+      "revenue": 13642718816,
+      "net_income": 2565654100,
+      "eps": 40.59,
+      "debt_equity": 1.06
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP043",
+    "ticker": "BIPA",
+    "company_name": "BioMed Innovations Pty Ltd",
+    "industry": "Healthcare",
+    "country": "Australia",
+    "founded": 1955,
+    "stock": {
+      "price": 166.28,
+      "shares_outstanding": 1949603,
+      "market_cap": 324179986,
+      "pe_ratio": 19.2,
+      "dividend_yield": 0.0,
+      "52_week_high": 220.36,
+      "52_week_low": 111.67,
+      "daily_change_percent": -4.2
+    },
+    "financials": {
+      "revenue": 117242854,
+      "net_income": 16878520,
+      "eps": 8.66,
+      "debt_equity": 1.75
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP044",
+    "ticker": "WPGP",
+    "company_name": "Wellness Partners Group Lda",
+    "industry": "Healthcare",
+    "country": "Portugal",
+    "founded": 1955,
+    "stock": {
+      "price": 74.98,
+      "shares_outstanding": 1823960,
+      "market_cap": 136760520,
+      "pe_ratio": 4.04,
+      "dividend_yield": 0.0,
+      "52_week_high": 119.95,
+      "52_week_low": 57.72,
+      "daily_change_percent": -2.3
+    },
+    "financials": {
+      "revenue": 198369006,
+      "net_income": 33816470,
+      "eps": 18.54,
+      "debt_equity": 1.44
+    },
+    "iso_code": "PT"
+  },
+  {
+    "id": "COMP045",
+    "ticker": "CEPA",
+    "company_name": "Clinical Excellence Pty Ltd",
+    "industry": "Healthcare",
+    "country": "Australia",
+    "founded": 1970,
+    "stock": {
+      "price": 106.69,
+      "shares_outstanding": 172512728,
+      "market_cap": 18405382950,
+      "pe_ratio": 18.3,
+      "dividend_yield": 0.41,
+      "52_week_high": 132.44,
+      "52_week_low": 62.23,
+      "daily_change_percent": 1.7
+    },
+    "financials": {
+      "revenue": 8023567022,
+      "net_income": 1005829006,
+      "eps": 5.83,
+      "debt_equity": 1.59
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP046",
+    "ticker": "LMSJ",
+    "company_name": "LifeCare Medical Services Co., Ltd",
+    "industry": "Healthcare",
+    "country": "Japan",
+    "founded": 1950,
+    "stock": {
+      "price": 112.03,
+      "shares_outstanding": 76841853,
+      "market_cap": 8608592791,
+      "pe_ratio": 31.65,
+      "dividend_yield": 0.52,
+      "52_week_high": 165.23,
+      "52_week_low": 98.1,
+      "daily_change_percent": 3.25
+    },
+    "financials": {
+      "revenue": 10232601270,
+      "net_income": 272243303,
+      "eps": 3.54,
+      "debt_equity": 0.22
+    },
+    "iso_code": "JP"
+  },
+  {
+    "id": "COMP047",
+    "ticker": "HSNB",
+    "company_name": "HealthTech Solutions NV",
+    "industry": "Healthcare",
+    "country": "Belgium",
+    "founded": 2012,
+    "stock": {
+      "price": 104.86,
+      "shares_outstanding": 5173730,
+      "market_cap": 542517327,
+      "pe_ratio": 9.03,
+      "dividend_yield": 1.2,
+      "52_week_high": 117.66,
+      "52_week_low": 58.56,
+      "daily_change_percent": 3.81
+    },
+    "financials": {
+      "revenue": 547630029,
+      "net_income": 60090763,
+      "eps": 11.61,
+      "debt_equity": 1.11
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP048",
+    "ticker": "PHIUS",
+    "company_name": "PatientFirst Healthcare Inc",
+    "industry": "Healthcare",
+    "country": "United States",
+    "founded": 1969,
+    "stock": {
+      "price": 177.05,
+      "shares_outstanding": 38996061,
+      "market_cap": 6904252600,
+      "pe_ratio": 49.18,
+      "dividend_yield": 0.0,
+      "52_week_high": 196.95,
+      "52_week_low": 163.04,
+      "daily_change_percent": 1.48
+    },
+    "financials": {
+      "revenue": 1503586063,
+      "net_income": 140492561,
+      "eps": 3.6,
+      "debt_equity": 0.56
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP049",
+    "ticker": "MPAS",
+    "company_name": "Medical Precision AB",
+    "industry": "Healthcare",
+    "country": "Sweden",
+    "founded": 1958,
+    "stock": {
+      "price": 68.46,
+      "shares_outstanding": 129919902,
+      "market_cap": 8894316490,
+      "pe_ratio": 11.51,
+      "dividend_yield": 0.86,
+      "52_week_high": 94.45,
+      "52_week_low": 55.48,
+      "daily_change_percent": -3.63
+    },
+    "financials": {
+      "revenue": 7357818425,
+      "net_income": 772567702,
+      "eps": 5.95,
+      "debt_equity": 1.14
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP050",
+    "ticker": "CHSS",
+    "company_name": "CarePlus Health Systems S.A.",
+    "industry": "Healthcare",
+    "country": "Spain",
+    "founded": 2007,
+    "stock": {
+      "price": 188.84,
+      "shares_outstanding": 4227555,
+      "market_cap": 798331486,
+      "pe_ratio": 89.5,
+      "dividend_yield": 0.0,
+      "52_week_high": 258.51,
+      "52_week_low": 144.08,
+      "daily_change_percent": 3.65
+    },
+    "financials": {
+      "revenue": 436946351,
+      "net_income": 8940685,
+      "eps": 2.11,
+      "debt_equity": 1.82
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP051",
+    "ticker": "BCAN",
+    "company_name": "BuildRight Construction AS",
+    "industry": "Construction",
+    "country": "Norway",
+    "founded": 2010,
+    "stock": {
+      "price": 31.92,
+      "shares_outstanding": 255858114,
+      "market_cap": 8166990998,
+      "pe_ratio": 4.01,
+      "dividend_yield": 1.72,
+      "52_week_high": 48.54,
+      "52_week_low": 19.98,
+      "daily_change_percent": -1.82
+    },
+    "financials": {
+      "revenue": 11537572968,
+      "net_income": 2036708176,
+      "eps": 7.96,
+      "debt_equity": 2.45
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP052",
+    "ticker": "SMLI",
+    "company_name": "Structural Masters Ltd",
+    "industry": "Construction",
+    "country": "Ireland",
+    "founded": 1962,
+    "stock": {
+      "price": 36.17,
+      "shares_outstanding": 6687039673,
+      "market_cap": 241870224972,
+      "pe_ratio": 20.09,
+      "dividend_yield": 4.34,
+      "52_week_high": 44.58,
+      "52_week_low": 16.46,
+      "daily_change_percent": 3.45
+    },
+    "financials": {
+      "revenue": 253389222316,
+      "net_income": 12005317229,
+      "eps": 1.8,
+      "debt_equity": 2.41
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP053",
+    "ticker": "FBAN",
+    "company_name": "Foundation Builders AS",
+    "industry": "Construction",
+    "country": "Norway",
+    "founded": 2018,
+    "stock": {
+      "price": 4.34,
+      "shares_outstanding": 202162747,
+      "market_cap": 877386321,
+      "pe_ratio": 20.67,
+      "dividend_yield": 2.8,
+      "52_week_high": 5.51,
+      "52_week_low": 1.93,
+      "daily_change_percent": -1.71
+    },
+    "financials": {
+      "revenue": 1281812135,
+      "net_income": 42901078,
+      "eps": 0.21,
+      "debt_equity": 1.95
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP054",
+    "ticker": "UDAS",
+    "company_name": "Urban Development AG",
+    "industry": "Construction",
+    "country": "Switzerland",
+    "founded": 1962,
+    "stock": {
+      "price": 57.53,
+      "shares_outstanding": 178532977,
+      "market_cap": 10271002166,
+      "pe_ratio": 8.44,
+      "dividend_yield": 0.0,
+      "52_week_high": 69.5,
+      "52_week_low": 30.21,
+      "daily_change_percent": -4.1
+    },
+    "financials": {
+      "revenue": 9278010063,
+      "net_income": 1216743318,
+      "eps": 6.82,
+      "debt_equity": 0.59
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP055",
+    "ticker": "PCGA",
+    "company_name": "Precision Construction GmbH",
+    "industry": "Construction",
+    "country": "Austria",
+    "founded": 1973,
+    "stock": {
+      "price": 78.91,
+      "shares_outstanding": 8988735,
+      "market_cap": 709301078,
+      "pe_ratio": 25.7,
+      "dividend_yield": 1.69,
+      "52_week_high": 89.17,
+      "52_week_low": 54.62,
+      "daily_change_percent": 0.66
+    },
+    "financials": {
+      "revenue": 974899776,
+      "net_income": 27568580,
+      "eps": 3.07,
+      "debt_equity": 1.99
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP056",
+    "ticker": "SBGF",
+    "company_name": "Skyline Builders Group SARL",
+    "industry": "Construction",
+    "country": "France",
+    "founded": 2019,
+    "stock": {
+      "price": 36.28,
+      "shares_outstanding": 288193985,
+      "market_cap": 10455677775,
+      "pe_ratio": 16.87,
+      "dividend_yield": 3.0,
+      "52_week_high": 56.03,
+      "52_week_low": 23.8,
+      "daily_change_percent": -2.12
+    },
+    "financials": {
+      "revenue": 10017629521,
+      "net_income": 619028596,
+      "eps": 2.15,
+      "debt_equity": 1.59
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP057",
+    "ticker": "ISSF",
+    "company_name": "Infrastructure Solutions SARL",
+    "industry": "Construction",
+    "country": "France",
+    "founded": 1995,
+    "stock": {
+      "price": 88.93,
+      "shares_outstanding": 10839172,
+      "market_cap": 963927565,
+      "pe_ratio": 8.91,
+      "dividend_yield": 0.0,
+      "52_week_high": 135.11,
+      "52_week_low": 40.79,
+      "daily_change_percent": -1.19
+    },
+    "financials": {
+      "revenue": 1057821404,
+      "net_income": 108141554,
+      "eps": 9.98,
+      "debt_equity": 0.76
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP058",
+    "ticker": "CEAD",
+    "company_name": "ConstructPro Enterprises A/S",
+    "industry": "Construction",
+    "country": "Denmark",
+    "founded": 1986,
+    "stock": {
+      "price": 63.84,
+      "shares_outstanding": 13134957,
+      "market_cap": 838535654,
+      "pe_ratio": 65.14,
+      "dividend_yield": 0.0,
+      "52_week_high": 101.22,
+      "52_week_low": 57.51,
+      "daily_change_percent": 2.45
+    },
+    "financials": {
+      "revenue": 599173524,
+      "net_income": 12856846,
+      "eps": 0.98,
+      "debt_equity": 2.16
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP059",
+    "ticker": "BEGA",
+    "company_name": "Building Excellence GmbH",
+    "industry": "Construction",
+    "country": "Austria",
+    "founded": 1955,
+    "stock": {
+      "price": 55.81,
+      "shares_outstanding": 11732431,
+      "market_cap": 654786974,
+      "pe_ratio": 6.99,
+      "dividend_yield": 0.0,
+      "52_week_high": 84.33,
+      "52_week_low": 41.61,
+      "daily_change_percent": 4.03
+    },
+    "financials": {
+      "revenue": 659474274,
+      "net_income": 93643765,
+      "eps": 7.98,
+      "debt_equity": 1.8
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP060",
+    "ticker": "DPSS",
+    "company_name": "Development Partners S.A.",
+    "industry": "Construction",
+    "country": "Spain",
+    "founded": 1984,
+    "stock": {
+      "price": 5.9,
+      "shares_outstanding": 29634104,
+      "market_cap": 174841213,
+      "pe_ratio": 9.22,
+      "dividend_yield": 3.54,
+      "52_week_high": 9.04,
+      "52_week_low": 3.55,
+      "daily_change_percent": 0.02
+    },
+    "financials": {
+      "revenue": 241720802,
+      "net_income": 19049881,
+      "eps": 0.64,
+      "debt_equity": 1.04
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP061",
+    "ticker": "PESF",
+    "company_name": "PowerGrid Energy Solutions Oy",
+    "industry": "Energy",
+    "country": "Finland",
+    "founded": 2000,
+    "stock": {
+      "price": 170.29,
+      "shares_outstanding": 602734193,
+      "market_cap": 102639605725,
+      "pe_ratio": 4.56,
+      "dividend_yield": 3.39,
+      "52_week_high": 199.94,
+      "52_week_low": 131.46,
+      "daily_change_percent": 1.74
+    },
+    "financials": {
+      "revenue": 136666282094,
+      "net_income": 22517390420,
+      "eps": 37.36,
+      "debt_equity": 1.17
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP062",
+    "ticker": "RSPA",
+    "company_name": "Renewable Source Pty Ltd",
+    "industry": "Energy",
+    "country": "Australia",
+    "founded": 1963,
+    "stock": {
+      "price": 69.64,
+      "shares_outstanding": 18157013,
+      "market_cap": 1264454385,
+      "pe_ratio": 10.93,
+      "dividend_yield": 0.0,
+      "52_week_high": 95.51,
+      "52_week_low": 59.36,
+      "daily_change_percent": 4.4
+    },
+    "financials": {
+      "revenue": 1134903447,
+      "net_income": 115602950,
+      "eps": 6.37,
+      "debt_equity": 1.68
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP063",
+    "ticker": "BEGB",
+    "company_name": "Brussels EcoPower Generation NV",
+    "industry": "Energy",
+    "country": "Belgium",
+    "founded": 1954,
+    "stock": {
+      "price": 159.86,
+      "shares_outstanding": 5751864,
+      "market_cap": 919492979,
+      "pe_ratio": 65.25,
+      "dividend_yield": 0.0,
+      "52_week_high": 194.42,
+      "52_week_low": 99.84,
+      "daily_change_percent": -3.6
+    },
+    "financials": {
+      "revenue": 448507857,
+      "net_income": 14073758,
+      "eps": 2.45,
+      "debt_equity": 2.06
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP064",
+    "ticker": "ESSS",
+    "company_name": "EnergyFlow Systems S.A.",
+    "industry": "Energy",
+    "country": "Spain",
+    "founded": 2003,
+    "stock": {
+      "price": 26.2,
+      "shares_outstanding": 21399590,
+      "market_cap": 560669258,
+      "pe_ratio": 16.38,
+      "dividend_yield": 0.0,
+      "52_week_high": 35.29,
+      "52_week_low": 18.94,
+      "daily_change_percent": 2.27
+    },
+    "financials": {
+      "revenue": 395406152,
+      "net_income": 34314165,
+      "eps": 1.6,
+      "debt_equity": 2.37
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP065",
+    "ticker": "SPSB",
+    "company_name": "Sao Paulo Sustainable Power S.A.",
+    "industry": "Energy",
+    "country": "Brazil",
+    "founded": 1995,
+    "stock": {
+      "price": 77.01,
+      "shares_outstanding": 378659399,
+      "market_cap": 29160560316,
+      "pe_ratio": 14.7,
+      "dividend_yield": 0.0,
+      "52_week_high": 85.07,
+      "52_week_low": 59.85,
+      "daily_change_percent": 0.44
+    },
+    "financials": {
+      "revenue": 19878431637,
+      "net_income": 1984045498,
+      "eps": 5.24,
+      "debt_equity": 2.38
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP066",
+    "ticker": "GELUK",
+    "company_name": "GridMaster Energy Ltd",
+    "industry": "Energy",
+    "country": "United Kingdom",
+    "founded": 2022,
+    "stock": {
+      "price": 39.03,
+      "shares_outstanding": 21922406,
+      "market_cap": 855631506,
+      "pe_ratio": 9.08,
+      "dividend_yield": 0.1,
+      "52_week_high": 57.87,
+      "52_week_low": 20.84,
+      "daily_change_percent": -3.74
+    },
+    "financials": {
+      "revenue": 676917960,
+      "net_income": 94293570,
+      "eps": 4.3,
+      "debt_equity": 1.6
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP067",
+    "ticker": "CICC",
+    "company_name": "CleanEnergy Innovations Co., Ltd",
+    "industry": "Energy",
+    "country": "China",
+    "founded": 1972,
+    "stock": {
+      "price": 42.05,
+      "shares_outstanding": 20837352,
+      "market_cap": 876210651,
+      "pe_ratio": 34.19,
+      "dividend_yield": 3.86,
+      "52_week_high": 47.5,
+      "52_week_low": 19.83,
+      "daily_change_percent": -2.49
+    },
+    "financials": {
+      "revenue": 549495724,
+      "net_income": 25584384,
+      "eps": 1.23,
+      "debt_equity": 2.25
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP068",
+    "ticker": "PUAG",
+    "company_name": "PowerTech Utilities AG",
+    "industry": "Energy",
+    "country": "Germany",
+    "founded": 1996,
+    "stock": {
+      "price": 10.49,
+      "shares_outstanding": 76309383,
+      "market_cap": 800485427,
+      "pe_ratio": 24.98,
+      "dividend_yield": 3.34,
+      "52_week_high": 14.05,
+      "52_week_low": 8.5,
+      "daily_change_percent": -0.24
+    },
+    "financials": {
+      "revenue": 407696104,
+      "net_income": 31913987,
+      "eps": 0.42,
+      "debt_equity": 0.44
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP069",
+    "ticker": "ERAN",
+    "company_name": "EnergyPlus Resources AS",
+    "industry": "Energy",
+    "country": "Norway",
+    "founded": 2004,
+    "stock": {
+      "price": 84.65,
+      "shares_outstanding": 7493815,
+      "market_cap": 634351439,
+      "pe_ratio": 4.76,
+      "dividend_yield": 2.9,
+      "52_week_high": 90.33,
+      "52_week_low": 80.35,
+      "daily_change_percent": 3.47
+    },
+    "financials": {
+      "revenue": 726596222,
+      "net_income": 133385122,
+      "eps": 17.8,
+      "debt_equity": 1.65
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP070",
+    "ticker": "FSB",
+    "company_name": "FuturePower S.A.",
+    "industry": "Energy",
+    "country": "Brazil",
+    "founded": 2014,
+    "stock": {
+      "price": 83.18,
+      "shares_outstanding": 85598997,
+      "market_cap": 7120124570,
+      "pe_ratio": 59.41,
+      "dividend_yield": 3.2,
+      "52_week_high": 104.76,
+      "52_week_low": 60.6,
+      "daily_change_percent": -2.05
+    },
+    "financials": {
+      "revenue": 2797026825,
+      "net_income": 119473562,
+      "eps": 1.4,
+      "debt_equity": 1.56
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP071",
+    "ticker": "CFAD",
+    "company_name": "CapitalTrust Financial A/S",
+    "industry": "Finance",
+    "country": "Denmark",
+    "founded": 1962,
+    "stock": {
+      "price": 119.79,
+      "shares_outstanding": 5609627,
+      "market_cap": 671977218,
+      "pe_ratio": 6.26,
+      "dividend_yield": 4.0,
+      "52_week_high": 153.04,
+      "52_week_low": 102.43,
+      "daily_change_percent": -1.01
+    },
+    "financials": {
+      "revenue": 901133597,
+      "net_income": 107451477,
+      "eps": 19.15,
+      "debt_equity": 2.16
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP072",
+    "ticker": "WGBN",
+    "company_name": "WealthBuilders Group BV",
+    "industry": "Finance",
+    "country": "Netherlands",
+    "founded": 2021,
+    "stock": {
+      "price": 101.11,
+      "shares_outstanding": 1928661,
+      "market_cap": 195006913,
+      "pe_ratio": 22.27,
+      "dividend_yield": 0.43,
+      "52_week_high": 147.25,
+      "52_week_low": 85.59,
+      "daily_change_percent": 0.56
+    },
+    "financials": {
+      "revenue": 272986384,
+      "net_income": 8758493,
+      "eps": 4.54,
+      "debt_equity": 2.08
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP073",
+    "ticker": "FPAN",
+    "company_name": "Financial Precision AS",
+    "industry": "Finance",
+    "country": "Norway",
+    "founded": 1977,
+    "stock": {
+      "price": 21.85,
+      "shares_outstanding": 31216178,
+      "market_cap": 682073489,
+      "pe_ratio": 4.82,
+      "dividend_yield": 0.0,
+      "52_week_high": 30.16,
+      "52_week_low": 12.97,
+      "daily_change_percent": 0.78
+    },
+    "financials": {
+      "revenue": 801688393,
+      "net_income": 141302859,
+      "eps": 4.53,
+      "debt_equity": 1.8
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP074",
+    "ticker": "MSF",
+    "company_name": "MoneyMasters SARL",
+    "industry": "Finance",
+    "country": "France",
+    "founded": 2021,
+    "stock": {
+      "price": 36.74,
+      "shares_outstanding": 23220053,
+      "market_cap": 853104747,
+      "pe_ratio": 9.37,
+      "dividend_yield": 0.0,
+      "52_week_high": 55.66,
+      "52_week_low": 34.39,
+      "daily_change_percent": 3.18
+    },
+    "financials": {
+      "revenue": 578259449,
+      "net_income": 90942293,
+      "eps": 3.92,
+      "debt_equity": 1.44
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP075",
+    "ticker": "IPLUK",
+    "company_name": "InvestSecure Partners Ltd",
+    "industry": "Finance",
+    "country": "United Kingdom",
+    "founded": 1953,
+    "stock": {
+      "price": 100.04,
+      "shares_outstanding": 15494906,
+      "market_cap": 1550110396,
+      "pe_ratio": 11.46,
+      "dividend_yield": 0.82,
+      "52_week_high": 112.92,
+      "52_week_low": 76.18,
+      "daily_change_percent": -4.3
+    },
+    "financials": {
+      "revenue": 860701130,
+      "net_income": 135331234,
+      "eps": 8.73,
+      "debt_equity": 2.3
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP076",
+    "ticker": "FSAG",
+    "company_name": "FinanceFlow Solutions AG",
+    "industry": "Finance",
+    "country": "Germany",
+    "founded": 1960,
+    "stock": {
+      "price": 35.41,
+      "shares_outstanding": 10557785,
+      "market_cap": 373851166,
+      "pe_ratio": 9.81,
+      "dividend_yield": 0.38,
+      "52_week_high": 38.21,
+      "52_week_low": 17.23,
+      "daily_change_percent": 1.18
+    },
+    "financials": {
+      "revenue": 254618447,
+      "net_income": 38164064,
+      "eps": 3.61,
+      "debt_equity": 1.94
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP077",
+    "ticker": "CCLJ",
+    "company_name": "CapitalGrowth Co., Ltd",
+    "industry": "Finance",
+    "country": "Japan",
+    "founded": 1978,
+    "stock": {
+      "price": 65.91,
+      "shares_outstanding": 134569731,
+      "market_cap": 8869490970,
+      "pe_ratio": 18.57,
+      "dividend_yield": 3.05,
+      "52_week_high": 90.71,
+      "52_week_low": 45.47,
+      "daily_change_percent": -1.92
+    },
+    "financials": {
+      "revenue": 4259481283,
+      "net_income": 478008935,
+      "eps": 3.55,
+      "debt_equity": 0.86
+    },
+    "iso_code": "JP"
+  },
+  {
+    "id": "COMP078",
+    "ticker": "WAAS",
+    "company_name": "WealthGuard Advisors AG",
+    "industry": "Finance",
+    "country": "Switzerland",
+    "founded": 1979,
+    "stock": {
+      "price": 12.0,
+      "shares_outstanding": 79004823,
+      "market_cap": 948057876,
+      "pe_ratio": 5.31,
+      "dividend_yield": 2.24,
+      "52_week_high": 15.44,
+      "52_week_low": 5.65,
+      "daily_change_percent": 0.33
+    },
+    "financials": {
+      "revenue": 1135350867,
+      "net_income": 178873349,
+      "eps": 2.26,
+      "debt_equity": 0.72
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP079",
+    "ticker": "FHGN",
+    "company_name": "Financial Horizon Group AS",
+    "industry": "Finance",
+    "country": "Norway",
+    "founded": 1987,
+    "stock": {
+      "price": 101.54,
+      "shares_outstanding": 4207382,
+      "market_cap": 427217568,
+      "pe_ratio": 8.72,
+      "dividend_yield": 1.41,
+      "52_week_high": 130.59,
+      "52_week_low": 63.2,
+      "daily_change_percent": 1.4
+    },
+    "financials": {
+      "revenue": 497560532,
+      "net_income": 49019428,
+      "eps": 11.65,
+      "debt_equity": 1.15
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP080",
+    "ticker": "MEAG",
+    "company_name": "MoneyWise Enterprises AG",
+    "industry": "Finance",
+    "country": "Germany",
+    "founded": 1989,
+    "stock": {
+      "price": 145.07,
+      "shares_outstanding": 6550172,
+      "market_cap": 950233452,
+      "pe_ratio": 8.69,
+      "dividend_yield": 0.48,
+      "52_week_high": 187.09,
+      "52_week_low": 89.98,
+      "daily_change_percent": -4.21
+    },
+    "financials": {
+      "revenue": 758405997,
+      "net_income": 109308910,
+      "eps": 16.69,
+      "debt_equity": 0.9
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP081",
+    "ticker": "LPSI",
+    "company_name": "Logistics Pro Solutions Ltd",
+    "industry": "Transportation",
+    "country": "Ireland",
+    "founded": 1968,
+    "stock": {
+      "price": 32.64,
+      "shares_outstanding": 16389678,
+      "market_cap": 534959089,
+      "pe_ratio": 25.7,
+      "dividend_yield": 3.27,
+      "52_week_high": 48.97,
+      "52_week_low": 27.69,
+      "daily_change_percent": -2.64
+    },
+    "financials": {
+      "revenue": 186291281,
+      "net_income": 20825757,
+      "eps": 1.27,
+      "debt_equity": 2.26
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP082",
+    "ticker": "FSS",
+    "company_name": "FreightMasters S.A.",
+    "industry": "Transportation",
+    "country": "Spain",
+    "founded": 1991,
+    "stock": {
+      "price": 69.38,
+      "shares_outstanding": 62925575,
+      "market_cap": 4365776393,
+      "pe_ratio": 7.62,
+      "dividend_yield": 0.0,
+      "52_week_high": 89.98,
+      "52_week_low": 63.02,
+      "daily_change_percent": 0.64
+    },
+    "financials": {
+      "revenue": 5259461805,
+      "net_income": 572971367,
+      "eps": 9.11,
+      "debt_equity": 1.89
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP083",
+    "ticker": "TEOF",
+    "company_name": "Transport Excellence Oy",
+    "industry": "Transportation",
+    "country": "Finland",
+    "founded": 1986,
+    "stock": {
+      "price": 31.19,
+      "shares_outstanding": 15885701,
+      "market_cap": 495475014,
+      "pe_ratio": 6.0,
+      "dividend_yield": 0.33,
+      "52_week_high": 40.67,
+      "52_week_low": 13.12,
+      "daily_change_percent": -1.31
+    },
+    "financials": {
+      "revenue": 505781219,
+      "net_income": 82613971,
+      "eps": 5.2,
+      "debt_equity": 1.48
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP084",
+    "ticker": "GSPG",
+    "company_name": "Global Shipping Partners AG",
+    "industry": "Transportation",
+    "country": "Germany",
+    "founded": 1974,
+    "stock": {
+      "price": 88.05,
+      "shares_outstanding": 6977578,
+      "market_cap": 614375742,
+      "pe_ratio": 11.48,
+      "dividend_yield": 0.0,
+      "52_week_high": 94.44,
+      "52_week_low": 79.24,
+      "daily_change_percent": 0.72
+    },
+    "financials": {
+      "revenue": 429956867,
+      "net_income": 53512127,
+      "eps": 7.67,
+      "debt_equity": 2.39
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP085",
+    "ticker": "CSBN",
+    "company_name": "CargoFlow Systems BV",
+    "industry": "Transportation",
+    "country": "Netherlands",
+    "founded": 2017,
+    "stock": {
+      "price": 47.12,
+      "shares_outstanding": 3101580444,
+      "market_cap": 146146470521,
+      "pe_ratio": 4.67,
+      "dividend_yield": 2.91,
+      "52_week_high": 50.49,
+      "52_week_low": 37.19,
+      "daily_change_percent": 4.91
+    },
+    "financials": {
+      "revenue": 183305212444,
+      "net_income": 31295312528,
+      "eps": 10.09,
+      "debt_equity": 2.46
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP086",
+    "ticker": "TLAN",
+    "company_name": "TransitPro Logistics AS",
+    "industry": "Transportation",
+    "country": "Norway",
+    "founded": 1999,
+    "stock": {
+      "price": 35.3,
+      "shares_outstanding": 3639564778,
+      "market_cap": 128476636663,
+      "pe_ratio": 5.83,
+      "dividend_yield": 0.0,
+      "52_week_high": 43.56,
+      "52_week_low": 20.52,
+      "daily_change_percent": 0.58
+    },
+    "financials": {
+      "revenue": 155046147957,
+      "net_income": 22047808716,
+      "eps": 6.06,
+      "debt_equity": 0.13
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP087",
+    "ticker": "DNSS",
+    "company_name": "Delivery Network S.A.",
+    "industry": "Transportation",
+    "country": "Spain",
+    "founded": 1966,
+    "stock": {
+      "price": 77.23,
+      "shares_outstanding": 2444079086,
+      "market_cap": 188756227811,
+      "pe_ratio": 72.86,
+      "dividend_yield": 0.0,
+      "52_week_high": 94.27,
+      "52_week_low": 58.76,
+      "daily_change_percent": 1.62
+    },
+    "financials": {
+      "revenue": 74650318178,
+      "net_income": 2588153236,
+      "eps": 1.06,
+      "debt_equity": 1.66
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP088",
+    "ticker": "SMAD",
+    "company_name": "SupplyChain Masters A/S",
+    "industry": "Transportation",
+    "country": "Denmark",
+    "founded": 2004,
+    "stock": {
+      "price": 11.29,
+      "shares_outstanding": 58575606,
+      "market_cap": 661318591,
+      "pe_ratio": 37.63,
+      "dividend_yield": 0.0,
+      "52_week_high": 18.05,
+      "52_week_low": 10.18,
+      "daily_change_percent": -4.07
+    },
+    "financials": {
+      "revenue": 414659666,
+      "net_income": 17831558,
+      "eps": 0.3,
+      "debt_equity": 1.76
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP089",
+    "ticker": "TSAN",
+    "company_name": "TransportTech Solutions AS",
+    "industry": "Transportation",
+    "country": "Norway",
+    "founded": 2017,
+    "stock": {
+      "price": 35.18,
+      "shares_outstanding": 7205316,
+      "market_cap": 253483016,
+      "pe_ratio": 6.49,
+      "dividend_yield": 0.35,
+      "52_week_high": 53.28,
+      "52_week_low": 16.03,
+      "daily_change_percent": 2.71
+    },
+    "financials": {
+      "revenue": 362979758,
+      "net_income": 39030765,
+      "eps": 5.42,
+      "debt_equity": 0.57
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP090",
+    "ticker": "MELUK",
+    "company_name": "MoveIt Express Ltd",
+    "industry": "Transportation",
+    "country": "United Kingdom",
+    "founded": 1996,
+    "stock": {
+      "price": 79.37,
+      "shares_outstanding": 155571152,
+      "market_cap": 12347682334,
+      "pe_ratio": 47.53,
+      "dividend_yield": 0.0,
+      "52_week_high": 122.74,
+      "52_week_low": 63.23,
+      "daily_change_percent": -4.56
+    },
+    "financials": {
+      "revenue": 4945599791,
+      "net_income": 259902515,
+      "eps": 1.67,
+      "debt_equity": 1.73
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP091",
+    "ticker": "GFNB",
+    "company_name": "GreenHarvest Farms NV",
+    "industry": "Agriculture",
+    "country": "Belgium",
+    "founded": 2006,
+    "stock": {
+      "price": 67.93,
+      "shares_outstanding": 225164612,
+      "market_cap": 15295432093,
+      "pe_ratio": 13.22,
+      "dividend_yield": 0.0,
+      "52_week_high": 100.63,
+      "52_week_low": 60.95,
+      "daily_change_percent": -3.06
+    },
+    "financials": {
+      "revenue": 18644221142,
+      "net_income": 1158188898,
+      "eps": 5.14,
+      "debt_equity": 0.6
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP092",
+    "ticker": "CAAS",
+    "company_name": "CropMasters Agriculture AB",
+    "industry": "Agriculture",
+    "country": "Sweden",
+    "founded": 1963,
+    "stock": {
+      "price": 54.91,
+      "shares_outstanding": 8153847,
+      "market_cap": 447727738,
+      "pe_ratio": 43.58,
+      "dividend_yield": 0.0,
+      "52_week_high": 59.23,
+      "52_week_low": 36.48,
+      "daily_change_percent": -1.29
+    },
+    "financials": {
+      "revenue": 183870869,
+      "net_income": 10286764,
+      "eps": 1.26,
+      "debt_equity": 1.51
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP093",
+    "ticker": "SGLI",
+    "company_name": "Sustainable Growers Ltd",
+    "industry": "Agriculture",
+    "country": "Ireland",
+    "founded": 1953,
+    "stock": {
+      "price": 59.88,
+      "shares_outstanding": 12941900,
+      "market_cap": 774960972,
+      "pe_ratio": 9.85,
+      "dividend_yield": 4.26,
+      "52_week_high": 70.19,
+      "52_week_low": 38.81,
+      "daily_change_percent": -1.5
+    },
+    "financials": {
+      "revenue": 429815588,
+      "net_income": 78636961,
+      "eps": 6.08,
+      "debt_equity": 0.37
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP094",
+    "ticker": "ZFPS",
+    "company_name": "Zurich FarmFresh Produce AG",
+    "industry": "Agriculture",
+    "country": "Switzerland",
+    "founded": 2010,
+    "stock": {
+      "price": 18.03,
+      "shares_outstanding": 6931533475,
+      "market_cap": 124975548554,
+      "pe_ratio": 22.54,
+      "dividend_yield": 0.0,
+      "52_week_high": 26.78,
+      "52_week_low": 8.58,
+      "daily_change_percent": -2.13
+    },
+    "financials": {
+      "revenue": 29574689865,
+      "net_income": 5546693538,
+      "eps": 0.8,
+      "debt_equity": 2.1
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP095",
+    "ticker": "AILI",
+    "company_name": "AgriTech Innovations Ltd",
+    "industry": "Agriculture",
+    "country": "Ireland",
+    "founded": 1980,
+    "stock": {
+      "price": 53.6,
+      "shares_outstanding": 11839194,
+      "market_cap": 634580798,
+      "pe_ratio": 30.98,
+      "dividend_yield": 4.23,
+      "52_week_high": 74.23,
+      "52_week_low": 33.92,
+      "daily_change_percent": 2.76
+    },
+    "financials": {
+      "revenue": 874207858,
+      "net_income": 20474559,
+      "eps": 1.73,
+      "debt_equity": 0.54
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP096",
+    "ticker": "MHFS",
+    "company_name": "Madrid HarvestPrime Farms S.A.",
+    "industry": "Agriculture",
+    "country": "Spain",
+    "founded": 1950,
+    "stock": {
+      "price": 45.45,
+      "shares_outstanding": 48258214,
+      "market_cap": 2193335826,
+      "pe_ratio": 7.06,
+      "dividend_yield": 0.0,
+      "52_week_high": 62.1,
+      "52_week_low": 36.14,
+      "daily_change_percent": -2.09
+    },
+    "financials": {
+      "revenue": 2824345464,
+      "net_income": 310591180,
+      "eps": 6.44,
+      "debt_equity": 1.34
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP097",
+    "ticker": "SAAD",
+    "company_name": "SoilCraft Agriculture A/S",
+    "industry": "Agriculture",
+    "country": "Denmark",
+    "founded": 1955,
+    "stock": {
+      "price": 40.81,
+      "shares_outstanding": 16780302,
+      "market_cap": 684804124,
+      "pe_ratio": 13.38,
+      "dividend_yield": 3.54,
+      "52_week_high": 54.24,
+      "52_week_low": 16.78,
+      "daily_change_percent": 3.73
+    },
+    "financials": {
+      "revenue": 602990524,
+      "net_income": 51199127,
+      "eps": 3.05,
+      "debt_equity": 2.38
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP098",
+    "ticker": "OGNB",
+    "company_name": "Organic Growth NV",
+    "industry": "Agriculture",
+    "country": "Belgium",
+    "founded": 1993,
+    "stock": {
+      "price": 27.38,
+      "shares_outstanding": 284323727,
+      "market_cap": 7784783645,
+      "pe_ratio": 54.76,
+      "dividend_yield": 2.62,
+      "52_week_high": 40.14,
+      "52_week_low": 12.96,
+      "daily_change_percent": -1.48
+    },
+    "financials": {
+      "revenue": 2240674231,
+      "net_income": 142064720,
+      "eps": 0.5,
+      "debt_equity": 1.64
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP099",
+    "ticker": "FSOF",
+    "company_name": "FarmPro Solutions Oy",
+    "industry": "Agriculture",
+    "country": "Finland",
+    "founded": 1975,
+    "stock": {
+      "price": 58.47,
+      "shares_outstanding": 335822892,
+      "market_cap": 19635564495,
+      "pe_ratio": 23.02,
+      "dividend_yield": 0.0,
+      "52_week_high": 91.74,
+      "52_week_low": 24.58,
+      "daily_change_percent": -2.98
+    },
+    "financials": {
+      "revenue": 16142211487,
+      "net_income": 852470829,
+      "eps": 2.54,
+      "debt_equity": 0.34
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP100",
+    "ticker": "CELP",
+    "company_name": "CropCircle Enterprises Lda",
+    "industry": "Agriculture",
+    "country": "Portugal",
+    "founded": 1997,
+    "stock": {
+      "price": 37.05,
+      "shares_outstanding": 4643686783,
+      "market_cap": 172048595310,
+      "pe_ratio": 12.15,
+      "dividend_yield": 3.51,
+      "52_week_high": 56.55,
+      "52_week_low": 21.58,
+      "daily_change_percent": -3.76
+    },
+    "financials": {
+      "revenue": 91066679780,
+      "net_income": 14169280114,
+      "eps": 3.05,
+      "debt_equity": 0.48
+    },
+    "iso_code": "PT"
+  },
+  {
+    "id": "COMP101",
+    "ticker": "SRAS",
+    "company_name": "ShopSmart Retailers AG",
+    "industry": "Retail",
+    "country": "Switzerland",
+    "founded": 1960,
+    "stock": {
+      "price": 104.83,
+      "shares_outstanding": 79617004,
+      "market_cap": 8346250529,
+      "pe_ratio": 6.24,
+      "dividend_yield": 0.0,
+      "52_week_high": 140.01,
+      "52_week_low": 88.12,
+      "daily_change_percent": 2.27
+    },
+    "financials": {
+      "revenue": 12234273381,
+      "net_income": 1337408934,
+      "eps": 16.8,
+      "debt_equity": 1.24
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP102",
+    "ticker": "USLI",
+    "company_name": "UrbanMarket Stores Ltd",
+    "industry": "Retail",
+    "country": "India",
+    "founded": 1955,
+    "stock": {
+      "price": 115.66,
+      "shares_outstanding": 3070645,
+      "market_cap": 355150800,
+      "pe_ratio": 23.65,
+      "dividend_yield": 0.0,
+      "52_week_high": 148.55,
+      "52_week_low": 90.14,
+      "daily_change_percent": -1.48
+    },
+    "financials": {
+      "revenue": 107997659,
+      "net_income": 15007944,
+      "eps": 4.89,
+      "debt_equity": 0.77
+    },
+    "iso_code": "IN"
+  },
+  {
+    "id": "COMP103",
+    "ticker": "VELI",
+    "company_name": "ValueMart Enterprises Ltd",
+    "industry": "Retail",
+    "country": "Ireland",
+    "founded": 1953,
+    "stock": {
+      "price": 51.3,
+      "shares_outstanding": 1888411322,
+      "market_cap": 96875500818,
+      "pe_ratio": 3.56,
+      "dividend_yield": 0.0,
+      "52_week_high": 64.12,
+      "52_week_low": 43.12,
+      "daily_change_percent": 1.79
+    },
+    "financials": {
+      "revenue": 142797923697,
+      "net_income": 27220538356,
+      "eps": 14.41,
+      "debt_equity": 0.19
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP104",
+    "ticker": "RHGF",
+    "company_name": "Retail Horizon Group SARL",
+    "industry": "Retail",
+    "country": "France",
+    "founded": 1997,
+    "stock": {
+      "price": 95.9,
+      "shares_outstanding": 1771830,
+      "market_cap": 169918497,
+      "pe_ratio": 14.49,
+      "dividend_yield": 0.0,
+      "52_week_high": 102.4,
+      "52_week_low": 46.45,
+      "daily_change_percent": -0.5
+    },
+    "financials": {
+      "revenue": 86113673,
+      "net_income": 11722595,
+      "eps": 6.62,
+      "debt_equity": 0.91
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP105",
+    "ticker": "EGBN",
+    "company_name": "Everyday Goods BV",
+    "industry": "Retail",
+    "country": "Netherlands",
+    "founded": 1983,
+    "stock": {
+      "price": 13.53,
+      "shares_outstanding": 29460639,
+      "market_cap": 398602445,
+      "pe_ratio": 23.33,
+      "dividend_yield": 0.84,
+      "52_week_high": 18.06,
+      "52_week_low": 12.21,
+      "daily_change_percent": -3.82
+    },
+    "financials": {
+      "revenue": 242629736,
+      "net_income": 17023911,
+      "eps": 0.58,
+      "debt_equity": 2.4
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP106",
+    "ticker": "PSLI",
+    "company_name": "PrimeShop Solutions Ltd",
+    "industry": "Retail",
+    "country": "Ireland",
+    "founded": 1990,
+    "stock": {
+      "price": 139.5,
+      "shares_outstanding": 6599677,
+      "market_cap": 920654941,
+      "pe_ratio": 28.35,
+      "dividend_yield": 4.04,
+      "52_week_high": 180.63,
+      "52_week_low": 62.54,
+      "daily_change_percent": 1.82
+    },
+    "financials": {
+      "revenue": 772024641,
+      "net_income": 32482732,
+      "eps": 4.92,
+      "debt_equity": 2.13
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP107",
+    "ticker": "MRNB",
+    "company_name": "MarketLine Retail NV",
+    "industry": "Retail",
+    "country": "Belgium",
+    "founded": 1975,
+    "stock": {
+      "price": 11.9,
+      "shares_outstanding": 75358411,
+      "market_cap": 896765090,
+      "pe_ratio": 5.17,
+      "dividend_yield": 0.0,
+      "52_week_high": 17.69,
+      "52_week_low": 8.09,
+      "daily_change_percent": -3.79
+    },
+    "financials": {
+      "revenue": 1171866315,
+      "net_income": 173583446,
+      "eps": 2.3,
+      "debt_equity": 2.32
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP108",
+    "ticker": "QSGA",
+    "company_name": "QuickBuy Stores GmbH",
+    "industry": "Retail",
+    "country": "Austria",
+    "founded": 2002,
+    "stock": {
+      "price": 6.6,
+      "shares_outstanding": 60676607,
+      "market_cap": 400465606,
+      "pe_ratio": 6.73,
+      "dividend_yield": 1.39,
+      "52_week_high": 10.56,
+      "52_week_low": 5.25,
+      "daily_change_percent": 0.26
+    },
+    "financials": {
+      "revenue": 498483665,
+      "net_income": 59467330,
+      "eps": 0.98,
+      "debt_equity": 1.53
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP109",
+    "ticker": "CGOF",
+    "company_name": "ConsumerFirst Group Oy",
+    "industry": "Retail",
+    "country": "Finland",
+    "founded": 1966,
+    "stock": {
+      "price": 20.17,
+      "shares_outstanding": 5972075,
+      "market_cap": 120456752,
+      "pe_ratio": 10.96,
+      "dividend_yield": 0.0,
+      "52_week_high": 27.29,
+      "52_week_low": 14.59,
+      "daily_change_percent": 2.68
+    },
+    "financials": {
+      "revenue": 97037931,
+      "net_income": 10977396,
+      "eps": 1.84,
+      "debt_equity": 0.32
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP110",
+    "ticker": "NRAS",
+    "company_name": "NextGen Retailers AG",
+    "industry": "Retail",
+    "country": "Switzerland",
+    "founded": 1975,
+    "stock": {
+      "price": 121.94,
+      "shares_outstanding": 88928493,
+      "market_cap": 10843940436,
+      "pe_ratio": 34.16,
+      "dividend_yield": 4.26,
+      "52_week_high": 162.84,
+      "52_week_low": 67.83,
+      "daily_change_percent": -4.21
+    },
+    "financials": {
+      "revenue": 6456069042,
+      "net_income": 317341958,
+      "eps": 3.57,
+      "debt_equity": 2.34
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP111",
+    "ticker": "BASB",
+    "company_name": "BrightMinds Academy S.A.",
+    "industry": "Education",
+    "country": "Brazil",
+    "founded": 2022,
+    "stock": {
+      "price": 17.92,
+      "shares_outstanding": 707262125,
+      "market_cap": 12674137280,
+      "pe_ratio": 22.97,
+      "dividend_yield": 0.77,
+      "52_week_high": 24.97,
+      "52_week_low": 16.06,
+      "daily_change_percent": -1.62
+    },
+    "financials": {
+      "revenue": 4074189247,
+      "net_income": 551554520,
+      "eps": 0.78,
+      "debt_equity": 1.48
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP112",
+    "ticker": "FIIUS",
+    "company_name": "FutureLearn Institute Inc",
+    "industry": "Education",
+    "country": "United States",
+    "founded": 1988,
+    "stock": {
+      "price": 3.65,
+      "shares_outstanding": 180652341,
+      "market_cap": 659381044,
+      "pe_ratio": 7.6,
+      "dividend_yield": 2.88,
+      "52_week_high": 4.83,
+      "52_week_low": 2.72,
+      "daily_change_percent": -2.1
+    },
+    "financials": {
+      "revenue": 626281831,
+      "net_income": 85927994,
+      "eps": 0.48,
+      "debt_equity": 1.92
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP113",
+    "ticker": "EIAS",
+    "company_name": "EduTech Innovations AB",
+    "industry": "Education",
+    "country": "Sweden",
+    "founded": 1994,
+    "stock": {
+      "price": 25.55,
+      "shares_outstanding": 27560974,
+      "market_cap": 704182885,
+      "pe_ratio": 26.07,
+      "dividend_yield": 0.65,
+      "52_week_high": 38.93,
+      "52_week_low": 14.71,
+      "daily_change_percent": 4.88
+    },
+    "financials": {
+      "revenue": 285549386,
+      "net_income": 27073483,
+      "eps": 0.98,
+      "debt_equity": 1.16
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP114",
+    "ticker": "ZGKS",
+    "company_name": "Zurich Global Knowledge Group AG",
+    "industry": "Education",
+    "country": "Switzerland",
+    "founded": 1970,
+    "stock": {
+      "price": 34.58,
+      "shares_outstanding": 14261102,
+      "market_cap": 493148907,
+      "pe_ratio": 28.34,
+      "dividend_yield": 1.73,
+      "52_week_high": 48.01,
+      "52_week_low": 18.55,
+      "daily_change_percent": 3.65
+    },
+    "financials": {
+      "revenue": 270104154,
+      "net_income": 17455588,
+      "eps": 1.22,
+      "debt_equity": 0.24
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP115",
+    "ticker": "SAOF",
+    "company_name": "SkillBuilders Academy Oy",
+    "industry": "Education",
+    "country": "Finland",
+    "founded": 1977,
+    "stock": {
+      "price": 35.51,
+      "shares_outstanding": 21823861,
+      "market_cap": 774965304,
+      "pe_ratio": 10.47,
+      "dividend_yield": 0.1,
+      "52_week_high": 55.75,
+      "52_week_low": 24.08,
+      "daily_change_percent": 4.67
+    },
+    "financials": {
+      "revenue": 656973120,
+      "net_income": 74008331,
+      "eps": 3.39,
+      "debt_equity": 1.25
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP116",
+    "ticker": "NLAD",
+    "company_name": "NextLevel Learning A/S",
+    "industry": "Education",
+    "country": "Denmark",
+    "founded": 2001,
+    "stock": {
+      "price": 4.93,
+      "shares_outstanding": 180166836,
+      "market_cap": 888222501,
+      "pe_ratio": 9.13,
+      "dividend_yield": 0.0,
+      "52_week_high": 6.34,
+      "52_week_low": 4.36,
+      "daily_change_percent": 2.28
+    },
+    "financials": {
+      "revenue": 933111532,
+      "net_income": 97702034,
+      "eps": 0.54,
+      "debt_equity": 1.34
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP117",
+    "ticker": "ASIN",
+    "company_name": "Amsterdam ScholarsFirst Institute BV",
+    "industry": "Education",
+    "country": "Netherlands",
+    "founded": 1962,
+    "stock": {
+      "price": 34.59,
+      "shares_outstanding": 9371830,
+      "market_cap": 324171599,
+      "pe_ratio": 14.12,
+      "dividend_yield": 0.0,
+      "52_week_high": 48.18,
+      "52_week_low": 25.46,
+      "daily_change_percent": -3.71
+    },
+    "financials": {
+      "revenue": 227650631,
+      "net_income": 23007235,
+      "eps": 2.45,
+      "debt_equity": 1.37
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP118",
+    "ticker": "ESAS",
+    "company_name": "EduBridge Solutions AG",
+    "industry": "Education",
+    "country": "Switzerland",
+    "founded": 1969,
+    "stock": {
+      "price": 59.23,
+      "shares_outstanding": 6708189,
+      "market_cap": 397326034,
+      "pe_ratio": 20.08,
+      "dividend_yield": 0.18,
+      "52_week_high": 85.44,
+      "52_week_low": 49.88,
+      "daily_change_percent": 0.19
+    },
+    "financials": {
+      "revenue": 153982738,
+      "net_income": 19778055,
+      "eps": 2.95,
+      "debt_equity": 1.0
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP119",
+    "ticker": "LHAD",
+    "company_name": "Learning Horizon A/S",
+    "industry": "Education",
+    "country": "Denmark",
+    "founded": 2010,
+    "stock": {
+      "price": 10.11,
+      "shares_outstanding": 10800040444,
+      "market_cap": 109188408888,
+      "pe_ratio": 10.76,
+      "dividend_yield": 2.28,
+      "52_week_high": 13.45,
+      "52_week_low": 6.77,
+      "daily_change_percent": 0.63
+    },
+    "financials": {
+      "revenue": 77615593856,
+      "net_income": 10165321137,
+      "eps": 0.94,
+      "debt_equity": 2.11
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP120",
+    "ticker": "HAEF",
+    "company_name": "Helsinki Academy Excellence Oy",
+    "industry": "Education",
+    "country": "Finland",
+    "founded": 1979,
+    "stock": {
+      "price": 8.36,
+      "shares_outstanding": 40944251,
+      "market_cap": 342293938,
+      "pe_ratio": 4.14,
+      "dividend_yield": 1.19,
+      "52_week_high": 11.79,
+      "52_week_low": 7.81,
+      "daily_change_percent": 0.78
+    },
+    "financials": {
+      "revenue": 468394078,
+      "net_income": 82895372,
+      "eps": 2.02,
+      "debt_equity": 1.57
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP121",
+    "ticker": "DCTI",
+    "company_name": "Dublin ConnectPlus Telecom Ltd",
+    "industry": "Telecommunications",
+    "country": "Ireland",
+    "founded": 2002,
+    "stock": {
+      "price": 86.26,
+      "shares_outstanding": 182210949,
+      "market_cap": 15717516460,
+      "pe_ratio": 8.58,
+      "dividend_yield": 3.15,
+      "52_week_high": 99.62,
+      "52_week_low": 55.43,
+      "daily_change_percent": -0.81
+    },
+    "financials": {
+      "revenue": 10911845522,
+      "net_income": 1832088304,
+      "eps": 10.05,
+      "debt_equity": 0.61
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP122",
+    "ticker": "SPGB",
+    "company_name": "Sao Paulo GlobalSignal Networks S.A.",
+    "industry": "Telecommunications",
+    "country": "Brazil",
+    "founded": 2008,
+    "stock": {
+      "price": 99.78,
+      "shares_outstanding": 8578454,
+      "market_cap": 855958140,
+      "pe_ratio": 5.94,
+      "dividend_yield": 4.49,
+      "52_week_high": 131.02,
+      "52_week_low": 60.59,
+      "daily_change_percent": 4.57
+    },
+    "financials": {
+      "revenue": 980605100,
+      "net_income": 144187724,
+      "eps": 16.81,
+      "debt_equity": 1.3
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP123",
+    "ticker": "NCIC",
+    "company_name": "NextWave Communications Inc",
+    "industry": "Telecommunications",
+    "country": "Canada",
+    "founded": 1988,
+    "stock": {
+      "price": 59.91,
+      "shares_outstanding": 245327435,
+      "market_cap": 14697566630,
+      "pe_ratio": 6.66,
+      "dividend_yield": 1.11,
+      "52_week_high": 81.29,
+      "52_week_low": 31.37,
+      "daily_change_percent": 4.73
+    },
+    "financials": {
+      "revenue": 15231115196,
+      "net_income": 2205410584,
+      "eps": 8.99,
+      "debt_equity": 1.53
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP124",
+    "ticker": "TSGA",
+    "company_name": "TeleLink Systems GmbH",
+    "industry": "Telecommunications",
+    "country": "Austria",
+    "founded": 1994,
+    "stock": {
+      "price": 37.13,
+      "shares_outstanding": 189167092,
+      "market_cap": 7023774125,
+      "pe_ratio": 8.14,
+      "dividend_yield": 0.55,
+      "52_week_high": 52.8,
+      "52_week_low": 22.61,
+      "daily_change_percent": 4.8
+    },
+    "financials": {
+      "revenue": 4589643948,
+      "net_income": 863156288,
+      "eps": 4.56,
+      "debt_equity": 1.99
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP125",
+    "ticker": "BMGA",
+    "company_name": "Broadband Masters GmbH",
+    "industry": "Telecommunications",
+    "country": "Austria",
+    "founded": 1967,
+    "stock": {
+      "price": 50.02,
+      "shares_outstanding": 14562859,
+      "market_cap": 728434207,
+      "pe_ratio": 15.44,
+      "dividend_yield": 0.91,
+      "52_week_high": 67.34,
+      "52_week_low": 45.68,
+      "daily_change_percent": 1.96
+    },
+    "financials": {
+      "revenue": 473680782,
+      "net_income": 47191726,
+      "eps": 3.24,
+      "debt_equity": 0.64
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP126",
+    "ticker": "CIAG",
+    "company_name": "ComNet Innovations AG",
+    "industry": "Telecommunications",
+    "country": "Germany",
+    "founded": 2020,
+    "stock": {
+      "price": 95.96,
+      "shares_outstanding": 7152378,
+      "market_cap": 686342192,
+      "pe_ratio": 8.33,
+      "dividend_yield": 3.23,
+      "52_week_high": 106.06,
+      "52_week_low": 79.06,
+      "daily_change_percent": -4.95
+    },
+    "financials": {
+      "revenue": 611087473,
+      "net_income": 82392938,
+      "eps": 11.52,
+      "debt_equity": 0.13
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP127",
+    "ticker": "SSCC",
+    "company_name": "SignalTech Solutions Co., Ltd",
+    "industry": "Telecommunications",
+    "country": "China",
+    "founded": 2018,
+    "stock": {
+      "price": 149.93,
+      "shares_outstanding": 67174827,
+      "market_cap": 10071521812,
+      "pe_ratio": 11.25,
+      "dividend_yield": 0.0,
+      "52_week_high": 232.3,
+      "52_week_low": 67.35,
+      "daily_change_percent": 0.74
+    },
+    "financials": {
+      "revenue": 4625777121,
+      "net_income": 895108813,
+      "eps": 13.33,
+      "debt_equity": 0.8
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP128",
+    "ticker": "TLI",
+    "company_name": "TeleSphere Ltd",
+    "industry": "Telecommunications",
+    "country": "Ireland",
+    "founded": 1987,
+    "stock": {
+      "price": 150.18,
+      "shares_outstanding": 459569430,
+      "market_cap": 69018136997,
+      "pe_ratio": 14.37,
+      "dividend_yield": 0.0,
+      "52_week_high": 190.48,
+      "52_week_low": 100.99,
+      "daily_change_percent": 4.37
+    },
+    "financials": {
+      "revenue": 92961803149,
+      "net_income": 4800730403,
+      "eps": 10.45,
+      "debt_equity": 2.3
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP129",
+    "ticker": "NYCUS",
+    "company_name": "New York CallWave Enterprises Inc",
+    "industry": "Telecommunications",
+    "country": "United States",
+    "founded": 1964,
+    "stock": {
+      "price": 21.63,
+      "shares_outstanding": 4608287686,
+      "market_cap": 99677262648,
+      "pe_ratio": 5.71,
+      "dividend_yield": 0.0,
+      "52_week_high": 32.84,
+      "52_week_low": 14.22,
+      "daily_change_percent": -3.07
+    },
+    "financials": {
+      "revenue": 148103398494,
+      "net_income": 17445704613,
+      "eps": 3.79,
+      "debt_equity": 1.23
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP130",
+    "ticker": "AICN",
+    "company_name": "Amsterdam Infinity Connect BV",
+    "industry": "Telecommunications",
+    "country": "Netherlands",
+    "founded": 1961,
+    "stock": {
+      "price": 44.88,
+      "shares_outstanding": 16706483,
+      "market_cap": 749786957,
+      "pe_ratio": 6.67,
+      "dividend_yield": 3.85,
+      "52_week_high": 69.27,
+      "52_week_low": 38.37,
+      "daily_change_percent": 0.15
+    },
+    "financials": {
+      "revenue": 920736856,
+      "net_income": 112514614,
+      "eps": 6.73,
+      "debt_equity": 1.89
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP131",
+    "ticker": "PGLI",
+    "company_name": "PrimeProperties Group Ltd",
+    "industry": "Real Estate",
+    "country": "India",
+    "founded": 1951,
+    "stock": {
+      "price": 40.22,
+      "shares_outstanding": 8886663,
+      "market_cap": 357421585,
+      "pe_ratio": 28.52,
+      "dividend_yield": 0.0,
+      "52_week_high": 63.34,
+      "52_week_low": 22.77,
+      "daily_change_percent": 2.23
+    },
+    "financials": {
+      "revenue": 186738913,
+      "net_income": 12500554,
+      "eps": 1.41,
+      "debt_equity": 0.59
+    },
+    "iso_code": "IN"
+  },
+  {
+    "id": "COMP132",
+    "ticker": "UDSS",
+    "company_name": "UrbanSpace Developers S.A.",
+    "industry": "Real Estate",
+    "country": "Spain",
+    "founded": 1987,
+    "stock": {
+      "price": 139.78,
+      "shares_outstanding": 1161207,
+      "market_cap": 162313514,
+      "pe_ratio": 17.97,
+      "dividend_yield": 0.0,
+      "52_week_high": 200.86,
+      "52_week_low": 79.82,
+      "daily_change_percent": -3.83
+    },
+    "financials": {
+      "revenue": 97201163,
+      "net_income": 9037277,
+      "eps": 7.78,
+      "debt_equity": 1.26
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP133",
+    "ticker": "RMBN",
+    "company_name": "RealEstate Masters BV",
+    "industry": "Real Estate",
+    "country": "Netherlands",
+    "founded": 1981,
+    "stock": {
+      "price": 46.95,
+      "shares_outstanding": 4164564,
+      "market_cap": 195526279,
+      "pe_ratio": 6.61,
+      "dividend_yield": 2.12,
+      "52_week_high": 63.18,
+      "52_week_low": 35.93,
+      "daily_change_percent": -2.82
+    },
+    "financials": {
+      "revenue": 229167610,
+      "net_income": 29570186,
+      "eps": 7.1,
+      "debt_equity": 1.04
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP134",
+    "ticker": "PSNB",
+    "company_name": "PropertyLink Solutions NV",
+    "industry": "Real Estate",
+    "country": "Belgium",
+    "founded": 1991,
+    "stock": {
+      "price": 175.13,
+      "shares_outstanding": 2708905,
+      "market_cap": 474410532,
+      "pe_ratio": 26.34,
+      "dividend_yield": 2.46,
+      "52_week_high": 232.58,
+      "52_week_low": 125.22,
+      "daily_change_percent": -3.5
+    },
+    "financials": {
+      "revenue": 528918387,
+      "net_income": 18014161,
+      "eps": 6.65,
+      "debt_equity": 1.41
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP135",
+    "ticker": "HOF",
+    "company_name": "HomeBuilders Oy",
+    "industry": "Real Estate",
+    "country": "Finland",
+    "founded": 1989,
+    "stock": {
+      "price": 26.78,
+      "shares_outstanding": 22553782,
+      "market_cap": 603990281,
+      "pe_ratio": 28.19,
+      "dividend_yield": 2.31,
+      "52_week_high": 34.85,
+      "52_week_low": 11.56,
+      "daily_change_percent": -0.38
+    },
+    "financials": {
+      "revenue": 192204286,
+      "net_income": 21501425,
+      "eps": 0.95,
+      "debt_equity": 2.02
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP136",
+    "ticker": "DELI",
+    "company_name": "Dublin EstateTrust Ltd",
+    "industry": "Real Estate",
+    "country": "Ireland",
+    "founded": 1973,
+    "stock": {
+      "price": 4.59,
+      "shares_outstanding": 26008289,
+      "market_cap": 119378046,
+      "pe_ratio": 9.18,
+      "dividend_yield": 4.02,
+      "52_week_high": 7.31,
+      "52_week_low": 3.03,
+      "daily_change_percent": -2.13
+    },
+    "financials": {
+      "revenue": 89629825,
+      "net_income": 13092163,
+      "eps": 0.5,
+      "debt_equity": 1.35
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP137",
+    "ticker": "SRPA",
+    "company_name": "Skyline Realty Partners Pty Ltd",
+    "industry": "Real Estate",
+    "country": "Australia",
+    "founded": 1994,
+    "stock": {
+      "price": 146.94,
+      "shares_outstanding": 849660118,
+      "market_cap": 124849057738,
+      "pe_ratio": 7.31,
+      "dividend_yield": 0.36,
+      "52_week_high": 232.21,
+      "52_week_low": 129.45,
+      "daily_change_percent": -3.67
+    },
+    "financials": {
+      "revenue": 169636620513,
+      "net_income": 17088630614,
+      "eps": 20.11,
+      "debt_equity": 2.29
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP138",
+    "ticker": "BDAG",
+    "company_name": "Berlin DreamHomes AG",
+    "industry": "Real Estate",
+    "country": "Germany",
+    "founded": 1981,
+    "stock": {
+      "price": 107.65,
+      "shares_outstanding": 48593721,
+      "market_cap": 5231114065,
+      "pe_ratio": 203.11,
+      "dividend_yield": 0.0,
+      "52_week_high": 145.27,
+      "52_week_low": 74.55,
+      "daily_change_percent": 3.23
+    },
+    "financials": {
+      "revenue": 1069842775,
+      "net_income": 25775036,
+      "eps": 0.53,
+      "debt_equity": 0.75
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP139",
+    "ticker": "MAAS",
+    "company_name": "MetroProperty Advisors AB",
+    "industry": "Real Estate",
+    "country": "Sweden",
+    "founded": 1962,
+    "stock": {
+      "price": 58.03,
+      "shares_outstanding": 3842955451,
+      "market_cap": 223006704821,
+      "pe_ratio": 17.43,
+      "dividend_yield": 0.0,
+      "52_week_high": 89.14,
+      "52_week_low": 23.71,
+      "daily_change_percent": -2.94
+    },
+    "financials": {
+      "revenue": 77315985326,
+      "net_income": 12811728311,
+      "eps": 3.33,
+      "debt_equity": 1.05
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP140",
+    "ticker": "CFDD",
+    "company_name": "Copenhagen FutureLiving Developments A/S",
+    "industry": "Real Estate",
+    "country": "Denmark",
+    "founded": 1990,
+    "stock": {
+      "price": 141.84,
+      "shares_outstanding": 5312422,
+      "market_cap": 753513936,
+      "pe_ratio": 22.23,
+      "dividend_yield": 0.0,
+      "52_week_high": 153.34,
+      "52_week_low": 96.05,
+      "daily_change_percent": -2.11
+    },
+    "financials": {
+      "revenue": 544749099,
+      "net_income": 33873081,
+      "eps": 6.38,
+      "debt_equity": 0.54
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP141",
+    "ticker": "GHAD",
+    "company_name": "GrandStay Hotels A/S",
+    "industry": "Hospitality",
+    "country": "Denmark",
+    "founded": 2004,
+    "stock": {
+      "price": 54.46,
+      "shares_outstanding": 6182082,
+      "market_cap": 336676185,
+      "pe_ratio": 18.65,
+      "dividend_yield": 0.27,
+      "52_week_high": 85.59,
+      "52_week_low": 48.13,
+      "daily_change_percent": 4.12
+    },
+    "financials": {
+      "revenue": 130037326,
+      "net_income": 18054152,
+      "eps": 2.92,
+      "debt_equity": 0.55
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP142",
+    "ticker": "LRAN",
+    "company_name": "LuxuryLodge Resorts AS",
+    "industry": "Hospitality",
+    "country": "Norway",
+    "founded": 1988,
+    "stock": {
+      "price": 77.84,
+      "shares_outstanding": 2671838475,
+      "market_cap": 207975906894,
+      "pe_ratio": 10.58,
+      "dividend_yield": 1.69,
+      "52_week_high": 114.03,
+      "52_week_low": 51.41,
+      "daily_change_percent": 3.49
+    },
+    "financials": {
+      "revenue": 254052131916,
+      "net_income": 19656572949,
+      "eps": 7.36,
+      "debt_equity": 1.04
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP143",
+    "ticker": "CHOF",
+    "company_name": "ComfortFirst Hospitality Oy",
+    "industry": "Hospitality",
+    "country": "Finland",
+    "founded": 1961,
+    "stock": {
+      "price": 64.85,
+      "shares_outstanding": 2736593151,
+      "market_cap": 177468065842,
+      "pe_ratio": 5.7,
+      "dividend_yield": 0.92,
+      "52_week_high": 91.16,
+      "52_week_low": 58.83,
+      "daily_change_percent": 3.47
+    },
+    "financials": {
+      "revenue": 258770099107,
+      "net_income": 31133048919,
+      "eps": 11.38,
+      "debt_equity": 0.34
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP144",
+    "ticker": "EGAN",
+    "company_name": "EliteTravel Group AS",
+    "industry": "Hospitality",
+    "country": "Norway",
+    "founded": 1992,
+    "stock": {
+      "price": 16.86,
+      "shares_outstanding": 40924574,
+      "market_cap": 689988317,
+      "pe_ratio": 5.73,
+      "dividend_yield": 0.0,
+      "52_week_high": 24.42,
+      "52_week_low": 11.93,
+      "daily_change_percent": -0.21
+    },
+    "financials": {
+      "revenue": 678809581,
+      "net_income": 120320140,
+      "eps": 2.94,
+      "debt_equity": 0.47
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP145",
+    "ticker": "SHSS",
+    "company_name": "Sunrise Hospitality S.A.",
+    "industry": "Hospitality",
+    "country": "Spain",
+    "founded": 1986,
+    "stock": {
+      "price": 3.2,
+      "shares_outstanding": 90431786160,
+      "market_cap": 289381715712,
+      "pe_ratio": 13.91,
+      "dividend_yield": 2.72,
+      "52_week_high": 3.72,
+      "52_week_low": 2.89,
+      "daily_change_percent": 0.52
+    },
+    "financials": {
+      "revenue": 102010255140,
+      "net_income": 20394192286,
+      "eps": 0.23,
+      "debt_equity": 1.2
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP146",
+    "ticker": "GGAS",
+    "company_name": "Global Getaways AG",
+    "industry": "Hospitality",
+    "country": "Switzerland",
+    "founded": 1990,
+    "stock": {
+      "price": 52.6,
+      "shares_outstanding": 7446052,
+      "market_cap": 391662335,
+      "pe_ratio": 7.15,
+      "dividend_yield": 0.0,
+      "52_week_high": 77.26,
+      "52_week_low": 30.3,
+      "daily_change_percent": -2.97
+    },
+    "financials": {
+      "revenue": 527825915,
+      "net_income": 54830942,
+      "eps": 7.36,
+      "debt_equity": 2.01
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP147",
+    "ticker": "REAS",
+    "company_name": "RelaxInn Enterprises AG",
+    "industry": "Hospitality",
+    "country": "Switzerland",
+    "founded": 1993,
+    "stock": {
+      "price": 59.82,
+      "shares_outstanding": 9622968,
+      "market_cap": 575645945,
+      "pe_ratio": 6.97,
+      "dividend_yield": 1.04,
+      "52_week_high": 81.56,
+      "52_week_low": 32.01,
+      "daily_change_percent": 0.51
+    },
+    "financials": {
+      "revenue": 552183462,
+      "net_income": 82607832,
+      "eps": 8.58,
+      "debt_equity": 0.74
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP148",
+    "ticker": "HHPS",
+    "company_name": "Haven Hospitality Partners S.A.",
+    "industry": "Hospitality",
+    "country": "Spain",
+    "founded": 1957,
+    "stock": {
+      "price": 40.11,
+      "shares_outstanding": 375275186,
+      "market_cap": 15052287710,
+      "pe_ratio": 8.24,
+      "dividend_yield": 2.46,
+      "52_week_high": 46.18,
+      "52_week_low": 35.66,
+      "daily_change_percent": 4.9
+    },
+    "financials": {
+      "revenue": 12027947413,
+      "net_income": 1827033216,
+      "eps": 4.87,
+      "debt_equity": 0.88
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP149",
+    "ticker": "DIAN",
+    "company_name": "DreamResorts International AS",
+    "industry": "Hospitality",
+    "country": "Norway",
+    "founded": 2011,
+    "stock": {
+      "price": 75.72,
+      "shares_outstanding": 204997860,
+      "market_cap": 15522437959,
+      "pe_ratio": 7.91,
+      "dividend_yield": 0.0,
+      "52_week_high": 79.89,
+      "52_week_low": 51.35,
+      "daily_change_percent": -1.27
+    },
+    "financials": {
+      "revenue": 11426220085,
+      "net_income": 1961402647,
+      "eps": 9.57,
+      "debt_equity": 0.58
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP150",
+    "ticker": "SHNB",
+    "company_name": "StayWell Hotels NV",
+    "industry": "Hospitality",
+    "country": "Belgium",
+    "founded": 1963,
+    "stock": {
+      "price": 2.52,
+      "shares_outstanding": 24308896,
+      "market_cap": 61258417,
+      "pe_ratio": 15.75,
+      "dividend_yield": 3.66,
+      "52_week_high": 3.58,
+      "52_week_low": 2.13,
+      "daily_change_percent": 4.1
+    },
+    "financials": {
+      "revenue": 54412357,
+      "net_income": 3779119,
+      "eps": 0.16,
+      "debt_equity": 2.44
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP151",
+    "ticker": "LMPP",
+    "company_name": "Lisbon MediCore Pharma Lda",
+    "industry": "Pharmaceuticals",
+    "country": "Portugal",
+    "founded": 1960,
+    "stock": {
+      "price": 84.85,
+      "shares_outstanding": 9716601,
+      "market_cap": 824453594,
+      "pe_ratio": 19.96,
+      "dividend_yield": 2.54,
+      "52_week_high": 135.3,
+      "52_week_low": 44.48,
+      "daily_change_percent": 1.84
+    },
+    "financials": {
+      "revenue": 451406611,
+      "net_income": 41277232,
+      "eps": 4.25,
+      "debt_equity": 0.93
+    },
+    "iso_code": "PT"
+  },
+  {
+    "id": "COMP152",
+    "ticker": "HPNB",
+    "company_name": "HealthPlus Pharmaceuticals NV",
+    "industry": "Pharmaceuticals",
+    "country": "Belgium",
+    "founded": 1992,
+    "stock": {
+      "price": 263.46,
+      "shares_outstanding": 1651159,
+      "market_cap": 435014350,
+      "pe_ratio": 13.71,
+      "dividend_yield": 0.0,
+      "52_week_high": 288.61,
+      "52_week_low": 227.87,
+      "daily_change_percent": 1.45
+    },
+    "financials": {
+      "revenue": 300299297,
+      "net_income": 31735905,
+      "eps": 19.22,
+      "debt_equity": 1.59
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP153",
+    "ticker": "BIAD",
+    "company_name": "BioPharma Innovations A/S",
+    "industry": "Pharmaceuticals",
+    "country": "Denmark",
+    "founded": 2019,
+    "stock": {
+      "price": 389.8,
+      "shares_outstanding": 47367604,
+      "market_cap": 18463892039,
+      "pe_ratio": 11.01,
+      "dividend_yield": 1.22,
+      "52_week_high": 607.42,
+      "52_week_low": 302.65,
+      "daily_change_percent": -2.2
+    },
+    "financials": {
+      "revenue": 9207877343,
+      "net_income": 1677943501,
+      "eps": 35.42,
+      "debt_equity": 1.73
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP154",
+    "ticker": "GLIC",
+    "company_name": "GlobalCure Labs Inc",
+    "industry": "Pharmaceuticals",
+    "country": "Canada",
+    "founded": 2022,
+    "stock": {
+      "price": 79.95,
+      "shares_outstanding": 16228940,
+      "market_cap": 1297503753,
+      "pe_ratio": 46.48,
+      "dividend_yield": 0.0,
+      "52_week_high": 124.79,
+      "52_week_low": 45.14,
+      "daily_change_percent": 0.64
+    },
+    "financials": {
+      "revenue": 608925712,
+      "net_income": 27982865,
+      "eps": 1.72,
+      "debt_equity": 2.05
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP155",
+    "ticker": "LOF",
+    "company_name": "LifeScience Oy",
+    "industry": "Pharmaceuticals",
+    "country": "Finland",
+    "founded": 1959,
+    "stock": {
+      "price": 274.04,
+      "shares_outstanding": 1513114,
+      "market_cap": 414653760,
+      "pe_ratio": 5.3,
+      "dividend_yield": 3.35,
+      "52_week_high": 339.87,
+      "52_week_low": 124.34,
+      "daily_change_percent": -2.68
+    },
+    "financials": {
+      "revenue": 481690304,
+      "net_income": 78173353,
+      "eps": 51.66,
+      "debt_equity": 1.72
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP156",
+    "ticker": "PBN",
+    "company_name": "PharmaTrust BV",
+    "industry": "Pharmaceuticals",
+    "country": "Netherlands",
+    "founded": 1998,
+    "stock": {
+      "price": 249.41,
+      "shares_outstanding": 3891080,
+      "market_cap": 970474262,
+      "pe_ratio": 11.94,
+      "dividend_yield": 1.03,
+      "52_week_high": 337.74,
+      "52_week_low": 151.26,
+      "daily_change_percent": -3.14
+    },
+    "financials": {
+      "revenue": 605857029,
+      "net_income": 81270952,
+      "eps": 20.89,
+      "debt_equity": 1.96
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP157",
+    "ticker": "CSAG",
+    "company_name": "CureTech Solutions AG",
+    "industry": "Pharmaceuticals",
+    "country": "Germany",
+    "founded": 2006,
+    "stock": {
+      "price": 125.2,
+      "shares_outstanding": 1000000,
+      "market_cap": 125200000,
+      "pe_ratio": 20.63,
+      "dividend_yield": 1.75,
+      "52_week_high": 156.3,
+      "52_week_low": 56.38,
+      "daily_change_percent": 4.43
+    },
+    "financials": {
+      "revenue": 68655127,
+      "net_income": 6069113,
+      "eps": 6.07,
+      "debt_equity": 1.96
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP158",
+    "ticker": "VIBN",
+    "company_name": "VitalMeds International BV",
+    "industry": "Pharmaceuticals",
+    "country": "Netherlands",
+    "founded": 1951,
+    "stock": {
+      "price": 49.87,
+      "shares_outstanding": 9212563,
+      "market_cap": 459430516,
+      "pe_ratio": 9.65,
+      "dividend_yield": 2.49,
+      "52_week_high": 68.74,
+      "52_week_low": 41.46,
+      "daily_change_percent": 3.64
+    },
+    "financials": {
+      "revenue": 424550800,
+      "net_income": 47651306,
+      "eps": 5.17,
+      "debt_equity": 0.26
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP159",
+    "ticker": "PPCJ",
+    "company_name": "Precision Pharma Co., Ltd",
+    "industry": "Pharmaceuticals",
+    "country": "Japan",
+    "founded": 1968,
+    "stock": {
+      "price": 313.88,
+      "shares_outstanding": 37056181,
+      "market_cap": 11631194092,
+      "pe_ratio": 10.53,
+      "dividend_yield": 0.0,
+      "52_week_high": 358.84,
+      "52_week_low": 171.98,
+      "daily_change_percent": -2.32
+    },
+    "financials": {
+      "revenue": 17336867749,
+      "net_income": 1104248450,
+      "eps": 29.8,
+      "debt_equity": 1.3
+    },
+    "iso_code": "JP"
+  },
+  {
+    "id": "COMP160",
+    "ticker": "NYWUS",
+    "company_name": "New York WellCure Biotech Inc",
+    "industry": "Pharmaceuticals",
+    "country": "United States",
+    "founded": 2000,
+    "stock": {
+      "price": 126.9,
+      "shares_outstanding": 61949356,
+      "market_cap": 7861373276,
+      "pe_ratio": 4.68,
+      "dividend_yield": 0.0,
+      "52_week_high": 165.2,
+      "52_week_low": 60.22,
+      "daily_change_percent": -4.93
+    },
+    "financials": {
+      "revenue": 11222023753,
+      "net_income": 1680631615,
+      "eps": 27.13,
+      "debt_equity": 1.24
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP161",
+    "ticker": "AMBN",
+    "company_name": "AutoMotion Motors BV",
+    "industry": "Automotive",
+    "country": "Netherlands",
+    "founded": 1972,
+    "stock": {
+      "price": 48.69,
+      "shares_outstanding": 192323588,
+      "market_cap": 9364235499,
+      "pe_ratio": 7.83,
+      "dividend_yield": 1.35,
+      "52_week_high": 67.28,
+      "52_week_low": 38.1,
+      "daily_change_percent": -0.21
+    },
+    "financials": {
+      "revenue": 7114956313,
+      "net_income": 1196994232,
+      "eps": 6.22,
+      "debt_equity": 1.63
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP162",
+    "ticker": "DIAS",
+    "company_name": "DriveTech Industries AG",
+    "industry": "Automotive",
+    "country": "Switzerland",
+    "founded": 2019,
+    "stock": {
+      "price": 38.52,
+      "shares_outstanding": 268150024,
+      "market_cap": 10329138924,
+      "pe_ratio": 16.53,
+      "dividend_yield": 0.0,
+      "52_week_high": 48.77,
+      "52_week_low": 17.82,
+      "daily_change_percent": 0.64
+    },
+    "financials": {
+      "revenue": 9798666019,
+      "net_income": 623551569,
+      "eps": 2.33,
+      "debt_equity": 0.94
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP163",
+    "ticker": "NACC",
+    "company_name": "NextRide Automotive Co., Ltd",
+    "industry": "Automotive",
+    "country": "China",
+    "founded": 2013,
+    "stock": {
+      "price": 68.26,
+      "shares_outstanding": 2186554679,
+      "market_cap": 149254222388,
+      "pe_ratio": 9.02,
+      "dividend_yield": 0.0,
+      "52_week_high": 102.42,
+      "52_week_low": 57.18,
+      "daily_change_percent": -0.91
+    },
+    "financials": {
+      "revenue": 167295649898,
+      "net_income": 16549202173,
+      "eps": 7.57,
+      "debt_equity": 0.73
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP164",
+    "ticker": "MSF1",
+    "company_name": "MotorMasters SARL",
+    "industry": "Automotive",
+    "country": "France",
+    "founded": 2019,
+    "stock": {
+      "price": 32.83,
+      "shares_outstanding": 444395109,
+      "market_cap": 14589491428,
+      "pe_ratio": 24.5,
+      "dividend_yield": 1.8,
+      "52_week_high": 43.62,
+      "52_week_low": 29.75,
+      "daily_change_percent": 1.92
+    },
+    "financials": {
+      "revenue": 17883795561,
+      "net_income": 595775836,
+      "eps": 1.34,
+      "debt_equity": 2.48
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP165",
+    "ticker": "FSLUK",
+    "company_name": "FutureDrive Systems Ltd",
+    "industry": "Automotive",
+    "country": "United Kingdom",
+    "founded": 2001,
+    "stock": {
+      "price": 46.35,
+      "shares_outstanding": 241665884,
+      "market_cap": 11201213723,
+      "pe_ratio": 27.59,
+      "dividend_yield": 0.0,
+      "52_week_high": 57.72,
+      "52_week_low": 35.03,
+      "daily_change_percent": -4.56
+    },
+    "financials": {
+      "revenue": 11533155835,
+      "net_income": 407082896,
+      "eps": 1.68,
+      "debt_equity": 1.92
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP166",
+    "ticker": "PAGA",
+    "company_name": "Precision AutoWorks GmbH",
+    "industry": "Automotive",
+    "country": "Austria",
+    "founded": 2014,
+    "stock": {
+      "price": 96.57,
+      "shares_outstanding": 1487793,
+      "market_cap": 143676170,
+      "pe_ratio": 13.25,
+      "dividend_yield": 0.0,
+      "52_week_high": 113.14,
+      "52_week_low": 58.5,
+      "daily_change_percent": -0.37
+    },
+    "financials": {
+      "revenue": 70200378,
+      "net_income": 10841293,
+      "eps": 7.29,
+      "debt_equity": 1.39
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP167",
+    "ticker": "GMSF",
+    "company_name": "Global Motors SARL",
+    "industry": "Automotive",
+    "country": "France",
+    "founded": 2010,
+    "stock": {
+      "price": 7.82,
+      "shares_outstanding": 56927961,
+      "market_cap": 445176655,
+      "pe_ratio": 17.0,
+      "dividend_yield": 1.4,
+      "52_week_high": 10.17,
+      "52_week_low": 4.02,
+      "daily_change_percent": -0.17
+    },
+    "financials": {
+      "revenue": 645615763,
+      "net_income": 26400830,
+      "eps": 0.46,
+      "debt_equity": 2.35
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP168",
+    "ticker": "EIIUS",
+    "company_name": "EcoDrive Innovations Inc",
+    "industry": "Automotive",
+    "country": "United States",
+    "founded": 1981,
+    "stock": {
+      "price": 85.13,
+      "shares_outstanding": 3938105,
+      "market_cap": 335250878,
+      "pe_ratio": 19.62,
+      "dividend_yield": 0.0,
+      "52_week_high": 121.09,
+      "52_week_low": 41.75,
+      "daily_change_percent": 4.84
+    },
+    "financials": {
+      "revenue": 420150387,
+      "net_income": 17106569,
+      "eps": 4.34,
+      "debt_equity": 2.12
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP169",
+    "ticker": "OSAN",
+    "company_name": "Oslo SpeedLine Autos AS",
+    "industry": "Automotive",
+    "country": "Norway",
+    "founded": 1999,
+    "stock": {
+      "price": 69.38,
+      "shares_outstanding": 1223977418,
+      "market_cap": 84919553260,
+      "pe_ratio": 25.89,
+      "dividend_yield": 0.13,
+      "52_week_high": 96.28,
+      "52_week_low": 35.28,
+      "daily_change_percent": 0.92
+    },
+    "financials": {
+      "revenue": 61699292192,
+      "net_income": 3282483758,
+      "eps": 2.68,
+      "debt_equity": 1.6
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP170",
+    "ticker": "UELUK",
+    "company_name": "UrbanDrive Enterprises Ltd",
+    "industry": "Automotive",
+    "country": "United Kingdom",
+    "founded": 2017,
+    "stock": {
+      "price": 28.67,
+      "shares_outstanding": 570835925,
+      "market_cap": 16365865969,
+      "pe_ratio": 92.48,
+      "dividend_yield": 1.47,
+      "52_week_high": 37.32,
+      "52_week_low": 15.6,
+      "daily_change_percent": 3.63
+    },
+    "financials": {
+      "revenue": 4604256156,
+      "net_income": 176413772,
+      "eps": 0.31,
+      "debt_equity": 2.18
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP171",
+    "ticker": "VMGB",
+    "company_name": "Visionary Media Group S.A.",
+    "industry": "Media",
+    "country": "Brazil",
+    "founded": 1967,
+    "stock": {
+      "price": 40.7,
+      "shares_outstanding": 3894851,
+      "market_cap": 158520435,
+      "pe_ratio": 14.85,
+      "dividend_yield": 0.0,
+      "52_week_high": 60.66,
+      "52_week_low": 36.84,
+      "daily_change_percent": 0.9
+    },
+    "financials": {
+      "revenue": 104239931,
+      "net_income": 10675722,
+      "eps": 2.74,
+      "debt_equity": 0.43
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP172",
+    "ticker": "ANBN",
+    "company_name": "Amsterdam NextGen Broadcasting BV",
+    "industry": "Media",
+    "country": "Netherlands",
+    "founded": 2021,
+    "stock": {
+      "price": 20.76,
+      "shares_outstanding": 515687500,
+      "market_cap": 10705672500,
+      "pe_ratio": 30.09,
+      "dividend_yield": 2.86,
+      "52_week_high": 29.72,
+      "52_week_low": 15.67,
+      "daily_change_percent": 5.0
+    },
+    "financials": {
+      "revenue": 7961924667,
+      "net_income": 356822521,
+      "eps": 0.69,
+      "debt_equity": 0.96
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP173",
+    "ticker": "CSCC",
+    "company_name": "CreativeEdge Studios Co., Ltd",
+    "industry": "Media",
+    "country": "China",
+    "founded": 2012,
+    "stock": {
+      "price": 16.61,
+      "shares_outstanding": 28804992,
+      "market_cap": 478450917,
+      "pe_ratio": 43.71,
+      "dividend_yield": 3.67,
+      "52_week_high": 26.25,
+      "52_week_low": 11.26,
+      "daily_change_percent": -0.05
+    },
+    "financials": {
+      "revenue": 129035648,
+      "net_income": 10919906,
+      "eps": 0.38,
+      "debt_equity": 0.02
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP174",
+    "ticker": "GMWS",
+    "company_name": "Global Media Works AG",
+    "industry": "Media",
+    "country": "Switzerland",
+    "founded": 2013,
+    "stock": {
+      "price": 46.05,
+      "shares_outstanding": 12749791,
+      "market_cap": 587127875,
+      "pe_ratio": 13.58,
+      "dividend_yield": 1.3,
+      "52_week_high": 68.13,
+      "52_week_low": 32.75,
+      "daily_change_percent": 2.73
+    },
+    "financials": {
+      "revenue": 724894587,
+      "net_income": 43272807,
+      "eps": 3.39,
+      "debt_equity": 0.08
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP175",
+    "ticker": "DSAN",
+    "company_name": "Digital Story AS",
+    "industry": "Media",
+    "country": "Norway",
+    "founded": 1981,
+    "stock": {
+      "price": 58.55,
+      "shares_outstanding": 9666112,
+      "market_cap": 565950857,
+      "pe_ratio": 5.72,
+      "dividend_yield": 0.0,
+      "52_week_high": 75.69,
+      "52_week_low": 30.46,
+      "daily_change_percent": -0.75
+    },
+    "financials": {
+      "revenue": 842226393,
+      "net_income": 99018711,
+      "eps": 10.24,
+      "debt_equity": 1.89
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP176",
+    "ticker": "BPSS",
+    "company_name": "BrightScreen Productions S.A.",
+    "industry": "Media",
+    "country": "Spain",
+    "founded": 2004,
+    "stock": {
+      "price": 6.13,
+      "shares_outstanding": 141776450,
+      "market_cap": 869089638,
+      "pe_ratio": 18.03,
+      "dividend_yield": 0.0,
+      "52_week_high": 7.14,
+      "52_week_low": 4.94,
+      "daily_change_percent": 1.89
+    },
+    "financials": {
+      "revenue": 272092765,
+      "net_income": 47820925,
+      "eps": 0.34,
+      "debt_equity": 0.29
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP177",
+    "ticker": "PMNF",
+    "company_name": "Pulse Media Network SARL",
+    "industry": "Media",
+    "country": "France",
+    "founded": 2015,
+    "stock": {
+      "price": 79.13,
+      "shares_outstanding": 206032723,
+      "market_cap": 16303369370,
+      "pe_ratio": 9.18,
+      "dividend_yield": 4.41,
+      "52_week_high": 95.82,
+      "52_week_low": 56.58,
+      "daily_change_percent": 4.52
+    },
+    "financials": {
+      "revenue": 15343046270,
+      "net_income": 1776886527,
+      "eps": 8.62,
+      "debt_equity": 1.49
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP178",
+    "ticker": "IBLP",
+    "company_name": "Infinity Broadcast Lda",
+    "industry": "Media",
+    "country": "Portugal",
+    "founded": 2000,
+    "stock": {
+      "price": 12.24,
+      "shares_outstanding": 19607311562,
+      "market_cap": 239993493518,
+      "pe_ratio": 3.61,
+      "dividend_yield": 3.9,
+      "52_week_high": 14.53,
+      "52_week_low": 9.69,
+      "daily_change_percent": 3.28
+    },
+    "financials": {
+      "revenue": 334646765458,
+      "net_income": 66476750240,
+      "eps": 3.39,
+      "debt_equity": 2.17
+    },
+    "iso_code": "PT"
+  },
+  {
+    "id": "COMP179",
+    "ticker": "MSAS",
+    "company_name": "MediaSphere Solutions AB",
+    "industry": "Media",
+    "country": "Sweden",
+    "founded": 2012,
+    "stock": {
+      "price": 63.9,
+      "shares_outstanding": 1905171,
+      "market_cap": 121740426,
+      "pe_ratio": 5.12,
+      "dividend_yield": 0.0,
+      "52_week_high": 91.51,
+      "52_week_low": 56.39,
+      "daily_change_percent": -0.45
+    },
+    "financials": {
+      "revenue": 150103294,
+      "net_income": 23776236,
+      "eps": 12.48,
+      "debt_equity": 1.01
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP180",
+    "ticker": "PSBN",
+    "company_name": "PrimeCast Studios BV",
+    "industry": "Media",
+    "country": "Netherlands",
+    "founded": 1977,
+    "stock": {
+      "price": 87.28,
+      "shares_outstanding": 31733404,
+      "market_cap": 2769691501,
+      "pe_ratio": 5.09,
+      "dividend_yield": 0.0,
+      "52_week_high": 129.84,
+      "52_week_low": 54.0,
+      "daily_change_percent": 4.68
+    },
+    "financials": {
+      "revenue": 4054261622,
+      "net_income": 544370971,
+      "eps": 17.15,
+      "debt_equity": 1.74
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP181",
+    "ticker": "JLGS",
+    "company_name": "JusticeFirst Law Group AB",
+    "industry": "Legal",
+    "country": "Sweden",
+    "founded": 2008,
+    "stock": {
+      "price": 41.76,
+      "shares_outstanding": 14344754,
+      "market_cap": 599036927,
+      "pe_ratio": 9.94,
+      "dividend_yield": 0.0,
+      "52_week_high": 44.96,
+      "52_week_low": 18.99,
+      "daily_change_percent": 2.84
+    },
+    "financials": {
+      "revenue": 560689424,
+      "net_income": 60196077,
+      "eps": 4.2,
+      "debt_equity": 0.86
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP182",
+    "ticker": "LALUK",
+    "company_name": "LegalTrust Advisors Ltd",
+    "industry": "Legal",
+    "country": "United Kingdom",
+    "founded": 1996,
+    "stock": {
+      "price": 23.18,
+      "shares_outstanding": 41420629,
+      "market_cap": 960130180,
+      "pe_ratio": 15.05,
+      "dividend_yield": 0.0,
+      "52_week_high": 26.37,
+      "52_week_low": 21.16,
+      "daily_change_percent": -2.26
+    },
+    "financials": {
+      "revenue": 444553396,
+      "net_income": 63991922,
+      "eps": 1.54,
+      "debt_equity": 0.33
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP183",
+    "ticker": "GPSS",
+    "company_name": "GlobalCounsel Partners S.A.",
+    "industry": "Legal",
+    "country": "Spain",
+    "founded": 2016,
+    "stock": {
+      "price": 33.15,
+      "shares_outstanding": 19436623,
+      "market_cap": 644324052,
+      "pe_ratio": 5.61,
+      "dividend_yield": 0.43,
+      "52_week_high": 38.7,
+      "52_week_low": 14.68,
+      "daily_change_percent": 0.94
+    },
+    "financials": {
+      "revenue": 736968104,
+      "net_income": 114924124,
+      "eps": 5.91,
+      "debt_equity": 1.07
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP184",
+    "ticker": "LSNB",
+    "company_name": "LawBridge Solutions NV",
+    "industry": "Legal",
+    "country": "Belgium",
+    "founded": 1988,
+    "stock": {
+      "price": 2.39,
+      "shares_outstanding": 68855270,
+      "market_cap": 164564095,
+      "pe_ratio": 5.2,
+      "dividend_yield": 0.4,
+      "52_week_high": 3.57,
+      "52_week_low": 1.09,
+      "daily_change_percent": -1.32
+    },
+    "financials": {
+      "revenue": 216968277,
+      "net_income": 31444253,
+      "eps": 0.46,
+      "debt_equity": 1.19
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP185",
+    "ticker": "PLSF",
+    "company_name": "Precision Legal Services SARL",
+    "industry": "Legal",
+    "country": "France",
+    "founded": 1969,
+    "stock": {
+      "price": 41.04,
+      "shares_outstanding": 321392466,
+      "market_cap": 13189946804,
+      "pe_ratio": 28.7,
+      "dividend_yield": 0.0,
+      "52_week_high": 46.8,
+      "52_week_low": 24.34,
+      "daily_change_percent": -2.87
+    },
+    "financials": {
+      "revenue": 14248812009,
+      "net_income": 460437384,
+      "eps": 1.43,
+      "debt_equity": 1.41
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP186",
+    "ticker": "CALP",
+    "company_name": "CourtSide Attorneys Lda",
+    "industry": "Legal",
+    "country": "Portugal",
+    "founded": 1960,
+    "stock": {
+      "price": 34.96,
+      "shares_outstanding": 75717180,
+      "market_cap": 2647072612,
+      "pe_ratio": 19.42,
+      "dividend_yield": 4.33,
+      "52_week_high": 42.76,
+      "52_week_low": 16.67,
+      "daily_change_percent": -2.23
+    },
+    "financials": {
+      "revenue": 875134504,
+      "net_income": 136031096,
+      "eps": 1.8,
+      "debt_equity": 1.47
+    },
+    "iso_code": "PT"
+  },
+  {
+    "id": "COMP187",
+    "ticker": "NLCC",
+    "company_name": "NextStep Legal Co., Ltd",
+    "industry": "Legal",
+    "country": "China",
+    "founded": 1956,
+    "stock": {
+      "price": 30.8,
+      "shares_outstanding": 513000759,
+      "market_cap": 15800423377,
+      "pe_ratio": 5.27,
+      "dividend_yield": 2.33,
+      "52_week_high": 40.97,
+      "52_week_low": 24.99,
+      "daily_change_percent": -2.04
+    },
+    "financials": {
+      "revenue": 17342843287,
+      "net_income": 2993731646,
+      "eps": 5.84,
+      "debt_equity": 1.65
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP188",
+    "ticker": "GLPA",
+    "company_name": "Guardian Law Pty Ltd",
+    "industry": "Legal",
+    "country": "Australia",
+    "founded": 2022,
+    "stock": {
+      "price": 47.82,
+      "shares_outstanding": 3285371,
+      "market_cap": 157106441,
+      "pe_ratio": 9.27,
+      "dividend_yield": 0.0,
+      "52_week_high": 76.17,
+      "52_week_low": 43.69,
+      "daily_change_percent": -3.68
+    },
+    "financials": {
+      "revenue": 133455213,
+      "net_income": 16936448,
+      "eps": 5.16,
+      "debt_equity": 1.32
+    },
+    "iso_code": "AU"
+  },
+  {
+    "id": "COMP189",
+    "ticker": "AMAS",
+    "company_name": "Advocate Masters AG",
+    "industry": "Legal",
+    "country": "Switzerland",
+    "founded": 2014,
+    "stock": {
+      "price": 34.78,
+      "shares_outstanding": 550161204,
+      "market_cap": 19134606675,
+      "pe_ratio": 36.23,
+      "dividend_yield": 0.18,
+      "52_week_high": 37.68,
+      "52_week_low": 29.01,
+      "daily_change_percent": 0.07
+    },
+    "financials": {
+      "revenue": 22989792962,
+      "net_income": 528859319,
+      "eps": 0.96,
+      "debt_equity": 0.17
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP190",
+    "ticker": "LHGA",
+    "company_name": "Legal Horizon GmbH",
+    "industry": "Legal",
+    "country": "Austria",
+    "founded": 1958,
+    "stock": {
+      "price": 35.69,
+      "shares_outstanding": 15683288,
+      "market_cap": 559736548,
+      "pe_ratio": 14.28,
+      "dividend_yield": 0.91,
+      "52_week_high": 53.34,
+      "52_week_low": 24.81,
+      "daily_change_percent": -1.09
+    },
+    "financials": {
+      "revenue": 560218578,
+      "net_income": 39184036,
+      "eps": 2.5,
+      "debt_equity": 0.77
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP191",
+    "ticker": "SASS",
+    "company_name": "SkyTech Aerospace S.A.",
+    "industry": "Aerospace",
+    "country": "Spain",
+    "founded": 1965,
+    "stock": {
+      "price": 257.65,
+      "shares_outstanding": 8151418,
+      "market_cap": 2100212847,
+      "pe_ratio": 32.61,
+      "dividend_yield": 0.0,
+      "52_week_high": 314.36,
+      "52_week_low": 208.16,
+      "daily_change_percent": 2.41
+    },
+    "financials": {
+      "revenue": 655427364,
+      "net_income": 64367585,
+      "eps": 7.9,
+      "debt_equity": 1.13
+    },
+    "iso_code": "ES"
+  },
+  {
+    "id": "COMP192",
+    "ticker": "OILUK",
+    "company_name": "OrbitX Innovations Ltd",
+    "industry": "Aerospace",
+    "country": "United Kingdom",
+    "founded": 1953,
+    "stock": {
+      "price": 247.91,
+      "shares_outstanding": 3853678,
+      "market_cap": 955365312,
+      "pe_ratio": 7.06,
+      "dividend_yield": 0.57,
+      "52_week_high": 366.81,
+      "52_week_low": 135.81,
+      "daily_change_percent": 3.86
+    },
+    "financials": {
+      "revenue": 840632599,
+      "net_income": 135289458,
+      "eps": 35.11,
+      "debt_equity": 1.8
+    },
+    "iso_code": "GB"
+  },
+  {
+    "id": "COMP193",
+    "ticker": "FBN",
+    "company_name": "FlightMasters BV",
+    "industry": "Aerospace",
+    "country": "Netherlands",
+    "founded": 1963,
+    "stock": {
+      "price": 101.02,
+      "shares_outstanding": 7193695,
+      "market_cap": 726707068,
+      "pe_ratio": 31.08,
+      "dividend_yield": 2.25,
+      "52_week_high": 137.57,
+      "52_week_low": 60.84,
+      "daily_change_percent": -2.45
+    },
+    "financials": {
+      "revenue": 690115316,
+      "net_income": 23376003,
+      "eps": 3.25,
+      "debt_equity": 1.14
+    },
+    "iso_code": "NL"
+  },
+  {
+    "id": "COMP194",
+    "ticker": "GASC",
+    "company_name": "Global Aerospace Systems Inc",
+    "industry": "Aerospace",
+    "country": "Canada",
+    "founded": 2003,
+    "stock": {
+      "price": 47.44,
+      "shares_outstanding": 22107959,
+      "market_cap": 1048801574,
+      "pe_ratio": 34.13,
+      "dividend_yield": 4.14,
+      "52_week_high": 54.48,
+      "52_week_low": 44.03,
+      "daily_change_percent": -4.65
+    },
+    "financials": {
+      "revenue": 1380533015,
+      "net_income": 30664196,
+      "eps": 1.39,
+      "debt_equity": 0.11
+    },
+    "iso_code": "CA"
+  },
+  {
+    "id": "COMP195",
+    "ticker": "ATCC",
+    "company_name": "AeroPrime Technologies Co., Ltd",
+    "industry": "Aerospace",
+    "country": "China",
+    "founded": 2001,
+    "stock": {
+      "price": 150.36,
+      "shares_outstanding": 40927781,
+      "market_cap": 6153901151,
+      "pe_ratio": 38.07,
+      "dividend_yield": 0.0,
+      "52_week_high": 172.71,
+      "52_week_low": 126.66,
+      "daily_change_percent": 4.81
+    },
+    "financials": {
+      "revenue": 1853882358,
+      "net_income": 161483294,
+      "eps": 3.95,
+      "debt_equity": 1.26
+    },
+    "iso_code": "CN"
+  },
+  {
+    "id": "COMP196",
+    "ticker": "REIUS",
+    "company_name": "RocketLine Enterprises Inc",
+    "industry": "Aerospace",
+    "country": "United States",
+    "founded": 2013,
+    "stock": {
+      "price": 304.18,
+      "shares_outstanding": 22694646,
+      "market_cap": 6903257420,
+      "pe_ratio": 31.33,
+      "dividend_yield": 3.53,
+      "52_week_high": 443.12,
+      "52_week_low": 162.26,
+      "daily_change_percent": -1.32
+    },
+    "financials": {
+      "revenue": 2155895432,
+      "net_income": 220363367,
+      "eps": 9.71,
+      "debt_equity": 0.92
+    },
+    "iso_code": "US"
+  },
+  {
+    "id": "COMP197",
+    "ticker": "NSGA",
+    "company_name": "NextGen SpaceWorks GmbH",
+    "industry": "Aerospace",
+    "country": "Austria",
+    "founded": 1998,
+    "stock": {
+      "price": 258.5,
+      "shares_outstanding": 3118664,
+      "market_cap": 806174644,
+      "pe_ratio": 13.46,
+      "dividend_yield": 2.86,
+      "52_week_high": 370.02,
+      "52_week_low": 104.76,
+      "daily_change_percent": -1.65
+    },
+    "financials": {
+      "revenue": 319032562,
+      "net_income": 59924382,
+      "eps": 19.21,
+      "debt_equity": 0.06
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP198",
+    "ticker": "CAOF",
+    "company_name": "Cosmos Aerospace Oy",
+    "industry": "Aerospace",
+    "country": "Finland",
+    "founded": 2002,
+    "stock": {
+      "price": 113.17,
+      "shares_outstanding": 8694529,
+      "market_cap": 983959846,
+      "pe_ratio": 6.95,
+      "dividend_yield": 1.26,
+      "52_week_high": 121.56,
+      "52_week_low": 59.68,
+      "daily_change_percent": 3.46
+    },
+    "financials": {
+      "revenue": 733798480,
+      "net_income": 141632874,
+      "eps": 16.29,
+      "debt_equity": 2.43
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP199",
+    "ticker": "LAGI",
+    "company_name": "LiftOff Aviation Group Ltd",
+    "industry": "Aerospace",
+    "country": "Ireland",
+    "founded": 1990,
+    "stock": {
+      "price": 164.79,
+      "shares_outstanding": 73030171,
+      "market_cap": 12034641879,
+      "pe_ratio": 8.66,
+      "dividend_yield": 0.28,
+      "52_week_high": 233.07,
+      "52_week_low": 77.76,
+      "daily_change_percent": -2.08
+    },
+    "financials": {
+      "revenue": 10314363149,
+      "net_income": 1389332570,
+      "eps": 19.02,
+      "debt_equity": 0.99
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP200",
+    "ticker": "PFSP",
+    "company_name": "Precision Flight Systems Lda",
+    "industry": "Aerospace",
+    "country": "Portugal",
+    "founded": 2009,
+    "stock": {
+      "price": 247.65,
+      "shares_outstanding": 28439720,
+      "market_cap": 7043096658,
+      "pe_ratio": 54.07,
+      "dividend_yield": 0.0,
+      "52_week_high": 339.67,
+      "52_week_low": 120.23,
+      "daily_change_percent": -3.36
+    },
+    "financials": {
+      "revenue": 3898654271,
+      "net_income": 130385573,
+      "eps": 4.58,
+      "debt_equity": 0.51
+    },
+    "iso_code": "PT"
+  }
+]

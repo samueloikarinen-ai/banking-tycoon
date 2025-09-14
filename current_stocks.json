@@ -1,0 +1,427 @@
+[
+  {
+    "id": "COMP106",
+    "ticker": "PSLI",
+    "company_name": "PrimeShop Solutions Ltd",
+    "industry": "Retail",
+    "country": "Ireland",
+    "founded": 1990,
+    "stock": {
+      "price": 176.91,
+      "shares_outstanding": 6599677,
+      "market_cap": 920654941,
+      "pe_ratio": 28.35,
+      "dividend_yield": 4.04,
+      "52_week_high": 180.63,
+      "52_week_low": 62.54,
+      "daily_change_percent": 26.82
+    },
+    "financials": {
+      "revenue": 772024641,
+      "net_income": 32482732,
+      "eps": 4.92,
+      "debt_equity": 2.13
+    },
+    "iso_code": "IE"
+  },
+  {
+    "id": "COMP091",
+    "ticker": "GFNB",
+    "company_name": "GreenHarvest Farms NV",
+    "industry": "Agriculture",
+    "country": "Belgium",
+    "founded": 2006,
+    "stock": {
+      "price": 70.16,
+      "shares_outstanding": 225164612,
+      "market_cap": 15295432093,
+      "pe_ratio": 13.22,
+      "dividend_yield": 0.0,
+      "52_week_high": 100.63,
+      "52_week_low": 60.95,
+      "daily_change_percent": 3.28
+    },
+    "financials": {
+      "revenue": 18644221142,
+      "net_income": 1158188898,
+      "eps": 5.14,
+      "debt_equity": 0.6
+    },
+    "iso_code": "BE"
+  },
+  {
+    "id": "COMP083",
+    "ticker": "TEOF",
+    "company_name": "Transport Excellence Oy",
+    "industry": "Transportation",
+    "country": "Finland",
+    "founded": 1986,
+    "stock": {
+      "price": 34.76,
+      "shares_outstanding": 15885701,
+      "market_cap": 495475014,
+      "pe_ratio": 6.0,
+      "dividend_yield": 0.33,
+      "52_week_high": 40.67,
+      "52_week_low": 13.12,
+      "daily_change_percent": 11.45
+    },
+    "financials": {
+      "revenue": 505781219,
+      "net_income": 82613971,
+      "eps": 5.2,
+      "debt_equity": 1.48
+    },
+    "iso_code": "FI"
+  },
+  {
+    "id": "COMP030",
+    "ticker": "PAWS",
+    "company_name": "Precision Alloy Works AB",
+    "industry": "Steel",
+    "country": "Sweden",
+    "founded": 1963,
+    "stock": {
+      "price": 46.13,
+      "shares_outstanding": 15247369,
+      "market_cap": 714491711,
+      "pe_ratio": 16.62,
+      "dividend_yield": 0.0,
+      "52_week_high": 52.15,
+      "52_week_low": 39.86,
+      "daily_change_percent": -1.55
+    },
+    "financials": {
+      "revenue": 855223377,
+      "net_income": 42933963,
+      "eps": 2.82,
+      "debt_equity": 1.52
+    },
+    "iso_code": "SE"
+  },
+  {
+    "id": "COMP041",
+    "ticker": "VMSA",
+    "company_name": "Vienna MediCare Solutions GmbH",
+    "industry": "Healthcare",
+    "country": "Austria",
+    "founded": 2008,
+    "stock": {
+      "price": 173.48,
+      "shares_outstanding": 1460143,
+      "market_cap": 215122868,
+      "pe_ratio": 163.7,
+      "dividend_yield": 1.31,
+      "52_week_high": 173.48,
+      "52_week_low": 116.22,
+      "daily_change_percent": 17.75
+    },
+    "financials": {
+      "revenue": 64017194,
+      "net_income": 1311176,
+      "eps": 0.9,
+      "debt_equity": 1.13
+    },
+    "iso_code": "AT"
+  },
+  {
+    "id": "COMP146",
+    "ticker": "GGAS",
+    "company_name": "Global Getaways AG",
+    "industry": "Hospitality",
+    "country": "Switzerland",
+    "founded": 1990,
+    "stock": {
+      "price": 49.15,
+      "shares_outstanding": 7446052,
+      "market_cap": 391662335,
+      "pe_ratio": 7.15,
+      "dividend_yield": 0.0,
+      "52_week_high": 77.26,
+      "52_week_low": 30.3,
+      "daily_change_percent": -6.55
+    },
+    "financials": {
+      "revenue": 527825915,
+      "net_income": 54830942,
+      "eps": 7.36,
+      "debt_equity": 2.01
+    },
+    "iso_code": "CH"
+  },
+  {
+    "id": "COMP157",
+    "ticker": "CSAG",
+    "company_name": "CureTech Solutions AG",
+    "industry": "Pharmaceuticals",
+    "country": "Germany",
+    "founded": 2006,
+    "stock": {
+      "price": 129.29,
+      "shares_outstanding": 1000000,
+      "market_cap": 125200000,
+      "pe_ratio": 20.63,
+      "dividend_yield": 1.75,
+      "52_week_high": 156.3,
+      "52_week_low": 56.38,
+      "daily_change_percent": 3.26
+    },
+    "financials": {
+      "revenue": 68655127,
+      "net_income": 6069113,
+      "eps": 6.07,
+      "debt_equity": 1.96
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP069",
+    "ticker": "ERAN",
+    "company_name": "EnergyPlus Resources AS",
+    "industry": "Energy",
+    "country": "Norway",
+    "founded": 2004,
+    "stock": {
+      "price": 87.43,
+      "shares_outstanding": 7493815,
+      "market_cap": 634351439,
+      "pe_ratio": 4.76,
+      "dividend_yield": 2.9,
+      "52_week_high": 90.33,
+      "52_week_low": 80.35,
+      "daily_change_percent": 3.28
+    },
+    "financials": {
+      "revenue": 726596222,
+      "net_income": 133385122,
+      "eps": 17.8,
+      "debt_equity": 1.65
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP142",
+    "ticker": "LRAN",
+    "company_name": "LuxuryLodge Resorts AS",
+    "industry": "Hospitality",
+    "country": "Norway",
+    "founded": 1988,
+    "stock": {
+      "price": 71.47,
+      "shares_outstanding": 2671838475,
+      "market_cap": 207975906894,
+      "pe_ratio": 10.58,
+      "dividend_yield": 1.69,
+      "52_week_high": 114.03,
+      "52_week_low": 51.41,
+      "daily_change_percent": -8.19
+    },
+    "financials": {
+      "revenue": 254052131916,
+      "net_income": 19656572949,
+      "eps": 7.36,
+      "debt_equity": 1.04
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP144",
+    "ticker": "EGAN",
+    "company_name": "EliteTravel Group AS",
+    "industry": "Hospitality",
+    "country": "Norway",
+    "founded": 1992,
+    "stock": {
+      "price": 17.78,
+      "shares_outstanding": 40924574,
+      "market_cap": 689988317,
+      "pe_ratio": 5.73,
+      "dividend_yield": 0.0,
+      "52_week_high": 24.42,
+      "52_week_low": 11.93,
+      "daily_change_percent": 5.43
+    },
+    "financials": {
+      "revenue": 678809581,
+      "net_income": 120320140,
+      "eps": 2.94,
+      "debt_equity": 0.47
+    },
+    "iso_code": "NO"
+  },
+  {
+    "id": "COMP058",
+    "ticker": "CEAD",
+    "company_name": "ConstructPro Enterprises A/S",
+    "industry": "Construction",
+    "country": "Denmark",
+    "founded": 1986,
+    "stock": {
+      "price": 58.96,
+      "shares_outstanding": 13134957,
+      "market_cap": 838535654,
+      "pe_ratio": 65.14,
+      "dividend_yield": 0.0,
+      "52_week_high": 101.22,
+      "52_week_low": 57.51,
+      "daily_change_percent": -7.65
+    },
+    "financials": {
+      "revenue": 599173524,
+      "net_income": 12856846,
+      "eps": 0.98,
+      "debt_equity": 2.16
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP141",
+    "ticker": "GHAD",
+    "company_name": "GrandStay Hotels A/S",
+    "industry": "Hospitality",
+    "country": "Denmark",
+    "founded": 2004,
+    "stock": {
+      "price": 55.49,
+      "shares_outstanding": 6182082,
+      "market_cap": 336676185,
+      "pe_ratio": 18.65,
+      "dividend_yield": 0.27,
+      "52_week_high": 85.59,
+      "52_week_low": 48.13,
+      "daily_change_percent": 1.89
+    },
+    "financials": {
+      "revenue": 130037326,
+      "net_income": 18054152,
+      "eps": 2.92,
+      "debt_equity": 0.55
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP056",
+    "ticker": "SBGF",
+    "company_name": "Skyline Builders Group SARL",
+    "industry": "Construction",
+    "country": "France",
+    "founded": 2019,
+    "stock": {
+      "price": 37.09,
+      "shares_outstanding": 288193985,
+      "market_cap": 10455677775,
+      "pe_ratio": 16.87,
+      "dividend_yield": 3.0,
+      "52_week_high": 56.03,
+      "52_week_low": 23.8,
+      "daily_change_percent": 2.23
+    },
+    "financials": {
+      "revenue": 10017629521,
+      "net_income": 619028596,
+      "eps": 2.15,
+      "debt_equity": 1.59
+    },
+    "iso_code": "FR"
+  },
+  {
+    "id": "COMP119",
+    "ticker": "LHAD",
+    "company_name": "Learning Horizon A/S",
+    "industry": "Education",
+    "country": "Denmark",
+    "founded": 2010,
+    "stock": {
+      "price": 9.98,
+      "shares_outstanding": 10800040444,
+      "market_cap": 109188408888,
+      "pe_ratio": 10.76,
+      "dividend_yield": 2.28,
+      "52_week_high": 13.45,
+      "52_week_low": 6.77,
+      "daily_change_percent": -1.26
+    },
+    "financials": {
+      "revenue": 77615593856,
+      "net_income": 10165321137,
+      "eps": 0.94,
+      "debt_equity": 2.11
+    },
+    "iso_code": "DK"
+  },
+  {
+    "id": "COMP065",
+    "ticker": "SPSB",
+    "company_name": "Sao Paulo Sustainable Power S.A.",
+    "industry": "Energy",
+    "country": "Brazil",
+    "founded": 1995,
+    "stock": {
+      "price": 84.36,
+      "shares_outstanding": 378659399,
+      "market_cap": 29160560316,
+      "pe_ratio": 14.7,
+      "dividend_yield": 0.0,
+      "52_week_high": 85.07,
+      "52_week_low": 59.85,
+      "daily_change_percent": 9.54
+    },
+    "financials": {
+      "revenue": 19878431637,
+      "net_income": 1984045498,
+      "eps": 5.24,
+      "debt_equity": 2.38
+    },
+    "iso_code": "BR"
+  },
+  {
+    "id": "COMP084",
+    "ticker": "GSPG",
+    "company_name": "Global Shipping Partners AG",
+    "industry": "Transportation",
+    "country": "Germany",
+    "founded": 1974,
+    "stock": {
+      "price": 84.86,
+      "shares_outstanding": 6977578,
+      "market_cap": 614375742,
+      "pe_ratio": 11.48,
+      "dividend_yield": 0.0,
+      "52_week_high": 94.44,
+      "52_week_low": 79.24,
+      "daily_change_percent": -3.62
+    },
+    "financials": {
+      "revenue": 429956867,
+      "net_income": 53512127,
+      "eps": 7.67,
+      "debt_equity": 2.39
+    },
+    "iso_code": "DE"
+  },
+  {
+    "id": "COMP101",
+    "ticker": "SRAS",
+    "company_name": "ShopSmart Retailers AG",
+    "industry": "Retail",
+    "country": "Switzerland",
+    "founded": 1960,
+    "stock": {
+      "price": 103.11,
+      "shares_outstanding": 79617004,
+      "market_cap": 8346250529,
+      "pe_ratio": 6.24,
+      "dividend_yield": 0.0,
+      "52_week_high": 140.01,
+      "52_week_low": 88.12,
+      "daily_change_percent": -1.64
+    },
+    "financials": {
+      "revenue": 12234273381,
+      "net_income": 1337408934,
+      "eps": 16.8,
+      "debt_equity": 1.24
+    },
+    "iso_code": "CH"
+  }
+]

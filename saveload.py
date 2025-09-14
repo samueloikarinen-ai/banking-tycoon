@@ -2,8 +2,8 @@ import json
 import os
 
 # File paths
-CUSTOMER_FILE = "customers.json"
-BANK_FILE = "bank_data.json"
+CUSTOMER_FILE = "data/customers.json"
+BANK_FILE = "data/bank_data.json"
 
 # Ensure files exist
 for filepath in [CUSTOMER_FILE, BANK_FILE]:
