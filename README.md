@@ -13,7 +13,21 @@ simple taxes, investments and economic cycles: Boom, recession, inflation, or cr
 
 map of europe (for future interactions)
 
+<img width="500" height="300" alt="banking" src="https://github.com/user-attachments/assets/baf3df53-2f29-43c7-a6a2-5ce1a49c34fc" />
 
+
+
+<img width="500" height="300" alt="banking2" src="https://github.com/user-attachments/assets/eff6adfd-7cce-4bbb-8bf6-4ead57bc10cc" />
+
+
+# update 1.1.1 coming soon
+
+bug fixes
+
+
+# update 1.1.2
+
+Random chance of loan defaults.
 
 
 # other updates to be added
@@ -33,9 +47,9 @@ Profit & Risk Management
     - Balance liquidity vs profitability.
     - Handle defaults, bankruptcies, and economic downturns.
 
-Investment Opportunities
+More Investment Opportunities
 
-    - Bonds, stocks, real estate, fintech startups.
+    - Bonds, real estate, fintech startups.
     - Diversify portfolio or go high-risk/high-reward.
 
 Regulation & Compliance
