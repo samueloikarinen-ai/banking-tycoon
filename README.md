@@ -1,5 +1,6 @@
-<img width="200" height="200" alt="banking tycoon" src="https://github.com/user-attachments/assets/6d9c73a2-8608-4f5f-bad9-5af7d108fae9" />
 # banking-tycoon 1.1
+
+<img width="100" height="100" alt="banking tycoon" src="https://github.com/user-attachments/assets/6d9c73a2-8608-4f5f-bad9-5af7d108fae9" />
 
 Banking tycoon game, with simple gui. 
 
